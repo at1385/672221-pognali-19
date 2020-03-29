@@ -2,11 +2,109 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Погнали</title>
+    <title>HTML Academy: Погнали - Главная</title>
   </head>
   <body>
+    <header class="page-header">
+      <div class="page-header__menu page-header__menu--opened">
+        <div class="page-header__logo-toggle-wrapper">
+          <div class="page-header__logo logo">
+            <a class="logo__link logo__link--light">
+              <img class="logo__image" src="" width="100" height="19" alt="Логоип «Погнали»">
+            </a>
+            <a class="logo__link logo__link--dark">
+              <img class="logo__image" src="" width="100" height="19" alt="Логоип «Погнали»">
+            </a>
+          </div>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+          <button class="page-header__menu-toggle" type="button">
+            <span class="visually-hidden">Показать/Скрыть меню</span>
+          </button>
+        </div>
 
+        <nav class="page-header__main-nav">
+          <ul class="site-menu">
+            <li class="site-menu__item">
+              <a class="site-menu__link" href="#">О сервисе</a>
+            </li>
+            <li class="site-menu__item">
+              <a class="site-menu__link" href="form.html">Направления</a>
+            </li>
+            <li class="site-menu__item">
+              <a class="site-menu__link" href="catalog.html">Попутчики</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="page-header__user-menu user-menu">
+          <li class="user-menu__item">
+            <a class="user-menu__button button button--login" href="#">Авторизация</a>
+          </li>
+        </ul>
+
+        <div class="page-header__contacts contacts">
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <a class="contacts__link contacts__link--phone" href="tel:88005558628">
+                <span class="contacts__label">8 800 555-86-28</span>
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link contacts__link--email" href="mailto:mail@htmlacademy.ru">
+                <span class="contacts__label">mail@htmlacademy.ru</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="page-header__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__icon" href="#">
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__icon" href="#">
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__icon" href="#">
+                <span class="visually-hidden">Инстаграм</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="page-header__top">
+        <p class="page-header__slogan"><b>В путешествие с крутыми попутчиками!</b></p>
+      </div>
+
+      <div class="review">
+        <blockquote class="review__content">
+          <p class="review__text">«Лучшее приложение, что я видел в жизни!»</p>
+          <cite class="review__author"><span class="review__wrap">Мурат Эльтазин</span> главный редактор газеты «гаджетлайф»</cite>
+        </blockquote>
+      </div>
+
+      <div class="algorithm">
+        <ol class="algorithm__list">
+          <li class="algorithm__item">
+            <p class="algorithm__text">Выберите направление</p>
+          </li>
+          <li class="algorithm__item">
+            <p class="algorithm__text">Изучите идеи путешественников</p>
+          </li>
+          <li class="algorithm__item">
+            <p class="algorithm__text">Находите тех, кто похож на вас</p>
+          </li>
+          <li class="algorithm__item">
+            <p class="algorithm__text">Путешествуйте вместе!</p>
+          </li>
+        </ol>
+      </div>
+    </header>
   </body>
 </html>
