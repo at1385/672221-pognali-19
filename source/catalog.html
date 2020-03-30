@@ -835,6 +835,126 @@
       </section>
 
       <div class="page-main__catalog-page-wrapper">
+        <section class="page-main__companions-finder companions-finder">
+          <h2 class="companions-finder__heading">Подберите идеального попутчика</h2>
+          <form class="companions-finder__filters" action="https://echo.htmlacademy.ru" method="post">
+            <div class="companions-finder__filters-wrapper">
+              <div class="companions-finder__filter-item">
+                <button class="companions-finder__filter-dropdown-button" type="button">
+                  <span class="companions-finder__filter-name">Хобби<span class="companions-finder__colon">:</span></span>
+                </button>
+                <div class="companions-finder__filter-content-wrapper">
+                  <p class="companions-finder__checkbox-wrapper companions-finder__checkbox-wrapper--first-column">
+                    <input class="companions-finder__checkbox visually-hidden" id="hobby-gym-id" type="checkbox" name="hobby-gym">
+                    <label class="companions-finder__label" for="hobby-gym-id">Спортзал</label>
+                  </p>
+                  <p class="companions-finder__checkbox-wrapper companions-finder__checkbox-wrapper--second-column">
+                    <input class="companions-finder__checkbox visually-hidden" id="hobby-hookah-id" type="checkbox" name="hobby-hookah">
+                    <label class="companions-finder__label" for="hobby-hookah-id">Кальян</label>
+                  </p>
+                  <p class="companions-finder__checkbox-wrapper">
+                    <input class="companions-finder__checkbox visually-hidden" id="hobby-couch-id" type="checkbox" name="hobby-couch">
+                    <label class="companions-finder__label" for="hobby-couch-id">Диван</label>
+                  </p>
+                </div>
+              </div>
+
+              <div class="companions-finder__filter-item">
+                <button class="companions-finder__filter-dropdown-button" type="button">
+                  <span class="companions-finder__filter-name">Музыка<span class="companions-finder__colon">:</span></span>
+                </button>
+                <div class="companions-finder__filter-content-wrapper">
+                  <p class="companions-finder__checkbox-wrapper companions-finder__checkbox-wrapper--first-column">
+                    <input class="companions-finder__checkbox visually-hidden" id="music-hardrock-id" type="checkbox" name="music-hardrock" checked>
+                    <label class="companions-finder__label" for="music-hardrock-id">Тяжелый рок</label>
+                  </p>
+                  <p class="companions-finder__checkbox-wrapper companions-finder__checkbox-wrapper--second-column">
+                    <input class="companions-finder__checkbox visually-hidden" id="music-rurap-id" type="checkbox" name="music-rurap">
+                    <label class="companions-finder__label" for="music-rurap-id">Русский рэп</label>
+                  </p>
+                  <p class="companions-finder__checkbox-wrapper">
+                    <input class="companions-finder__checkbox visually-hidden" id="music-eurodance-id" type="checkbox" name="music-eurodance">
+                    <label class="companions-finder__label" for="music-eurodance-id">Евроденс</label>
+                  </p>
+                </div>
+              </div>
+
+              <div class="companions-finder__filter-item companions-finder__filter-item--food">
+                <button class="companions-finder__filter-dropdown-button" type="button">
+                  <span class="companions-finder__filter-name">Еда<span class="companions-finder__colon">:</span></span>
+                </button>
+                <div class="companions-finder__filter-content-wrapper">
+                  <p class="companions-finder__checkbox-wrapper companions-finder__checkbox-wrapper--first-column">
+                    <input class="companions-finder__checkbox visually-hidden" id="food-meat-id" type="checkbox" name="food-meat">
+                    <label class="companions-finder__label" for="food-meat-id">Мясоед</label>
+                  </p>
+                  <p class="companions-finder__checkbox-wrapper companions-finder__checkbox-wrapper--second-column">
+                    <input class="companions-finder__checkbox visually-hidden" id="food-healthy-id" type="checkbox" name="food-healthy">
+                    <label class="companions-finder__label" for="food-healthy-id">Сидит на ПП</label>
+                  </p>
+                  <p class="companions-finder__checkbox-wrapper">
+                    <input class="companions-finder__checkbox visually-hidden" id="food-vegan-id" type="checkbox" name="food-vegan">
+                    <label class="companions-finder__label" for="food-vegan-id">Веган сыроед</label>
+                  </p>
+                </div>
+              </div>
+
+              <div class="companions-finder__filter-item companions-finder__filter-item--transport">
+                <button class="companions-finder__filter-dropdown-button companions-finder__filter-dropdown-button--less-spacing" type="button">
+                  <span class="companions-finder__filter-name companions-finder__filter-name--transport">Транспорт<span class="companions-finder__colon">:</span></span>
+                </button>
+                <div class="companions-finder__filter-content-wrapper companions-finder__filter-content-wrapper--transport">
+                  <p class="companions-finder__checkbox-wrapper companions-finder__checkbox-wrapper--transport">
+                    <input class="companions-finder__transport-checkbox companions-finder__transport-checkbox--plane visually-hidden" id="transport-plane-id" type="checkbox" name="transport-plane" checked>
+                    <label class="companions-finder__transport-label companions-finder__transport-label--plane" for="transport-plane-id">
+                      <span class="visually-hidden">Самолет</span>
+                    </label>
+                  </p>
+                  <p class="companions-finder__checkbox-wrapper companions-finder__checkbox-wrapper--transport">
+                    <input class="companions-finder__transport-checkbox companions-finder__transport-checkbox--bus visually-hidden" id="transport-bus-id" type="checkbox" name="transport-bus" checked>
+                    <label class="companions-finder__transport-label companions-finder__transport-label--bus" for="transport-bus-id">
+                      <span class="visually-hidden">Автобус</span>
+                    </label>
+                  </p>
+                  <p class="companions-finder__checkbox-wrapper companions-finder__checkbox-wrapper--transport">
+                    <input class="companions-finder__transport-checkbox companions-finder__transport-checkbox--bike visually-hidden" id="transport-bike-id" type="checkbox" name="transport-bike">
+                    <label class="companions-finder__transport-label companions-finder__transport-label--bike" for="transport-bike-id">
+                      <span class="visually-hidden">Велосипед</span>
+                    </label>
+                  </p>
+                  <p class="companions-finder__checkbox-wrapper companions-finder__checkbox-wrapper--transport">
+                    <input class="companions-finder__transport-checkbox companions-finder__transport-checkbox--walk visually-hidden" id="transport-walk-id" type="checkbox" name="transport-walk" checked>
+                    <label class="companions-finder__transport-label companions-finder__transport-label--walk" for="transport-walk-id">
+                      <span class="visually-hidden">Пешком</span>
+                    </label>
+                  </p>
+                </div>
+              </div>
+
+              <div class="companions-finder__filter-item companions-finder__filter-item--level">
+                <button class="companions-finder__filter-dropdown-button companions-finder__filter-dropdown-button--less-spacing" type="button">
+                  <span class="companions-finder__filter-name">Левел<span class="companions-finder__colon">:</span></span>
+                </button>
+                <div class="companions-finder__filter-content-wrapper level-filter">
+                  <div class="level-filter__level-range">
+                    <label><span class="visually-hidden">от</span><input class="level-filter__level-number level-filter__level-number--min" type="text" name="min-level" value="30"></label>
+                    <label><span class="visually-hidden">до</span><input class="level-filter__level-number level-filter__level-number--max" type="text" name="max-level" value="100"></label>
+                  </div>
+                  <div class="level-filter__controls">
+                    <div class="level-filter__scale">
+                      <div class="level-filter__bar"></div>
+                    </div>
+                    <button class="level-filter__toggle level-filter__toggle--min" type="button"></button>
+                    <button class="level-filter__toggle level-filter__toggle--max" type="button"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button class="companions-finder__button button button--companions" type="submit" name="companions-finder-button">Показать</button>
+          </form>
+        </section>
+
         <section class="page-main__catalog catalog">
           <h2 class="visually-hidden">Каталог пользователей</h2>
           <ul class="catalog__list">
