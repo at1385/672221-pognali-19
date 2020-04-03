@@ -1,0 +1,38 @@
+@mixin container-mobile {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+@mixin link {
+  color: $dark;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: rgba($dark, 0.7);
+  }
+
+  &:active {
+    color: rgba($dark, 0.3);
+  }
+}
+
+@mixin button {
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $bright-darker;
+  }
+
+  &:active {
+    color: rgba($darkest, 0.3);
+  }
+}

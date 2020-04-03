@@ -1,0 +1,33 @@
+.button {
+  @include button;
+
+  display: inline-block;
+  width: 230px;
+  min-height: 40px;
+  padding: 0 25px;
+
+  font-family: inherit;
+  font-size: 17px;
+  line-height: 40px;
+  font-weight: 700;
+  color: $darkest;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  text-decoration: none;
+  word-wrap: break-word;
+
+  background-color: $bright;
+
+  border: none;
+  border-radius: 25px;
+
+  cursor: pointer;
+
+  &--login {
+    width: 270px;
+    min-height: 50px;
+
+    line-height: 50px;
+  }
+}
