@@ -1,0 +1,125 @@
+.countries-cards {
+  @include list-reset;
+
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 270px;
+    height: 70px;
+
+    background-color: transparent;
+    background-image: linear-gradient(transparent, $light 95%);
+  }
+}
+
+.countries-cards__item {
+  position: relative;
+
+  margin-bottom: 10px;
+  padding-top: 99px;
+
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  border-radius: 10px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 87px;
+    left: 25px;
+
+    width: 35px;
+    height: 24px;
+
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 35px 24px;
+  }
+
+  &--thailand {
+    background-image: url("../img/thailand-mobile@1x.jpg");
+
+    &::before {
+      background-image: url("../img/flag-thailand.svg");
+    }
+  }
+
+  &--france {
+    background-image: url("../img/france-mobile@1x.jpg");
+
+    &::before {
+      background-image: url("../img/flag-france.svg");
+    }
+  }
+
+  &--czech {
+    background-image: url("../img/czech-mobile@1x.jpg");
+
+    &::before {
+      background-image: url("../img/flag-czech.svg");
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.countries-cards__bottom-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  padding-bottom: 20px;
+
+  background-color: $lightest;
+
+  border-radius: 10px;
+}
+
+.countries-cards__link {
+  @include link;
+
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.countries-cards__slogan,
+.countries-cards__counter {
+  margin: 0;
+
+  font-weight: 500;
+  color: rgba(#444444, 0.3);
+}
+
+.countries-cards__counter {
+  position: relative;
+
+  padding-left: 16px;
+
+  line-height: 25px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 7px;
+    left: 0;
+
+    width: 11px;
+    height: 11px;
+
+    background-image: url("../img/user.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    opacity: 0.1;
+  }
+}
