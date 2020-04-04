@@ -1,0 +1,70 @@
+.algorithm {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: $darkest;
+
+  background-color: $dark;
+  background-image: linear-gradient($darkest 80px, $dark 80px);
+}
+
+.algorithm__wrapper {
+  @include container-mobile;
+}
+
+.algorithm__list {
+  @include list-reset;
+
+  background-image: linear-gradient($bright-darkest 90px, $bright-dark 90px, $bright-dark 170px, $bright-darker 170px, $bright-darker 250px, $bright 250px);
+
+  border-radius: 10px;
+
+  counter-reset: algorithm;
+}
+
+.algorithm__item {
+  position: relative;
+
+  width: 270px;
+  padding-top: 20px;
+  padding-bottom: 24px;
+
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+
+  &::after {
+    counter-increment: algorithm;
+    content: counter(algorithm);
+
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    color: $lightest;
+  }
+
+  &:nth-child(1) {
+    background-color: $bright-darkest;
+  }
+
+  &:nth-child(2) {
+    background-color: $bright-dark;
+  }
+
+  &:nth-child(3) {
+    background-color: $bright-darker;
+  }
+
+  &:nth-child(4) {
+    background-color: $bright;
+
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+}
+
+.algorithm__text {
+  width: 140px;
+  margin: 0;
+  margin-left: 25px;
+}

@@ -1,0 +1,24 @@
+.review {
+  @include container-mobile;
+
+  padding-top: 45px;
+  padding-bottom: 32px;
+
+  background-color: $darkest;
+}
+
+.review__content {
+  width: 160px;
+  margin: 0;
+  margin-left: 25px;
+}
+
+.review__text {
+  margin: 0;
+  margin-bottom: 18px;
+}
+
+.review__author {
+  font-weight: 700;
+  font-style: normal;
+}
