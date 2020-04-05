@@ -34,10 +34,34 @@
       fill: rgba($lightest, 0.3);
     }
   }
+
+  &--footer {
+    background-color: $bright;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $bright-darker;
+
+      .social__logo--footer {
+        fill: $dark;
+      }
+    }
+
+    &:active {
+      .social__logo--footer {
+        fill: rgba($dark, 0.3);
+      }
+    }
+  }
 }
 
 .social__logo {
   vertical-align: middle;
 
   fill: #cccccc;
+
+  &--footer {
+    fill: $dark;
+  }
 }
