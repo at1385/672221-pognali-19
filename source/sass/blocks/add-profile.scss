@@ -1,0 +1,132 @@
+.add-profile {
+  @include container-mobile;
+
+  z-index: 3;
+
+  padding-top: 70px;
+  padding-bottom: 40px;
+  padding-left: 25px;
+
+  background-image: url("../img/rates@1x.png");
+  background-repeat: no-repeat;
+  background-position: 195px 71px;
+  background-size: 99px 99px;
+}
+
+.add-profile__heading {
+  position: relative;
+
+  width: 105px;
+  margin-top: 15px;
+  margin-bottom: 45px;
+  margin-left: 25px;
+
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $bright-darkest;
+}
+
+.add-profile__features-list {
+  @include list-reset;
+
+  position: relative;
+
+  margin-bottom: 30px;
+  padding-left: 25px;
+
+  counter-reset: add-profile;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    left: 25px;
+
+    width: 200px;
+    height: 1px;
+
+    background-color: rgba($darkest, 0.05);
+  }
+}
+
+.add-profile__features-item {
+  position: relative;
+
+  width: 245px;
+  padding-top: 10px;
+  padding-bottom: 12px;
+  padding-right: 60px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 200px;
+    height: 1px;
+
+    background-color: rgba($darkest, 0.05);
+  }
+
+  &::after {
+    counter-increment: add-profile;
+    content: counter(add-profile);
+
+    position: absolute;
+    top: 4px;
+    right: 0;
+
+    width: 34px;
+    height: 34px;
+
+    line-height: 34px;
+    color: $lightest;
+    text-align: center;
+    vertical-align: middle;
+
+    border-radius: 50%;
+  }
+
+  &:nth-child(1) {
+    &::after {
+      background-color: $bright-dark;
+    }
+  }
+
+  &:nth-child(2) {
+    &::after {
+      background-color: $bright-darker;
+    }
+  }
+
+  &:nth-child(3) {
+    &::after {
+      background-color: $bright;
+    }
+  }
+}
+
+.add-profile__tariffs-link {
+  display: block;
+  width: 220px;
+  margin: 0 auto;
+
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  color: $darkest;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: rgba($darkest, 0.7);
+  }
+
+  &:active {
+    color: rgba($darkest, 0.3);
+  }
+}
