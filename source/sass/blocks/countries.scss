@@ -1,0 +1,45 @@
+.countries {
+  @include list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.countries__item {
+  min-width: 35px;
+  height: 24px;
+  margin-right: 19px;
+
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 35px 24px;
+
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--sri-lanka {
+    background-image: url("../img/flag-sri-lanka.svg");
+  }
+
+  &--thailand {
+    background-image: url("../img/flag-thailand.svg");
+  }
+
+  &--seychelles {
+    background-image: url("../img/flag-seychelles.svg");
+  }
+
+  &--belgium {
+    background-image: url("../img/flag-belgium.svg");
+  }
+
+  &--czech {
+    background-image: url("../img/flag-czech.svg");
+  }
+}
