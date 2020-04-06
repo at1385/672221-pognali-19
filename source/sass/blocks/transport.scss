@@ -1,0 +1,48 @@
+.transport {
+  @include list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.transport__item {
+  width: 33px;
+  height: 33px;
+
+  line-height: 33px;
+
+  border-radius: 50%;
+}
+
+.transport__icon {
+  display: inline-block;
+
+  vertical-align: middle;
+
+  fill: rgba(#000000, 0.15);
+
+  &--active {
+    fill: #1d2e5b;
+  }
+
+  &--plane {
+    width: 19px;
+    height: 21px;
+  }
+
+  &--bus {
+    width: 17px;
+    height: 21px;
+  }
+
+  &--bike {
+    width: 24px;
+    height: 21px;
+  }
+
+  &--walk {
+    width: 20px;
+    height: 21px;
+  }
+}
