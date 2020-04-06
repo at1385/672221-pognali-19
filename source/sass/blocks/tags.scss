@@ -1,0 +1,36 @@
+.tags__list {
+  @include list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  width: 185px;
+  margin: 0 auto;
+
+  line-height: 18px;
+}
+
+.tags__item {
+  align-self: flex-start;
+  margin-right: 5px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.tags__link {
+  color: #444444;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: rgba(#444444, 0.5);
+    text-decoration: none;
+  }
+}
