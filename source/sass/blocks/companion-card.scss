@@ -1,0 +1,278 @@
+.companion-card {
+  position: relative;
+
+  padding-top: 15px;
+  padding-bottom: 22px;
+
+  background-color: $lightest;
+
+  border-radius: 20px;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.08);
+  }
+}
+
+.companion-card__user-picture {
+  position: absolute;
+  top: 15px;
+  left: 18px;
+
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+
+  vertical-align: top;
+
+  border-radius: 50%;
+
+  overflow: hidden;
+}
+
+.companion-card__user-image {
+  width: 70px;
+  height: 70px;
+}
+
+.companion-card__name-status-wrapper {
+  margin-left: 105px;
+}
+
+.companion-card__user-name {
+  @include link;
+
+  display: inline-block;
+  width: 125px;
+  margin: 0;
+  margin-right: 10px;
+
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #1d2e5b;
+  vertical-align: top;
+  text-decoration: none;
+  word-wrap: break-word;
+}
+
+.companion-card__name-separator {
+  margin: 0;
+}
+
+.companion-card__web-status {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0;
+  margin-top: 10px;
+
+  vertical-align: top;
+
+  border-radius: 50%;
+
+  &--offline {
+    background-color: #f97676;
+  }
+
+  &--online {
+    background-color: #81e31e;
+  }
+}
+
+.companion-card__favourites-rating-wrapper {
+  position: relative;
+  z-index: 1;
+
+  margin-bottom: 12px;
+  margin-left: 67px;
+}
+
+.companion-card__favourites {
+  position: relative;
+
+  width: 31px;
+  height: 31px;
+  margin-right: 2px;
+
+  vertical-align: top;
+
+  background-color: $light;
+
+  border: none;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 9px;
+
+    width: 13px;
+    height: 11px;
+
+    background-color: transparent;
+    background-image: url("../img/heart.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 13px 11px;
+
+    opacity: 0.3;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #e2e5f2;
+
+    &::before {
+      opacity: 0.5;
+    }
+  }
+
+  &:active {
+    &::before {
+      opacity: 0.1;
+    }
+  }
+
+  &--active {
+    background-color: #f9eaea;
+
+    &::before {
+      background-image: url("../img/heart-active.svg");
+
+      opacity: 1;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: #f9d8d8;
+
+      &::before {
+        opacity: 1;
+      }
+    }
+
+    &:active {
+      &::before {
+        opacity: 0.3;
+      }
+    }
+  }
+}
+
+.companion-card__raiting {
+  display: inline-block;
+  margin-top: 7px;
+
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: $darkest;
+  vertical-align: top;
+  text-transform: uppercase;
+}
+
+.companion-card__tags {
+  margin: 0 18px;
+  margin-bottom: 13px;
+}
+
+.companion-card__sub-heading {
+  position: relative;
+
+  margin: 0;
+  margin-bottom: 16px;
+  padding-left: 27px;
+
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: lowercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+
+    width: 15px;
+    height: 1px;
+
+    background-color: #edeff6;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 0;
+
+    width: 138px;
+    height: 1px;
+
+    background-color: #edeff6;
+  }
+
+  &--transport {
+    &::after {
+      left: 105px;
+
+      width: 75px;
+      height: 1px;
+
+      background-color: #edeff6;
+    }
+  }
+
+  &--level {
+    width: 62px;
+    margin-bottom: 9px;
+
+    &::after {
+      right: 0;
+
+      width: 11px;
+      height: 1px;
+
+      background-color: #edeff6;
+    }
+  }
+}
+
+.companion-card__countries {
+  margin: 0 25px;
+  margin-bottom: 8px;
+
+  &--even {
+    margin-bottom: 11px;
+  }
+}
+
+.companion-card__transport-level-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.companion-card__transport-wrapper {
+  margin-right: 22px;
+}
+
+.companion-card__transport {
+  margin-left: 24px;
+}
+
+.companion-card__level-wrapper {
+  width: 89px;
+}
+
+.companion-card__level {
+  margin-left: 24px;
+}
+
+.companion-card__button {
+  margin: 0 18px;
+}
