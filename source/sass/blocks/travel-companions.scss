@@ -1,0 +1,42 @@
+.travel-companions {
+  position: relative;
+  z-index: 4;
+
+  margin-top: -35px;
+
+  background-color: $dark;
+
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.travel-companions__wrapper {
+  @include container-mobile;
+
+  padding-top: 105px;
+  padding-bottom: 30px;
+
+  background-image:
+    url("../img/blue-back-desktop@1x.png"),
+    url("../img/smolov-back-desktop@1x.png"),
+    url("../img/rogovaya-back-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position:
+    -19px 73px,
+    152px 73px,
+    -10px 345px;
+  background-size:
+    132px 132px,
+    143px 143px,
+    71px 71px;
+}
+
+.travel-companions__block-description {
+  margin-bottom: 60px;
+}
+
+.page-main {
+  .travel-companions__users-cards {
+    margin-bottom: 20px;
+  }
+}

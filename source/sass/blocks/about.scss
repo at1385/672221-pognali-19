@@ -1,0 +1,27 @@
+.about {
+  position: relative;
+  z-index: 6;
+
+  background-color: $dark;
+
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.about__wrapper {
+  @include container-mobile;
+
+  padding-top: 71px;
+  padding-bottom: 83px;
+
+  background-image:
+    url("../img/about-mobile@1x.png"),
+    url("../img/blue-back-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-position:
+    18px 39px,
+    -19px 39px;
+  background-size:
+    292px auto,
+    132px auto;
+}

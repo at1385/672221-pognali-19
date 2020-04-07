@@ -1,0 +1,25 @@
+.page-footer {
+  position: relative;
+  z-index: 3;
+
+  margin-top: -35px;
+  padding-top: 38px;
+
+  background-color: $lightest;
+
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+}
+
+.page-footer__wrapper {
+  @include container-mobile;
+}
+
+.page-footer__logo {
+  margin: 0 auto;
+  margin-bottom: 38px;
+}
+
+.page-footer__social {
+  margin-bottom: 37px;
+}

@@ -1,0 +1,41 @@
+.block-description {
+  margin-left: 25px;
+}
+
+.block-description__heading,
+.block-description__paragraph {
+  margin: 0;
+  margin-bottom: 19px;
+}
+
+.block-description__heading {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $bright-darkest;
+}
+
+.block-description__paragraph {
+  width: 200px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--light {
+    width: 215px;
+
+    font-weight: 300;
+    color: $lightest;
+  }
+
+  &--light-accent {
+    font-weight: 700;
+  }
+}
+
+.block-description__wrap {
+  &--about-additional {
+    display: none;
+  }
+}

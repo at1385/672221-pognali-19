@@ -1,0 +1,32 @@
+.copyright {
+  padding: 14px 0;
+
+  border-top: 1px solid rgba(#444444, 0.05);
+}
+
+.copyright__link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  color: #444444;
+  vertical-align: middle;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__phrase {
+  margin-top: 2px;
+}
+
+.copyright__logo {
+  fill: $dark;
+}

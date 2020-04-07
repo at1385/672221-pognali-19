@@ -1,0 +1,57 @@
+.rectangle-button {
+  @include button;
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 24px;
+
+  font: inherit;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: $darkest;
+  vertical-align: middle;
+  text-decoration: none;
+
+  background-color: $bright;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 22px;
+    right: 23px;
+
+    margin-top: 2px;
+
+    width: 10px;
+    height: 14px;
+
+    background-color: transparent;
+    background-image: url("../img/triangle-arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 10px 14px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $bright-darker;
+  }
+
+  &:active {
+    color: rgba($darkest, 0.3);
+
+    &::after {
+      opacity: 0.3;
+    }
+  }
+
+  &--about {
+    display: none;
+  }
+}

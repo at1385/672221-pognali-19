@@ -1,0 +1,107 @@
+.modal-tariffs {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  z-index: 10;
+
+  display: none;
+  width: 270px;
+  margin: 0 auto;
+  margin-left: -135px;
+  padding: 0 25px;
+  padding-top: 30px;
+  padding-bottom: 92px;
+
+  background-color: $lightest;
+
+  border-radius: 20px;
+  box-shadow: 0 20px 50px 0 rgba(29, 46, 91, 0.1);
+}
+
+.modal-tariffs__heading {
+  margin: 0;
+  margin-bottom: 32px;
+
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $bright-darkest;
+  text-align: center;
+}
+
+.modal-tariffs__list {
+  @include list-reset;
+
+  position: relative;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 220px;
+    height: 1px;
+
+    background-color: rgba($darkest, 0.05);
+  }
+}
+
+.modal-tariffs__item {
+  position: relative;
+
+  padding-top: 9px;
+  padding-bottom: 13px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 220px;
+    height: 1px;
+
+    background-color: rgba($darkest, 0.05);
+  }
+}
+
+.modal-tariffs__price {
+  display: block;
+}
+
+.modal-tariffs__close {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 270px;
+  padding: 18px 0;
+
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #1d2e5b;
+  text-transform: uppercase;
+
+  background-color: #f3f4f8;
+
+  border: none;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  outline: none;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #d1d7e9;
+  }
+
+  &:active {
+    color: rgba(#1d2e5b, 0.3);
+  }
+}

@@ -1,0 +1,25 @@
+.site-menu {
+  @include list-reset;
+
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.site-menu__link {
+  @include link;
+
+  &--current {
+    color: rgba($dark, 0.3);
+
+    cursor: default;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: rgba($dark, 0.3);
+    }
+  }
+}

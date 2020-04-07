@@ -1,0 +1,33 @@
+.page-main--inner-page {
+  background-color: $light;
+}
+
+.page-main__main-heading {
+  position: relative;
+  z-index: 10;
+
+  background-color: $darkest;
+
+  border-bottom-right-radius: 21px;
+  border-bottom-left-radius: 21px;
+}
+
+.page-main__add-profile-tariffs-wrapper {
+  position: relative;
+
+  margin-top: -35px;
+
+  background-color: $light;
+
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.page-main__catalog-page-wrapper {
+  padding-bottom: 81px;
+}
+
+.page-main__button {
+  margin-bottom: 21px;
+  margin-left: 60px;
+}

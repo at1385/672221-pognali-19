@@ -1,0 +1,28 @@
+.directions {
+  position: relative;
+  z-index: 5;
+
+  margin-top: -35px;
+
+  background-color: $light;
+
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.directions__wrapper {
+  @include container-mobile;
+
+  padding-top: 105px;
+  padding-bottom: 30px;
+}
+
+.directions__block-description {
+  margin-bottom: 61px;
+}
+
+.page-main {
+  .directions__countries-cards {
+    margin-bottom: 25px;
+  }
+}

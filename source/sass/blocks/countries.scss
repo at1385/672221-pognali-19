@@ -1,0 +1,152 @@
+.countries {
+  @include list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &--catalog {
+    flex-direction: column;
+    margin-left: 5px;
+
+    .countries__item {
+      &--catalog {
+        background-image: none;
+      }
+
+      &--sri-lanka {
+        &::before {
+          background-image: url("../img/flag-sri-lanka.svg");
+        }
+      }
+
+      &--thailand {
+        &::before {
+          background-image: url("../img/flag-thailand.svg");
+        }
+      }
+
+      &--seychelles {
+        &::before {
+          background-image: url("../img/flag-seychelles.svg");
+        }
+      }
+
+      &--belgium {
+        &::before {
+          background-image: url("../img/flag-belgium.svg");
+        }
+      }
+
+      &--czech {
+        &::before {
+          background-image: url("../img/flag-czech.svg");
+        }
+      }
+
+      &--usa {
+        &::before {
+          background-image: url("../img/flag-usa.svg");
+        }
+      }
+
+      &--australia {
+        &::before {
+          background-image: url("../img/flag-australia.svg");
+        }
+      }
+
+      &--dominicana {
+        &::before {
+          background-image: url("../img/flag-dominica.svg");
+        }
+      }
+
+      &--great-britain {
+        &::before {
+          background-image: url("../img/flag-united-kingdom.svg");
+        }
+      }
+
+      &--germany {
+        &::before {
+          background-image: url("../img/flag-germany.png");
+        }
+      }
+    }
+  }
+}
+
+.countries__item {
+  min-width: 35px;
+  height: 24px;
+  margin-right: 19px;
+
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 35px 24px;
+
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--catalog {
+    position: relative;
+
+    margin-bottom: 4px;
+    padding-left: 41px;
+
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #1d2e5b;
+    text-transform: uppercase;
+
+    background-color: transparent;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 2px;
+
+      width: 26px;
+      height: 18px;
+
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: 26px 18px;
+
+      border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px;
+    }
+  }
+
+  &--sri-lanka {
+    background-image: url("../img/flag-sri-lanka.svg");
+  }
+
+  &--thailand {
+    background-image: url("../img/flag-thailand.svg");
+  }
+
+  &--seychelles {
+    background-image: url("../img/flag-seychelles.svg");
+  }
+
+  &--belgium {
+    background-image: url("../img/flag-belgium.svg");
+  }
+
+  &--czech {
+    background-image: url("../img/flag-czech.svg");
+  }
+}

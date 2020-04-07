@@ -1,0 +1,119 @@
+.users-cards {
+  @include list-reset;
+}
+
+.users-cards__item {
+  position: relative;
+
+  margin-bottom: 11px;
+
+  text-align: center;
+
+  border-radius: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.08);
+
+    .users-cards__image {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.users-cards__image-level-wrapper {
+  position: relative;
+
+  order: 0;
+  width: 270px;
+  height: 270px;
+
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+
+  overflow: hidden;
+}
+
+.users-cards__image {
+  width: 270px;
+  height: 270px;
+
+  transition: all 0.5s ease-out;
+}
+
+.users-cards__level {
+  position: absolute;
+  top: 16px;
+  left: 17px;
+}
+
+.users-cards__info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  padding: 25px;
+  padding-bottom: 16px;
+
+  background-color: $lightest;
+
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.users-cards__status-name-wrapper {
+  position: relative;
+
+  order: 1;
+  align-self: center;
+  margin-bottom: 13px;
+}
+
+.users-cards__web-status {
+  position: absolute;
+  top: 9px;
+  left: -16px;
+
+  width: 5px;
+  height: 5px;
+  margin: 0;
+
+  border-radius: 50%;
+
+  &--offline {
+    background-color: #f97676;
+  }
+
+  &--online {
+    background-color: #81e31e;
+  }
+}
+
+.users-cards__name {
+  @include link;
+
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.users-cards__countries {
+  order: 0;
+  position: relative;
+  z-index: 1;
+  margin-top: -37px;
+  margin-bottom: 12px;
+}
+
+.users-cards__tags {
+  order: 2;
+  margin-bottom: 11px;
+}
+
+.users-cards__transport {
+  order: 3;
+}
