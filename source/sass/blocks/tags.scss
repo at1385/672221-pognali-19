@@ -9,6 +9,15 @@
   margin: 0 auto;
 
   line-height: 18px;
+
+  &--catalog {
+    justify-content: flex-start;
+
+    margin: 0;
+    margin-left: 8px;
+
+    font-size: 15px;
+  }
 }
 
 .tags__item {
