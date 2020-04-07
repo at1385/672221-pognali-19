@@ -1,0 +1,17 @@
+.catalog {
+  @include container-mobile;
+}
+
+.catalog__list {
+  @include list-reset;
+
+  margin-bottom: 19px;
+}
+
+.catalog__companion-card {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
