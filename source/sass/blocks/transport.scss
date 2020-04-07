@@ -4,6 +4,47 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  &--catalog {
+    width: 135px;
+
+    .transport__item {
+      width: 32px;
+      height: 32px;
+
+      background-color: $light;
+    }
+
+    .transport__icon {
+      margin-top: 8px;
+      margin-left: 8px;
+
+      vertical-align: top;
+
+      &--plane {
+        width: 14px;
+        height: 16px;
+      }
+
+      &--bus {
+        width: 13px;
+        height: 16px;
+        margin-left: 10px;
+      }
+
+      &--bike {
+        width: 19px;
+        height: 17px;
+        margin-top: 7px;
+        margin-left: 6px;
+      }
+
+      &--walk {
+        width: 15px;
+        height: 17px;
+      }
+    }
+  }
 }
 
 .transport__item {

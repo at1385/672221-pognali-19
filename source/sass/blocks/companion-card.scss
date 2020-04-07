@@ -228,13 +228,14 @@
   }
 
   &--level {
-    width: 62px;
+    width: 92px;
     margin-bottom: 9px;
+    padding-left: 30px;
 
     &::after {
       right: 0;
 
-      width: 11px;
+      width: 12px;
       height: 1px;
 
       background-color: #edeff6;
