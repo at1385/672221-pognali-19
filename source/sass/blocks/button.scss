@@ -30,4 +30,53 @@
 
     line-height: 50px;
   }
+
+  &--more {
+    position: relative;
+
+    width: 149px;
+    min-height: 0;
+    padding-right: 0;
+    padding-left: 34px;
+
+    color: #1d2e5b;
+    line-height: 30px;
+
+    background-color: transparent;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: 0;
+
+      width: 18px;
+      height: 18px;
+
+      background-color: transparent;
+      background-image: url("../img/show-more-plus.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: 18px 18px;
+    }
+
+    &:hover,
+    &:focus {
+      color: rgba(#1d2e5b, 0.6);
+
+      background-color: transparent;
+
+      &::before {
+        opacity: 0.6;
+      }
+    }
+
+    &:active {
+      color: rgba(#1d2e5b, 0.3);
+
+      &::before {
+        opacity: 0.3;
+      }
+    }
+  }
 }
