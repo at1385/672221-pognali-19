@@ -67,4 +67,34 @@
 
     border: none;
   }
+
+  &--border {
+    padding: 19px 18px;
+
+    border: 3px solid $dark;
+
+    &::after {
+      top: 19px;
+      right: 20px;
+    }
+
+    &:hover,
+    &:focus {
+      color: $lightest;
+
+      background-color: $darkest;
+
+      &::after {
+        background-image: url("../img/triangle-arrow-right-light.svg");
+      }
+    }
+
+    &:active {
+      color: rgba($lightest, 0.3);
+
+      &::after {
+        opacity: 0.3;
+      }
+    }
+  }
 }
