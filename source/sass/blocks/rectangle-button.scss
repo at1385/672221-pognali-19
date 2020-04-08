@@ -54,4 +54,17 @@
   &--about {
     display: none;
   }
+
+  &--email-send {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 60px;
+    min-height: 62px;
+
+    padding: 23px 25px;
+
+    border: none;
+  }
 }
