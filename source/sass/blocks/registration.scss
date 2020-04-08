@@ -1,0 +1,61 @@
+.registration {
+  position: relative;
+  z-index: 2;
+
+  margin-top: -35px;
+
+  background-color: $dark;
+
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.registration__wrapper {
+  @include container-mobile;
+
+  padding-top: 105px;
+  padding-bottom: 29px;
+}
+
+.registration__heading-question {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $bright-darkest;
+  text-align: center;
+}
+
+.registration__text {
+  width: 215px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+  font-weight: 300;
+  color: $lightest;
+  text-align: center;
+
+  &:last-of-type {
+    margin-bottom: 18px;
+  }
+}
+
+.registration__authorization-link {
+  color: $bright;
+  text-decoration: underline;
+
+  &:hover,
+  &:focus {
+    color: $bright-darkest;
+  }
+
+  &:active {
+    color: rgba($bright-darkest, 0.3);
+  }
+}
+
+.registration__email-form {
+  margin-bottom: 28px;
+}
