@@ -69,6 +69,33 @@
     }
   }
 
+  &--light {
+    position: relative;
+
+    width: 100px;
+    height: 100px;
+
+    color: #444444;
+
+    background-color: $light;
+  }
+
+  &--80-form {
+    &::before {
+      width: 100px;
+      height: 100px;
+
+      transform: rotate(-15deg);
+    }
+
+    &::after {
+      width: 100px;
+      height: 100px;
+
+      transform: rotate(45deg);
+    }
+  }
+
   &--dark-min {
     position: relative;
 
@@ -148,6 +175,11 @@
   position: relative;
   z-index: 1;
 
+  &--dark {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
   &--min {
     display: none;
   }
@@ -175,5 +207,21 @@
     height: 1px;
 
     background-color: rgba($lightest, 0.3);
+  }
+
+  &--dark {
+    font-size: 38px;
+    line-height: 38px;
+    color: $darkest;
+
+    &::after {
+      bottom: 1px;
+      right: -3px;
+
+      width: 49px;
+      height: 2px;
+
+      background-color: rgba(#444444, 0.3);
+    }
   }
 }
