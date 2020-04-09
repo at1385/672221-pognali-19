@@ -119,14 +119,14 @@
       </section>
     </header>
 
-    <main class="page-main">
+    <main class="page-main page-main--inner-page">
       <div class="page-main__main-heading">
         <h1 class="main-heading">
           <span class="main-heading__name">Направления</span>
         </h1>
       </div>
 
-      <section class="page-main__user-info user-info">
+      <section class="user-info">
         <header class="user-info__header">
           <h2 class="visually-hidden">Информация о пользователе</h2>
           <p class="user-info__level level level--light level--80-form">
@@ -134,15 +134,15 @@
             <b class="level__number level__number--dark">80</b>
           </p>
           <div class="user-info__image-wrapper">
-            <img class="user-info__image" src="" width="100" height="100" alt="Фотография пользователя">
+            <img class="user-info__image" src="img/photo-account-mobile@1x.jpg" width="100" height="100" alt="Фотография пользователя">
           </div>
           <button class="user-info__button button button--inner-page" type="button"><span>Сменить фото</span></button>
         </header>
 
         <div class="user-info__tags-transport-wrapper">
           <div class="user-info__wrapper user-info__wrapper--tags">
-            <h3 class="user-info__sub-heading user-info__sub-heading--tags">Тэги</h3>
-            <textarea class="user-info__textarea" name="user-tags" placeholder="Коротко о себе в виде 5-8 хештэгов">#бургер #бар #футбол #концерт #крафт</textarea>
+            <label class="user-info__sub-heading user-info__sub-heading--tags" for="tags-id">Тэги</label>
+            <textarea class="user-info__textarea" id="tags-id" name="user-tags" placeholder="Коротко о себе в виде 5-8 хештэгов">#бургер #бар #футбол #концерт #крафт</textarea>
           </div>
 
           <div class="user-info__wrapper user-info__wrapper--transport">
