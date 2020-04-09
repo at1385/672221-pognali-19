@@ -1,0 +1,96 @@
+.user-schedule {
+  position: relative;
+  z-index: 1;
+
+  margin-top: -28px;
+
+  font-weight: 500;
+  color: #1d2e5b;
+
+  background-color: #dfe3f0;
+
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+}
+
+.user-schedule__heading {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.user-schedule__container {
+  @include container-mobile;
+
+  padding-top: 27px;
+  padding-bottom: 60px;
+}
+
+.user-schedule__list {
+  @include list-reset;
+}
+
+.user-schedule__item {
+  margin-bottom: 10px;
+  padding: 21px 25px;
+  padding-bottom: 24px;
+
+  background-color: $lightest;
+
+  border-radius: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.user-schedule__country-wrapper,
+.user-schedule__info {
+  margin: 0;
+}
+
+.user-schedule__country-wrapper {
+  margin-bottom: 22px;
+
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.user-schedule__countries {
+  font-weight: 700;
+}
+
+.user-schedule__info-wrapper {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.user-schedule__info {
+  margin-bottom: 6px;
+
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+
+  &:last-of-type {
+    margin-bottom: 23px;
+  }
+}
+
+.user-schedule__change-link {
+  color: rgba(#444444, 0.3);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: rgba(#444444, 0.6);
+  }
+
+  &:active {
+    color: rgba(#444444, 0.1);
+  }
+}
