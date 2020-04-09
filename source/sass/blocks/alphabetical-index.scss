@@ -1,0 +1,68 @@
+.alphabetical-index {
+  @include list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 221px;
+
+  border: 1px solid #cbced9;
+  border-right-width: 0;
+  border-bottom-width: 0;
+}
+
+.alphabetical-index__item {
+  border-right: 1px solid #cbced9;
+  border-bottom: 1px solid #cbced9;
+}
+
+.alphabetical-index__letter-button {
+  width: 43px;
+  min-height: 40px;
+  padding: 0;
+
+  font: inherit;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+
+  background-color: $lightest;
+
+  border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    outline: 1px solid #959bb2;
+  }
+
+  &:active {
+    color: $lightest;
+
+    background-color: #1d2e5b;
+
+    outline-color: #1d2e5b;
+  }
+
+  &--active {
+    color: $lightest;
+
+    background-color: #1d2e5b;
+
+    outline: 1px solid #1d2e5b;
+
+    &:hover,
+    &:focus {
+      outline-color: #1d2e5b;
+    }
+  }
+
+  &--active-light {
+    background-color: $light;
+
+    &:hover,
+    &:focus {
+      border-color: #cbced9;
+    }
+  }
+}
