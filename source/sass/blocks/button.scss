@@ -31,6 +31,21 @@
     line-height: 50px;
   }
 
+  &--inner-page {
+    width: 270px;
+
+    background-color: #dfe3f0;
+
+    &:hover,
+    &:focus {
+      background-color: #d1d7e9;
+    }
+
+    &:active {
+      color: rgba($darkest, 0.3);
+    }
+  }
+
   &--more {
     position: relative;
 
