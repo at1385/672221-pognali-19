@@ -1,0 +1,55 @@
+.add-schedule {
+  position: relative;
+  z-index: 2;
+
+  margin-top: -30px;
+
+  color: #1d2e5b;
+
+  background-color: #d4d9eb;
+
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+}
+
+.add-schedule__container {
+  @include container-mobile;
+
+  padding-top: 28px;
+  padding-bottom: 77px;
+}
+
+.add-schedule__header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.add-schedule__heading {
+  margin: 0;
+  margin-bottom: 31px;
+
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.add-schedule__step-indicator-wrapper {
+  @include list-reset;
+
+  display: flex;
+}
+
+.add-schedule__step-indicator {
+  width: 5px;
+  height: 5px;
+  margin-top: 11px;
+  margin-right: 16px;
+
+  background-color: rgba(#1d2e5b, 0.3);
+  border-radius: 50%;
+
+  &--current {
+    background-color: #1d2e5b;
+  }
+}
