@@ -46,6 +46,26 @@
     }
   }
 
+  &--step-back {
+    width: 120px;
+    min-height: 0;
+    padding: 0;
+
+    line-height: 30px;
+
+    background-color: transparent;
+
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      color: rgba($darkest, 0.7);
+    }
+
+    &:active {
+      color: rgba($darkest, 0.3);
+    }
+  }
+
   &--more {
     position: relative;
 
