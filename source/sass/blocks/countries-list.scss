@@ -1,0 +1,35 @@
+.countries-list {
+  @include list-reset;
+
+  &--form {
+    padding-top: 55px;
+    padding-bottom: 16px;
+    padding-left: 19px;
+
+    background-color: $lightest;
+
+    border: 1px solid #cbced9;
+    border-top: none;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+}
+
+.countries-list__item--letter {
+  display: none;
+}
+
+.countries-list__label {
+  color: #444444;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: #1d2e5b;
+  }
+
+  &:active {
+    color: rgba(#1d2e5b, 0.3);
+  }
+}
