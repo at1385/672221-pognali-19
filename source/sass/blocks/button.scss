@@ -102,6 +102,23 @@
     }
   }
 
+  &--companions {
+    background-color: $lightest;
+
+    &:hover,
+    &:focus {
+      background-color: $lightest;
+      box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
+    }
+
+    &:active {
+      color: rgba($darkest, 0.3);
+
+      background-color: #f3c72b;
+      box-shadow: none;
+    }
+  }
+
   &--more {
     position: relative;
 

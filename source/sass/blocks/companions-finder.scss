@@ -3,7 +3,6 @@
   margin-top: 0;
   margin-right: auto;
   margin-left: auto;
-  padding: 0 25px;
 
   padding-top: 24px;
 
@@ -16,6 +15,7 @@
   width: 120px;
   margin: 0;
   margin-bottom: 22px;
+  padding-left: 25px;
 
   font-size: 22.5px;
   line-height: 22.5px;
@@ -26,11 +26,17 @@
 .companions-finder__filters-wrapper {
   position: relative;
 
+  width: 270px;
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 25px;
+
   &::before {
     content: "";
     position: absolute;
     top: 0;
-    left: 0;
+    left: 25px;
 
     width: 220px;
     height: 1px;
