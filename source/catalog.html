@@ -127,753 +127,755 @@
       </div>
 
       <section class="countries-filter">
-        <header class="countries-filter__header">
-          <h2 class="countries-filter__heading countries-filter__heading--visually-hidden">Фильтрация по странам<span class="countries-filter__colon">:</span></h2>
-          <button class="countries-filter__filter-toggle" type="button">
-            <span class="countries-filter__toggle-label countries-filter__toggle-label--min">Свернуть</span>
-            <span class="countries-filter__toggle-label countries-filter__toggle-label--max">Показать все</span>
-          </button>
-        </header>
-        <div class="countries-filter__content-wrapper">
-          <ul class="countries-filter__world-parts-list">
-            <li class="countries-filter__world-parts-item">
-              <input class="countries-filter__world-parts-selector visually-hidden" id="europe-id" type="radio" name="world-parts" value="europe" checked>
-              <label class="countries-filter__world-parts-label" for="europe-id">Европа</label>
-            </li>
-            <li class="countries-filter__world-parts-item">
-              <input class="countries-filter__world-parts-selector visually-hidden" id="asia-id" type="radio" name="world-parts" value="asia">
-              <label class="countries-filter__world-parts-label" for="asia-id">Азия</label>
-            </li>
-            <li class="countries-filter__world-parts-item">
-              <input class="countries-filter__world-parts-selector visually-hidden" id="america-id" type="radio" name="world-parts" value="america">
-              <label class="countries-filter__world-parts-label" for="america-id">Америка</label>
-            </li>
-            <li class="countries-filter__world-parts-item">
-              <input class="countries-filter__world-parts-selector visually-hidden" id="islands-id" type="radio" name="world-parts" value="islands">
-              <label class="countries-filter__world-parts-label" for="islands-id">Острова</label>
-            </li>
-          </ul>
-          <ul class="countries-filter__alphabetical-index alphabetical-index">
-            <li class="alphabetical-index__item">
-              <button class="alphabetical-index__letter-button alphabetical-index__letter-button--active" type="button"><span>А</span></button>
-            </li>
-            <li class="alphabetical-index__item">
-              <button class="alphabetical-index__letter-button" type="button"><span>Б</span></button>
-            </li>
-            <li class="alphabetical-index__item">
-              <button class="alphabetical-index__letter-button" type="button"><span>В</span></button>
-            </li>
-            <li class="alphabetical-index__item">
-              <button class="alphabetical-index__letter-button" type="button"><span>Г</span></button>
-            </li>
-            <li class="alphabetical-index__item">
-              <button class="alphabetical-index__letter-button" type="button"><span>Д</span></button>
-            </li>
-            <li class="alphabetical-index__item">
-              <button class="alphabetical-index__letter-button" type="button"><span>Е</span></button>
-            </li>
-            <li class="alphabetical-index__item">
-              <button class="alphabetical-index__letter-button" type="button"><span>З</span></button>
-            </li>
-            <li class="alphabetical-index__item">
-              <button class="alphabetical-index__letter-button" type="button"><span>И</span></button>
-            </li>
-            <li class="alphabetical-index__item">
-              <button class="alphabetical-index__letter-button" type="button"><span>К</span></button>
-            </li>
-            <li class="alphabetical-index__item">
-              <button class="alphabetical-index__letter-button" type="button"><span>Л</span></button>
-            </li>
-            <li class="alphabetical-index__item">
-              <button class="alphabetical-index__letter-button" type="button"><span>М</span></button>
-            </li>
-            <li class="alphabetical-index__item">
-              <button class="alphabetical-index__letter-button" type="button"><span>Н</span></button>
-            </li>
-            <li class="alphabetical-index__item">
-              <button class="alphabetical-index__letter-button" type="button"><span>О</span></button>
-            </li>
-            <li class="alphabetical-index__item">
-              <button class="alphabetical-index__letter-button" type="button"><span>П</span></button>
-            </li>
-            <li class="alphabetical-index__item">
-              <button class="alphabetical-index__letter-button" type="button"><span>Р</span></button>
-            </li>
-            <li class="alphabetical-index__item">
-              <button class="alphabetical-index__letter-button" type="button"><span>С</span></button>
-            </li>
-            <li class="alphabetical-index__item">
-              <button class="alphabetical-index__letter-button" type="button"><span>Т</span></button>
-            </li>
-            <li class="alphabetical-index__item">
-              <button class="alphabetical-index__letter-button" type="button"><span>У</span></button>
-            </li>
-            <li class="alphabetical-index__item">
-              <button class="alphabetical-index__letter-button" type="button"><span>Ф</span></button>
-            </li>
-            <li class="alphabetical-index__item">
-              <button class="alphabetical-index__letter-button" type="button"><span>Х</span></button>
-            </li>
-            <li class="alphabetical-index__item">
-              <button class="alphabetical-index__letter-button" type="button"><span>Ч</span></button>
-            </li>
-            <li class="alphabetical-index__item">
-              <button class="alphabetical-index__letter-button" type="button"><span>Ш</span></button>
-            </li>
-            <li class="alphabetical-index__item">
-              <button class="alphabetical-index__letter-button" type="button"><span>Э</span></button>
-            </li>
-            <li class="alphabetical-index__item">
-              <button class="alphabetical-index__letter-button" type="button"><span>Ю</span></button>
-            </li>
-            <li class="alphabetical-index__item">
-              <button class="alphabetical-index__letter-button" type="button"><span>Я</span></button>
-            </li>
-          </ul>
-          <div class="countries-filter__countries-wrapper">
-            <ul class="countries-filter__countries-list countries-list">
-              <li class="countries-list__item countries-list__item--letter">
-                <span class="countries-list__letter">А</span>
+        <div class="countries-filter__container">
+          <header class="countries-filter__header">
+            <h2 class="countries-filter__heading countries-filter__heading--visually-hidden">Фильтрация по странам<span class="countries-filter__colon">:</span></h2>
+            <button class="countries-filter__filter-toggle" type="button">
+              <span class="countries-filter__toggle-label countries-filter__toggle-label--min">Свернуть</span>
+              <span class="countries-filter__toggle-label countries-filter__toggle-label--max">Показать все</span>
+            </button>
+          </header>
+          <div class="countries-filter__content-wrapper">
+            <ul class="countries-filter__world-parts-list">
+              <li class="countries-filter__world-parts-item">
+                <input class="countries-filter__world-parts-selector visually-hidden" id="europe-id" type="radio" name="world-parts" value="europe" checked>
+                <label class="countries-filter__world-parts-label" for="europe-id">Европа</label>
               </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Австралия</a>
+              <li class="countries-filter__world-parts-item">
+                <input class="countries-filter__world-parts-selector visually-hidden" id="asia-id" type="radio" name="world-parts" value="asia">
+                <label class="countries-filter__world-parts-label" for="asia-id">Азия</label>
               </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Австрия</a>
+              <li class="countries-filter__world-parts-item">
+                <input class="countries-filter__world-parts-selector visually-hidden" id="america-id" type="radio" name="world-parts" value="america">
+                <label class="countries-filter__world-parts-label" for="america-id">Америка</label>
               </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Азербайджан</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Албания</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Алжир</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Ангола</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Андорра</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Антигуа и Барбуда</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Аргентина</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Армения</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Афганистан</a>
+              <li class="countries-filter__world-parts-item">
+                <input class="countries-filter__world-parts-selector visually-hidden" id="islands-id" type="radio" name="world-parts" value="islands">
+                <label class="countries-filter__world-parts-label" for="islands-id">Острова</label>
               </li>
             </ul>
+            <ul class="countries-filter__alphabetical-index alphabetical-index">
+              <li class="alphabetical-index__item">
+                <button class="alphabetical-index__letter-button alphabetical-index__letter-button--active" type="button"><span>А</span></button>
+              </li>
+              <li class="alphabetical-index__item">
+                <button class="alphabetical-index__letter-button" type="button"><span>Б</span></button>
+              </li>
+              <li class="alphabetical-index__item">
+                <button class="alphabetical-index__letter-button" type="button"><span>В</span></button>
+              </li>
+              <li class="alphabetical-index__item">
+                <button class="alphabetical-index__letter-button" type="button"><span>Г</span></button>
+              </li>
+              <li class="alphabetical-index__item">
+                <button class="alphabetical-index__letter-button" type="button"><span>Д</span></button>
+              </li>
+              <li class="alphabetical-index__item">
+                <button class="alphabetical-index__letter-button" type="button"><span>Е</span></button>
+              </li>
+              <li class="alphabetical-index__item">
+                <button class="alphabetical-index__letter-button" type="button"><span>З</span></button>
+              </li>
+              <li class="alphabetical-index__item">
+                <button class="alphabetical-index__letter-button" type="button"><span>И</span></button>
+              </li>
+              <li class="alphabetical-index__item">
+                <button class="alphabetical-index__letter-button" type="button"><span>К</span></button>
+              </li>
+              <li class="alphabetical-index__item">
+                <button class="alphabetical-index__letter-button" type="button"><span>Л</span></button>
+              </li>
+              <li class="alphabetical-index__item">
+                <button class="alphabetical-index__letter-button" type="button"><span>М</span></button>
+              </li>
+              <li class="alphabetical-index__item">
+                <button class="alphabetical-index__letter-button" type="button"><span>Н</span></button>
+              </li>
+              <li class="alphabetical-index__item">
+                <button class="alphabetical-index__letter-button" type="button"><span>О</span></button>
+              </li>
+              <li class="alphabetical-index__item">
+                <button class="alphabetical-index__letter-button" type="button"><span>П</span></button>
+              </li>
+              <li class="alphabetical-index__item">
+                <button class="alphabetical-index__letter-button" type="button"><span>Р</span></button>
+              </li>
+              <li class="alphabetical-index__item">
+                <button class="alphabetical-index__letter-button" type="button"><span>С</span></button>
+              </li>
+              <li class="alphabetical-index__item">
+                <button class="alphabetical-index__letter-button" type="button"><span>Т</span></button>
+              </li>
+              <li class="alphabetical-index__item">
+                <button class="alphabetical-index__letter-button" type="button"><span>У</span></button>
+              </li>
+              <li class="alphabetical-index__item">
+                <button class="alphabetical-index__letter-button" type="button"><span>Ф</span></button>
+              </li>
+              <li class="alphabetical-index__item">
+                <button class="alphabetical-index__letter-button" type="button"><span>Х</span></button>
+              </li>
+              <li class="alphabetical-index__item">
+                <button class="alphabetical-index__letter-button" type="button"><span>Ч</span></button>
+              </li>
+              <li class="alphabetical-index__item">
+                <button class="alphabetical-index__letter-button" type="button"><span>Ш</span></button>
+              </li>
+              <li class="alphabetical-index__item">
+                <button class="alphabetical-index__letter-button" type="button"><span>Э</span></button>
+              </li>
+              <li class="alphabetical-index__item">
+                <button class="alphabetical-index__letter-button" type="button"><span>Ю</span></button>
+              </li>
+              <li class="alphabetical-index__item">
+                <button class="alphabetical-index__letter-button" type="button"><span>Я</span></button>
+              </li>
+            </ul>
+            <div class="countries-filter__countries-wrapper">
+              <ul class="countries-filter__countries-list countries-list">
+                <li class="countries-list__item countries-list__item--letter">
+                  <span class="countries-list__letter">А</span>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Австралия</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Австрия</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Азербайджан</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Албания</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Алжир</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Ангола</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Андорра</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Антигуа и Барбуда</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Аргентина</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Армения</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Афганистан</a>
+                </li>
+              </ul>
 
-            <ul class="countries-filter__countries-list countries-list">
-              <li class="countries-list__item countries-list__item--letter">
-                <span class="countries-list__letter">Б</span>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Багамские Острова</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Бангладеш</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Барбадос</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Бахрейн</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Белоруссия</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Белиз</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Бельгия</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Бенин</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Болгария</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Боливия</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Босния и Герцеговина</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Ботсвана</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Бразилия</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Бруней</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Буркина-Фасо</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Бурунди</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Бутан</a>
-              </li>
-            </ul>
+              <ul class="countries-filter__countries-list countries-list">
+                <li class="countries-list__item countries-list__item--letter">
+                  <span class="countries-list__letter">Б</span>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Багамские Острова</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Бангладеш</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Барбадос</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Бахрейн</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Белоруссия</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Белиз</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Бельгия</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Бенин</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Болгария</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Боливия</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Босния и Герцеговина</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Ботсвана</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Бразилия</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Бруней</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Буркина-Фасо</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Бурунди</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Бутан</a>
+                </li>
+              </ul>
 
-            <ul class="countries-filter__countries-list countries-list">
-              <li class="countries-list__item countries-list__item--letter">
-                <span class="countries-list__letter">В</span>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Вануату</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Великобритания</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Венгрия</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Венесуэла</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Восточный Тимор</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Вьетнам</a>
-              </li>
-            </ul>
+              <ul class="countries-filter__countries-list countries-list">
+                <li class="countries-list__item countries-list__item--letter">
+                  <span class="countries-list__letter">В</span>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Вануату</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Великобритания</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Венгрия</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Венесуэла</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Восточный Тимор</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Вьетнам</a>
+                </li>
+              </ul>
 
-            <ul class="countries-filter__countries-list countries-list">
-              <li class="countries-list__item countries-list__item--letter">
-                <span class="countries-list__letter">Г</span>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Габон</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Гаити</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Гайана</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Гамбия</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Гана</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Гватемала</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Гвинея</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Гвинея-Бисау</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Германия</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Гондурас</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Гренада</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Греция</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Грузия</a>
-              </li>
-            </ul>
+              <ul class="countries-filter__countries-list countries-list">
+                <li class="countries-list__item countries-list__item--letter">
+                  <span class="countries-list__letter">Г</span>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Габон</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Гаити</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Гайана</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Гамбия</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Гана</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Гватемала</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Гвинея</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Гвинея-Бисау</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Германия</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Гондурас</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Гренада</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Греция</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Грузия</a>
+                </li>
+              </ul>
 
-            <ul class="countries-filter__countries-list countries-list">
-              <li class="countries-list__item countries-list__item--letter">
-                <span class="countries-list__letter">Д</span>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Дания</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Джибути</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Доминика</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Доминикана</a>
-              </li>
-            </ul>
+              <ul class="countries-filter__countries-list countries-list">
+                <li class="countries-list__item countries-list__item--letter">
+                  <span class="countries-list__letter">Д</span>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Дания</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Джибути</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Доминика</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Доминикана</a>
+                </li>
+              </ul>
 
-            <ul class="countries-filter__countries-list countries-list">
-              <li class="countries-list__item countries-list__item--letter">
-                <span class="countries-list__letter">Е</span>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Египет</a>
-              </li>
-            </ul>
+              <ul class="countries-filter__countries-list countries-list">
+                <li class="countries-list__item countries-list__item--letter">
+                  <span class="countries-list__letter">Е</span>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Египет</a>
+                </li>
+              </ul>
 
-            <ul class="countries-filter__countries-list countries-list">
-              <li class="countries-list__item countries-list__item--letter">
-                <span class="countries-list__letter">З</span>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Замбия</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Зимбабве</a>
-              </li>
-            </ul>
+              <ul class="countries-filter__countries-list countries-list">
+                <li class="countries-list__item countries-list__item--letter">
+                  <span class="countries-list__letter">З</span>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Замбия</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Зимбабве</a>
+                </li>
+              </ul>
 
-            <ul class="countries-filter__countries-list countries-list">
-              <li class="countries-list__item countries-list__item--letter">
-                <span class="countries-list__letter">И</span>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Израиль</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Индия</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Индонезия</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Иордания</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Ирак</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Иран</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Ирландия</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Исландия</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Испания</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Италия</a>
-              </li>
-            </ul>
+              <ul class="countries-filter__countries-list countries-list">
+                <li class="countries-list__item countries-list__item--letter">
+                  <span class="countries-list__letter">И</span>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Израиль</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Индия</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Индонезия</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Иордания</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Ирак</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Иран</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Ирландия</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Исландия</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Испания</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Италия</a>
+                </li>
+              </ul>
 
-            <ul class="countries-filter__countries-list countries-list">
-              <li class="countries-list__item countries-list__item--letter">
-                <span class="countries-list__letter">К</span>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Кабо-Верде</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Казахстан</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Камбоджа</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Камерун</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Канада</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Катар</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Кения</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Кипр</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Киргизия</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Кирибати</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Китай</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Колумбия</a>
-              </li>
-            </ul>
+              <ul class="countries-filter__countries-list countries-list">
+                <li class="countries-list__item countries-list__item--letter">
+                  <span class="countries-list__letter">К</span>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Кабо-Верде</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Казахстан</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Камбоджа</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Камерун</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Канада</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Катар</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Кения</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Кипр</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Киргизия</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Кирибати</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Китай</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Колумбия</a>
+                </li>
+              </ul>
 
-            <ul class="countries-filter__countries-list countries-list">
-              <li class="countries-list__item countries-list__item--letter">
-                <span class="countries-list__letter">Л</span>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Лаос</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Латвия</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Лесото</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Либерия</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Ливан</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Ливия</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Литва</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Лихтенштейн</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Люксембург</a>
-              </li>
-            </ul>
+              <ul class="countries-filter__countries-list countries-list">
+                <li class="countries-list__item countries-list__item--letter">
+                  <span class="countries-list__letter">Л</span>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Лаос</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Латвия</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Лесото</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Либерия</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Ливан</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Ливия</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Литва</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Лихтенштейн</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Люксембург</a>
+                </li>
+              </ul>
 
-            <ul class="countries-filter__countries-list countries-list">
-              <li class="countries-list__item countries-list__item--letter">
-                <span class="countries-list__letter">М</span>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Маврикий</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Мавритания</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Мадагаскар</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Малави</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Малайзия</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Мали</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Мальдивы</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Мальта</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Марокко</a>
-              </li>
-            </ul>
+              <ul class="countries-filter__countries-list countries-list">
+                <li class="countries-list__item countries-list__item--letter">
+                  <span class="countries-list__letter">М</span>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Маврикий</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Мавритания</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Мадагаскар</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Малави</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Малайзия</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Мали</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Мальдивы</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Мальта</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Марокко</a>
+                </li>
+              </ul>
 
-            <ul class="countries-filter__countries-list countries-list">
-              <li class="countries-list__item countries-list__item--letter">
-                <span class="countries-list__letter">Н</span>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Намибия</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Науру</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Непал</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Нигер</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Нигерия</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Нидерланды</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Никарагуа</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Новая Зеландия</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Норвегия</a>
-              </li>
-            </ul>
+              <ul class="countries-filter__countries-list countries-list">
+                <li class="countries-list__item countries-list__item--letter">
+                  <span class="countries-list__letter">Н</span>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Намибия</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Науру</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Непал</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Нигер</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Нигерия</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Нидерланды</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Никарагуа</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Новая Зеландия</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Норвегия</a>
+                </li>
+              </ul>
 
-            <ul class="countries-filter__countries-list countries-list">
-              <li class="countries-list__item countries-list__item--letter">
-                <span class="countries-list__letter">О</span>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">ОАЭ</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Оман</a>
-              </li>
-            </ul>
+              <ul class="countries-filter__countries-list countries-list">
+                <li class="countries-list__item countries-list__item--letter">
+                  <span class="countries-list__letter">О</span>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">ОАЭ</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Оман</a>
+                </li>
+              </ul>
 
-            <ul class="countries-filter__countries-list countries-list">
-              <li class="countries-list__item countries-list__item--letter">
-                <span class="countries-list__letter">П</span>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Пакистан</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Палау</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Панама</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Папуа — Новая Гвинея</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Парагвай</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Перу</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Польша</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Португалия</a>
-              </li>
-            </ul>
+              <ul class="countries-filter__countries-list countries-list">
+                <li class="countries-list__item countries-list__item--letter">
+                  <span class="countries-list__letter">П</span>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Пакистан</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Палау</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Панама</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Папуа — Новая Гвинея</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Парагвай</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Перу</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Польша</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Португалия</a>
+                </li>
+              </ul>
 
-            <ul class="countries-filter__countries-list countries-list">
-              <li class="countries-list__item countries-list__item--letter">
-                <span class="countries-list__letter">Р</span>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Руанда</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Румыния</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Россия</a>
-              </li>
-            </ul>
+              <ul class="countries-filter__countries-list countries-list">
+                <li class="countries-list__item countries-list__item--letter">
+                  <span class="countries-list__letter">Р</span>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Руанда</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Румыния</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Россия</a>
+                </li>
+              </ul>
 
-            <ul class="countries-filter__countries-list countries-list">
-              <li class="countries-list__item countries-list__item--letter">
-                <span class="countries-list__letter">С</span>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Сальвадор</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Самоа</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Сан-Марино</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Саудовская Аравия</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Сейшелы</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Сенегал</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Сербия</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Сингапур</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Сирия</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Словакия</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Словения</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">США</a>
-              </li>
-            </ul>
+              <ul class="countries-filter__countries-list countries-list">
+                <li class="countries-list__item countries-list__item--letter">
+                  <span class="countries-list__letter">С</span>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Сальвадор</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Самоа</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Сан-Марино</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Саудовская Аравия</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Сейшелы</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Сенегал</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Сербия</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Сингапур</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Сирия</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Словакия</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Словения</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">США</a>
+                </li>
+              </ul>
 
-            <ul class="countries-filter__countries-list countries-list">
-              <li class="countries-list__item countries-list__item--letter">
-                <span class="countries-list__letter">Т</span>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Таджикистан</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Таиланд</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Танзания</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Того</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Тонга</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Тринидад и Тобаго</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Тувалу</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Тунис</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Туркмения</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Турция</a>
-              </li>
-            </ul>
+              <ul class="countries-filter__countries-list countries-list">
+                <li class="countries-list__item countries-list__item--letter">
+                  <span class="countries-list__letter">Т</span>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Таджикистан</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Таиланд</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Танзания</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Того</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Тонга</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Тринидад и Тобаго</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Тувалу</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Тунис</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Туркмения</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Турция</a>
+                </li>
+              </ul>
 
-            <ul class="countries-filter__countries-list countries-list">
-              <li class="countries-list__item countries-list__item--letter">
-                <span class="countries-list__letter">У</span>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Уганда</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Узбекистан</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Украина</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Уругвай</a>
-              </li>
-            </ul>
+              <ul class="countries-filter__countries-list countries-list">
+                <li class="countries-list__item countries-list__item--letter">
+                  <span class="countries-list__letter">У</span>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Уганда</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Узбекистан</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Украина</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Уругвай</a>
+                </li>
+              </ul>
 
-            <ul class="countries-filter__countries-list countries-list">
-              <li class="countries-list__item countries-list__item--letter">
-                <span class="countries-list__letter">Ф</span>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Фиджи</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Филиппины</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Финляндия</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Франция</a>
-              </li>
-            </ul>
+              <ul class="countries-filter__countries-list countries-list">
+                <li class="countries-list__item countries-list__item--letter">
+                  <span class="countries-list__letter">Ф</span>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Фиджи</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Филиппины</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Финляндия</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Франция</a>
+                </li>
+              </ul>
 
-            <ul class="countries-filter__countries-list countries-list">
-              <li class="countries-list__item countries-list__item--letter">
-                <span class="countries-list__letter">Х</span>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Хорватия</a>
-              </li>
-            </ul>
+              <ul class="countries-filter__countries-list countries-list">
+                <li class="countries-list__item countries-list__item--letter">
+                  <span class="countries-list__letter">Х</span>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Хорватия</a>
+                </li>
+              </ul>
 
-            <ul class="countries-filter__countries-list countries-list">
-              <li class="countries-list__item countries-list__item--letter">
-                <span class="countries-list__letter">Ч</span>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Чад</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Черногория</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Чехия</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Чили</a>
-              </li>
-            </ul>
+              <ul class="countries-filter__countries-list countries-list">
+                <li class="countries-list__item countries-list__item--letter">
+                  <span class="countries-list__letter">Ч</span>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Чад</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Черногория</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Чехия</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Чили</a>
+                </li>
+              </ul>
 
-            <ul class="countries-filter__countries-list countries-list">
-              <li class="countries-list__item countries-list__item--letter">
-                <span class="countries-list__letter">Ш</span>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Швейцария</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Швеция</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Шри-Ланка</a>
-              </li>
-            </ul>
+              <ul class="countries-filter__countries-list countries-list">
+                <li class="countries-list__item countries-list__item--letter">
+                  <span class="countries-list__letter">Ш</span>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Швейцария</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Швеция</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Шри-Ланка</a>
+                </li>
+              </ul>
 
-            <ul class="countries-filter__countries-list countries-list">
-              <li class="countries-list__item countries-list__item--letter">
-                <span class="countries-list__letter">Э</span>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Эквадор</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Эритрея</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Эсватини</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Эстония</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Эфиопия</a>
-              </li>
-            </ul>
+              <ul class="countries-filter__countries-list countries-list">
+                <li class="countries-list__item countries-list__item--letter">
+                  <span class="countries-list__letter">Э</span>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Эквадор</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Эритрея</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Эсватини</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Эстония</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Эфиопия</a>
+                </li>
+              </ul>
 
-            <ul class="countries-filter__countries-list countries-list">
-              <li class="countries-list__item countries-list__item--letter">
-                <span class="countries-list__letter">Ю</span>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">ЮАР</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Южный Судан</a>
-              </li>
-            </ul>
+              <ul class="countries-filter__countries-list countries-list">
+                <li class="countries-list__item countries-list__item--letter">
+                  <span class="countries-list__letter">Ю</span>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">ЮАР</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Южный Судан</a>
+                </li>
+              </ul>
 
-            <ul class="countries-filter__countries-list countries-list">
-              <li class="countries-list__item countries-list__item--letter">
-                <span class="countries-list__letter">Я</span>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Ямайка</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__label" href="#">Япония</a>
-              </li>
-            </ul>
+              <ul class="countries-filter__countries-list countries-list">
+                <li class="countries-list__item countries-list__item--letter">
+                  <span class="countries-list__letter">Я</span>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Ямайка</a>
+                </li>
+                <li class="countries-list__item">
+                  <a class="countries-list__label" href="#">Япония</a>
+                </li>
+              </ul>
+            </div>
           </div>
+          <button class="countries-filter__button button button--filter" type="button">
+            <span class="button__countries-filter-label">Свернуть</span>
+          </button>
         </div>
-        <button class="countries-filter__button button button--filter" type="button">
-          <span class="button__countries-filter-label">Свернуть</span>
-        </button>
       </section>
 
       <div class="page-main__catalog-page-wrapper">
