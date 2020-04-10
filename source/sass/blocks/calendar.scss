@@ -1,0 +1,156 @@
+.calendar__month-toggler {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+
+  border: 1px solid #cbced9;
+  border-left: none;
+  border-right: none;
+}
+
+.calendar__button {
+  width: 41px;
+  min-height: 42px;
+  padding: 0;
+
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 9px 16px;
+
+  border: none;
+
+  opacity: 0.3;
+  cursor: pointer;
+
+  &--left {
+    background-image: url("../img/month-arrow-left.svg");
+    background-position: 0 13px;
+  }
+
+  &--right {
+    background-image: url("../img/month-arrow-right.svg");
+    background-position: 32px 13px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+
+  &::-moz-focus-inner {
+    border: 0;
+  }
+}
+
+.calendar__input {
+  box-sizing: border-box;
+  width: 135px;
+
+  font: inherit;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+
+  background-color: transparent;
+
+  border: none;
+}
+
+.calendar__weekdays-list,
+.calendar__days-list {
+  @include list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.calendar__weekdays-item {
+  flex-grow: 1;
+  width: 31px;
+  height: 32px;
+
+  font-size: 14px;
+  line-height: 31px;
+  color: #444444;
+  text-align: center;
+
+  &--holiday {
+    color: #ff5c23;
+  }
+}
+
+.calendar__weekday-letter {
+  display: none;
+}
+
+.calendar__days-list {
+  width: 220px;
+
+  border: 1px solid #cbced9;
+  border-right-width: 0;
+  border-bottom-width: 0;
+}
+
+.calendar__days-item {
+  display: flex;
+  flex-grow: 1;
+
+  border-right: 1px solid #cbced9;
+  border-bottom: 1px solid #cbced9;
+}
+
+.calendar__date {
+  flex-grow: 1;
+  width: 30px;
+  min-height: 30px;
+  padding: 0;
+
+  font: inherit;
+  font-size: 13px;
+  line-height: 18px;
+  color: #444444;
+
+  background-color: $light;
+
+  border: none;
+  cursor: pointer;
+
+  &--chosen {
+    color: $lightest;
+
+    background-color: #101d41;
+  }
+
+  &:hover,
+  &:focus {
+    color: $lightest;
+
+    background-color: #1d2e5b;
+
+    outline: 2px solid #ff5c23;
+    outline-offset: -1px;
+  }
+
+  &:disabled {
+    color: rgba(#444444, 0.3);
+
+    background-color: $lightest;
+
+    outline: none;
+
+    cursor: default;
+  }
+}
+
+.calendar__month-label {
+  display: none;
+}
+
+.calendar__period-label {
+  display: none;
+}

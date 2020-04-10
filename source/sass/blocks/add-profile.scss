@@ -1,7 +1,17 @@
 .add-profile {
-  @include container-mobile;
-
+  position: relative;
   z-index: 3;
+
+  margin-top: -35px;
+
+  background-color: $light;
+
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.add-profile__container {
+  @include container-mobile;
 
   padding-top: 70px;
   padding-bottom: 40px;

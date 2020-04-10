@@ -8,7 +8,7 @@
   <body>
     <header class="page-header">
       <section class="menu">
-        <div class="menu__wrapper menu__wrapper--inner-page">
+        <div class="menu__container menu__container--inner-page">
           <header class="menu__header">
             <div class="logo">
               <a class="logo__link logo__link--light" href="index.html">
@@ -119,14 +119,14 @@
       </section>
     </header>
 
-    <main class="page-main">
+    <main class="page-main page-main--inner-page">
       <div class="page-main__main-heading">
         <h1 class="main-heading">
           <span class="main-heading__name">Направления</span>
         </h1>
       </div>
 
-      <section class="page-main__user-info user-info">
+      <section class="user-info">
         <header class="user-info__header">
           <h2 class="visually-hidden">Информация о пользователе</h2>
           <p class="user-info__level level level--light level--80-form">
@@ -134,15 +134,15 @@
             <b class="level__number level__number--dark">80</b>
           </p>
           <div class="user-info__image-wrapper">
-            <img class="user-info__image" src="" width="100" height="100" alt="Фотография пользователя">
+            <img class="user-info__image" src="img/photo-account-mobile@1x.jpg" width="100" height="100" alt="Фотография пользователя">
           </div>
           <button class="user-info__button button button--inner-page" type="button"><span>Сменить фото</span></button>
         </header>
 
         <div class="user-info__tags-transport-wrapper">
           <div class="user-info__wrapper user-info__wrapper--tags">
-            <h3 class="user-info__sub-heading user-info__sub-heading--tags">Тэги</h3>
-            <textarea class="user-info__textarea" name="user-tags" placeholder="Коротко о себе в виде 5-8 хештэгов">#бургер #бар #футбол #концерт #крафт</textarea>
+            <label class="user-info__sub-heading user-info__sub-heading--tags" for="tags-id">Тэги</label>
+            <textarea class="user-info__textarea" id="tags-id" name="user-tags" placeholder="Коротко о себе в виде 5-8 хештэгов">#бургер #бар #футбол #концерт #крафт</textarea>
           </div>
 
           <div class="user-info__wrapper user-info__wrapper--transport">
@@ -152,24 +152,57 @@
                 <input class="transport-chooser__transport-checkbox transport-chooser__transport-checkbox--plane visually-hidden" id="transport-plane-id" type="checkbox" name="transport-plane" checked>
                 <label class="transport-chooser__transport-label transport-chooser__transport-label--plane" for="transport-plane-id">
                   <span class="visually-hidden">Самолет</span>
+                  <svg class="transport-chooser__icon transport-chooser__icon--plane" xmlns="http://www.w3.org/2000/svg" width="19" height="21" x="0px" y="0px" viewBox="0 0 19 21">
+                    <path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
+                    c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
+                    C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
+                    c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1
+                    c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9
+                    c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
+                    c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z"/>
+                  </svg>
                 </label>
               </p>
               <p class="transport-chooser__checkbox-wrapper">
                 <input class="transport-chooser__transport-checkbox transport-chooser__transport-checkbox--bus visually-hidden" id="transport-bus-id" type="checkbox" name="transport-bus" checked>
                 <label class="transport-chooser__transport-label transport-chooser__transport-label--bus" for="transport-bus-id">
                   <span class="visually-hidden">Автобус</span>
+                  <svg class="transport-chooser__icon transport-chooser__icon--bus" xmlns="http://www.w3.org/2000/svg" width="17" height="21" x="0px" y="0px" viewBox="0 0 17 21">
+                    <path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
+                    c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
+                    C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
+                    M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
+                    H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z"/>
+                  </svg>
                 </label>
               </p>
               <p class="transport-chooser__checkbox-wrapper">
                 <input class="transport-chooser__transport-checkbox transport-chooser__transport-checkbox--bike visually-hidden" id="transport-bike-id" type="checkbox" name="transport-bike">
                 <label class="transport-chooser__transport-label transport-chooser__transport-label--bike" for="transport-bike-id">
                   <span class="visually-hidden">Велосипед</span>
+                  <svg class="transport-chooser__icon transport-chooser__icon--bike" xmlns="http://www.w3.org/2000/svg" width="24" height="21" x="0px" y="0px" viewBox="0 0 24 21">
+                    <path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
+                    S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2
+                    l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5
+                    l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5
+                    s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z"/>
+                  </svg>
                 </label>
               </p>
               <p class="transport-chooser__checkbox-wrapper">
                 <input class="transport-chooser__transport-checkbox transport-chooser__transport-checkbox--walk visually-hidden" id="transport-walk-id" type="checkbox" name="transport-walk" checked>
                 <label class="transport-chooser__transport-label transport-chooser__transport-label--walk" for="transport-walk-id">
                   <span class="visually-hidden">Пешком</span>
+                  <svg class="transport-chooser__icon transport-chooser__icon--walk" xmlns="http://www.w3.org/2000/svg" width="20" height="21" x="0px" y="0px" viewBox="0 0 20 21">
+                    <g>
+                      <ellipse cx="14.3" cy="2" rx="2.1" ry="2"/>
+                      <path d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6
+                      C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5
+                      c0.4,0,0.7-0.2,0.9-0.5l1.9-3.2l3,2.6L11.7,20c-0.1,0.5,0.4,1,1,1c0,0,0,0,0.1,0c0.6,0,1-0.4,1.1-0.9l0.3-5.4
+                      c0-0.3-0.1-0.6-0.3-0.8l-2.6-2.2l2.7-4.6l3.1,1.8C17.1,9,17.5,9.1,17.7,9c0.3-0.1,0.5-0.2,0.7-0.5L19.9,6C20.2,5.5,20,4.9,19.4,4.6
+                      z"/>
+                    </g>
+                  </svg>
                 </label>
               </p>
             </div>
@@ -177,453 +210,464 @@
         </div>
       </section>
 
-      <section class="page-main__user-schedule user-schedule">
-        <h2 class="user-schedule__heading">Мои планы:</h2>
-        <ol class="user-schedule__list">
-          <li class="user-schedule__item">
-            <p class="user-schedule__country-wrapper">
-              <span class="user-schedule__number">1.</span>
-              <b class="user-schedule__countries">Франция, Италия</b>
-            </p>
-            <div class="user-schedule__info-wrapper">
-              <p class="user-schedule__info"><span class="visually-hidden">Количество попутчиков: </span>3 попутчика</p>
-              <p class="user-schedule__info"><span class="visually-hidden">Даты пребывания: </span>26 мар — 29 мар</p>
-              <a class="user-schedule__change-link" href="#">Изменить</a>
-            </div>
-          </li>
-          <li class="user-schedule__item">
-            <p class="user-schedule__country-wrapper">
-              <span class="user-schedule__number">2.</span>
-              <b class="user-schedule__countries">Таиланд, Индонезия</b>
-            </p>
-            <div class="user-schedule__info-wrapper">
-              <p class="user-schedule__info"><span class="visually-hidden">Количество попутчиков: </span>1 попутчик</p>
-              <p class="user-schedule__info"><span class="visually-hidden">Даты пребывания: </span>1 июл — 15 июл</p>
-              <a class="user-schedule__change-link" href="#">Изменить</a>
-            </div>
-          </li>
-        </ol>
-      </section>
-
-      <section class="page-main__add-schedule add-schedule">
-        <header class="add-schedule__header">
-          <h2 class="add-schedule__heading">Добавить план:</h2>
-          <ul class="add-schedule__step-indicator-wrapper">
-            <li class="add-schedule__step-indicator add-schedule__step-indicator--current">
-              <span class="visually-hidden">Первый шаг</span>
-            </li>
-            <li class="add-schedule__step-indicator">
-              <span class="visually-hidden">Второй шаг</span>
-            </li>
-            <li class="add-schedule__step-indicator">
-              <span class="visually-hidden">Третий шаг</span>
-            </li>
-          </ul>
-        </header>
-
-        <form class="add-schedule__new-schedule-form new-schedule-form" action="https://echo.htmlacademy.ru" method="post">
-          <ol class="new-schedule-form__steps-list">
-            <li class="new-schedule-form__steps-item new-schedule-form__steps-item--dates" id="first-step-id">
-              <div class="new-schedule-form__step-wrapper">
-                <div class="new-schedule-form__header new-schedule-form__header--dates">
-                  <div class="new-schedule-form__heading-description-wrapper">
-                    <h3 class="new-schedule-form__step-heading"><span class="new-schedule-form__step-number">Шаг 1.</span> Даты пребывания</h3>
-                    <p class="new-schedule-form__step-description new-schedule-form__step-description--dates">Укажите предпочтительное количество попутчиков, которых<br class="new-schedule-form__wrap"> вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
-                  </div>
-                  <ul class="new-schedule-form__indicator-list">
-                    <li class="new-schedule-form__indicator-item new-schedule-form__indicator-item--current">Даты</li>
-                    <li class="new-schedule-form__indicator-item">Маршрут</li>
-                    <li class="new-schedule-form__indicator-item">Развлечения</li>
-                  </ul>
-                </div>
-
-                <div class="new-schedule-form__counter-children-wrapper">
-                  <div class="new-schedule-form__counter">
-                    <div class="new-schedule-form__counter-header">
-                      <label class="new-schedule-form__counter-label" for="companion-counter-id">Ищу попутчиков:</label>
-                      <span class="new-schedule-form__counter-label new-schedule-form__counter-label--unit">Чел.</span>
-                    </div>
-                    <div class="new-schedule-form__counter-content">
-                      <button class="new-schedule-form__counter-button new-schedule-form__counter-button--minus" type="button"><span class="visually-hidden">-</span></button>
-                      <input class="new-schedule-form__counter-input" id="companion-counter-id" type="text" name="companion-counter" value="2">
-                      <button class="new-schedule-form__counter-button new-schedule-form__counter-button--plus" type="button"><span class="visually-hidden">+</span></button>
-                    </div>
-                  </div>
-
-                  <div class="new-schedule-form__counter new-schedule-form__counter--duration">
-                    <div class="new-schedule-form__counter-header">
-                      <label class="new-schedule-form__counter-label" for="days-counter-id">Длительность:</label>
-                      <span class="new-schedule-form__counter-label new-schedule-form__counter-label--unit">Дн.</span>
-                    </div>
-                    <div class="new-schedule-form__counter-content">
-                      <button class="new-schedule-form__counter-button new-schedule-form__counter-button--minus" type="button"><span class="visually-hidden">-</span></button>
-                      <input class="new-schedule-form__counter-input" id="days-counter-id" type="text" name="days-counter" value="2">
-                      <button class="new-schedule-form__counter-button new-schedule-form__counter-button--plus" type="button"><span class="visually-hidden">+</span></button>
-                    </div>
-                  </div>
-
-                  <div class="new-schedule-form__children-option">
-                    <input class="new-schedule-form__children-checkbox visually-hidden" id="children-option-id" type="checkbox" name="children-option" checked>
-                    <label class="new-schedule-form__children-label" for="children-option-id">Можно с детьми</label>
-                  </div>
-                </div>
-
-                <div class="new-schedule-form__calendar calendar">
-                  <div class="calendar__month-toggler">
-                    <button class="calendar__button calendar__button--left" type="button"><span class="visually-hidden">Предыдущий месяц</span></button>
-                    <label class="visually-hidden" for="month-id">Выберите месяц</label>
-                    <input class="calendar__input" id="month-id" type="text" name="month" value="Март 2019" readonly>
-                    <button class="calendar__button calendar__button--right" type="button"><span class="visually-hidden">Следующий месяц</span></button>
-                  </div>
-                  <ul class="calendar__weekdays-list">
-                    <li class="calendar__weekdays-item">П<span class="calendar__weekday-letter">н</span></li>
-                    <li class="calendar__weekdays-item">В<span class="calendar__weekday-letter">т</span></li>
-                    <li class="calendar__weekdays-item">С<span class="calendar__weekday-letter">р</span></li>
-                    <li class="calendar__weekdays-item">Ч<span class="calendar__weekday-letter">т</span></li>
-                    <li class="calendar__weekdays-item">П<span class="calendar__weekday-letter">т</span></li>
-                    <li class="calendar__weekdays-item calendar__weekdays-item--holiday">С<span class="calendar__weekday-letter">б</span></li>
-                    <li class="calendar__weekdays-item calendar__weekdays-item--holiday">В<span class="calendar__weekday-letter">с</span></li>
-                  </ul>
-                  <ul class="calendar__days-list">
-                    <li class="calendar__days-item">
-                      <button class="calendar__date calendar__date--disabled" type="button" disabled>23<span class="visually-hidden"> февраля</span></button>
-                    </li>
-                    <li class="calendar__days-item">
-                      <button class="calendar__date calendar__date--disabled" type="button" disabled>24<span class="visually-hidden"> февраля</span></button>
-                    </li>
-                    <li class="calendar__days-item">
-                      <button class="calendar__date calendar__date--disabled" type="button" disabled>25<span class="visually-hidden"> февраля</span></button>
-                    </li>
-                    <li class="calendar__days-item">
-                      <button class="calendar__date calendar__date--disabled" type="button" disabled>26<span class="visually-hidden"> февраля</span></button>
-                    </li>
-                    <li class="calendar__days-item">
-                      <button class="calendar__date calendar__date--disabled" type="button" disabled>27<span class="visually-hidden"> февраля</span></button>
-                    </li>
-                    <li class="calendar__days-item">
-                      <button class="calendar__date calendar__date--disabled" type="button" disabled>28<span class="visually-hidden"> февраля</span></button>
-                    </li>
-                    <li class="calendar__days-item">
-                      <button class="calendar__date calendar__date--disabled" type="button" disabled>1 <span class="visually-hidden">марта</span> <span class="calendar__month-label">мар</span></button>
-                    </li>
-                    <li class="calendar__days-item">
-                      <button class="calendar__date calendar__date--disabled" type="button" disabled>2<span class="visually-hidden"> марта</span></button>
-                    </li>
-                    <li class="calendar__days-item">
-                      <button class="calendar__date calendar__date--disabled" type="button" disabled>3<span class="visually-hidden"> марта</span></button>
-                    </li>
-                    <li class="calendar__days-item">
-                      <button class="calendar__date calendar__date--disabled" type="button" disabled>4<span class="visually-hidden"> марта</span></button>
-                    </li>
-                    <li class="calendar__days-item">
-                      <button class="calendar__date calendar__date--disabled" type="button" disabled>5<span class="visually-hidden"> марта</span></button>
-                    </li>
-                    <li class="calendar__days-item">
-                      <button class="calendar__date calendar__date--disabled" type="button" disabled>6<span class="visually-hidden"> марта</span></button>
-                    </li>
-                    <li class="calendar__days-item">
-                      <button class="calendar__date calendar__date--disabled" type="button" disabled>7<span class="visually-hidden"> марта</span></button>
-                    </li>
-                    <li class="calendar__days-item">
-                      <button class="calendar__date calendar__date--disabled" type="button" disabled>8<span class="visually-hidden"> марта</span></button>
-                    </li>
-                    <li class="calendar__days-item">
-                      <button class="calendar__date calendar__date--disabled" type="button" disabled>9<span class="visually-hidden"> марта</span></button>
-                    </li>
-                    <li class="calendar__days-item">
-                      <button class="calendar__date calendar__date--disabled" type="button" disabled>10<span class="visually-hidden"> марта</span></button>
-                    </li>
-                    <li class="calendar__days-item">
-                      <button class="calendar__date calendar__date--disabled" type="button" disabled>11<span class="visually-hidden"> марта</span></button>
-                    </li>
-                    <li class="calendar__days-item">
-                      <button class="calendar__date calendar__date--disabled" type="button" disabled>12<span class="visually-hidden"> марта</span></button>
-                    </li>
-                    <li class="calendar__days-item">
-                      <button class="calendar__date calendar__date--disabled" type="button" disabled>13<span class="visually-hidden"> марта</span></button>
-                    </li>
-                    <li class="calendar__days-item">
-                      <button class="calendar__date calendar__date--disabled" type="button" disabled>14<span class="visually-hidden"> марта</span></button>
-                    </li>
-                    <li class="calendar__days-item">
-                      <button class="calendar__date calendar__date--disabled" type="button" disabled>15<span class="visually-hidden"> марта</span></button>
-                    </li>
-                    <li class="calendar__days-item">
-                      <button class="calendar__date calendar__date--disabled" type="button" disabled>16<span class="visually-hidden"> марта</span></button>
-                    </li>
-                    <li class="calendar__days-item">
-                      <button class="calendar__date calendar__date--disabled" type="button" disabled>17<span class="visually-hidden"> марта</span></button>
-                    </li>
-                    <li class="calendar__days-item">
-                      <button class="calendar__date calendar__date--disabled" type="button" disabled>18<span class="visually-hidden"> марта</span></button>
-                    </li>
-                    <li class="calendar__days-item">
-                      <button class="calendar__date calendar__date--disabled" type="button" disabled>19<span class="visually-hidden"> марта</span></button>
-                    </li>
-                    <li class="calendar__days-item">
-                      <button class="calendar__date calendar__date--disabled" type="button" disabled>20<span class="visually-hidden"> марта</span></button>
-                    </li>
-                    <li class="calendar__days-item">
-                      <button class="calendar__date calendar__date--disabled" type="button" disabled>21<span class="visually-hidden"> марта</span></button>
-                    </li>
-                    <li class="calendar__days-item">
-                      <button class="calendar__date calendar__date--disabled" type="button" disabled>22<span class="visually-hidden"> марта</span></button>
-                    </li>
-                    <li class="calendar__days-item">
-                      <button class="calendar__date calendar__date--disabled" type="button" disabled>23<span class="visually-hidden"> марта</span></button>
-                    </li>
-                    <li class="calendar__days-item">
-                      <button class="calendar__date calendar__date--disabled" type="button" disabled>24<span class="visually-hidden"> марта</span></button>
-                    </li>
-                    <li class="calendar__days-item">
-                      <button class="calendar__date calendar__date--disabled" type="button" disabled>25<span class="visually-hidden"> марта</span></button>
-                    </li>
-                    <li class="calendar__days-item">
-                      <button class="calendar__date calendar__date--chosen calendar__date--period" type="button">26 <span class="visually-hidden">марта</span> <span class="calendar__period-label">Заезд</span></button>
-                    </li>
-                    <li class="calendar__days-item">
-                      <button class="calendar__date calendar__date--chosen" type="button">27<span class="visually-hidden"> марта</span></button>
-                    </li>
-                    <li class="calendar__days-item">
-                      <button class="calendar__date calendar__date--chosen calendar__date--period" type="button">28 <span class="visually-hidden">марта</span> <span class="calendar__period-label">Выезд</span></button>
-                    </li>
-                    <li class="calendar__days-item">
-                      <button class="calendar__date" type="button">29<span class="visually-hidden"> марта</span></button>
-                    </li>
-                    <li class="calendar__days-item">
-                      <button class="calendar__date" type="button">30<span class="visually-hidden"> марта</span></button>
-                    </li>
-                    <li class="calendar__days-item">
-                      <button class="calendar__date" type="button">31<span class="visually-hidden"> марта</span></button>
-                    </li>
-                    <li class="calendar__days-item">
-                      <button class="calendar__date" type="button">1 <span class="visually-hidden"> апреля</span> <span class="calendar__month-label">апр</span></button>
-                    </li>
-                    <li class="calendar__days-item">
-                      <button class="calendar__date" type="button">2<span class="visually-hidden"> апреля</span></button>
-                    </li>
-                    <li class="calendar__days-item">
-                      <button class="calendar__date" type="button">3<span class="visually-hidden"> апреля</span></button>
-                    </li>
-                    <li class="calendar__days-item">
-                      <button class="calendar__date" type="button">4<span class="visually-hidden"> апреля</span></button>
-                    </li>
-                    <li class="calendar__days-item">
-                      <button class="calendar__date" type="button">5<span class="visually-hidden"> апреля</span></button>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              <a class="new-schedule-form__button new-schedule-form__button--dates button button--rectangle" href="#second-step-id">Следующий шаг</a>
-            </li>
-
-            <li class="new-schedule-form__steps-item new-schedule-form__steps-item--countries-selector" id="second-step-id">
-              <div class="new-schedule-form__step-wrapper new-schedule-form__step-wrapper--countries-selector">
-                <div class="new-schedule-form__header">
-                  <div class="new-schedule-form__heading-description-wrapper">
-                    <h3 class="new-schedule-form__step-heading"><span class="new-schedule-form__step-number">Шаг 2.</span> Маршрут</h3>
-                    <p class="new-schedule-form__step-description">Укажите страны, которые вы хотели посетить. <br class="new-schedule-form__wrap">Это может быть одна или сразу несколько.</p>
-                  </div>
-                  <ul class="new-schedule-form__indicator-list">
-                    <li class="new-schedule-form__indicator-item">Даты</li>
-                    <li class="new-schedule-form__indicator-item new-schedule-form__indicator-item--current">Маршрут</li>
-                    <li class="new-schedule-form__indicator-item">Развлечения</li>
-                  </ul>
-                </div>
-
-                <ul class="new-schedule-form__countries-selector countries-selector">
-                  <li class="countries-selector__item countries-selector__item--chosen">
-                    <button class="countries-selector__button countries-selector__button--chosen" type="button" value="BIH"><span>Босния и Герцеговина</span></button>
-                    <p class="countries-selector__flag">
-                      <img class="countries-selector__flag-image" src="" width="35" height="24" alt="Флаг страны">
-                    </p>
-                    <button class="countries-selector__delete-button" type="button"><span class="visually-hidden">Удалить страну</span></button>
-                  </li>
-
-                  <li class="countries-selector__item countries-selector__item--chosen">
-                    <button class="countries-selector__button countries-selector__button--chosen" type="button" value="CZE"><span>Чехия</span></button>
-                    <p class="countries-selector__flag">
-                      <img class="countries-selector__flag-image" src="" width="35" height="24" alt="Флаг страны">
-                    </p>
-                    <button class="countries-selector__delete-button" type="button"><span class="visually-hidden">Удалить страну</span></button>
-                  </li>
-
-                  <li class="countries-selector__item">
-                    <button class="countries-selector__button" type="button"><span>Выберите страну</span></button>
-                    <div class="countries-selector__dropdown-wrapper">
-                      <ul class="countries-selector__alphabetical-index alphabetical-index">
-                        <li class="alphabetical-index__item">
-                          <button class="alphabetical-index__letter-button alphabetical-index__letter-button--active-light" type="button">А</button>
-                        </li>
-                        <li class="alphabetical-index__item">
-                          <button class="alphabetical-index__letter-button" type="button">Б</button>
-                        </li>
-                        <li class="alphabetical-index__item">
-                          <button class="alphabetical-index__letter-button" type="button">В</button>
-                        </li>
-                        <li class="alphabetical-index__item">
-                          <button class="alphabetical-index__letter-button" type="button">Г</button>
-                        </li>
-                        <li class="alphabetical-index__item">
-                          <button class="alphabetical-index__letter-button" type="button">Д</button>
-                        </li>
-                        <li class="alphabetical-index__item">
-                          <button class="alphabetical-index__letter-button" type="button">Е</button>
-                        </li>
-                        <li class="alphabetical-index__item">
-                          <button class="alphabetical-index__letter-button" type="button">З</button>
-                        </li>
-                        <li class="alphabetical-index__item">
-                          <button class="alphabetical-index__letter-button" type="button">И</button>
-                        </li>
-                        <li class="alphabetical-index__item">
-                          <button class="alphabetical-index__letter-button" type="button">К</button>
-                        </li>
-                        <li class="alphabetical-index__item">
-                          <button class="alphabetical-index__letter-button" type="button">Л</button>
-                        </li>
-                        <li class="alphabetical-index__item">
-                          <button class="alphabetical-index__letter-button" type="button">М</button>
-                        </li>
-                        <li class="alphabetical-index__item">
-                          <button class="alphabetical-index__letter-button" type="button">Н</button>
-                        </li>
-                        <li class="alphabetical-index__item">
-                          <button class="alphabetical-index__letter-button" type="button">О</button>
-                        </li>
-                        <li class="alphabetical-index__item">
-                          <button class="alphabetical-index__letter-button" type="button">П</button>
-                        </li>
-                        <li class="alphabetical-index__item">
-                          <button class="alphabetical-index__letter-button" type="button">Р</button>
-                        </li>
-                        <li class="alphabetical-index__item">
-                          <button class="alphabetical-index__letter-button" type="button">С</button>
-                        </li>
-                        <li class="alphabetical-index__item">
-                          <button class="alphabetical-index__letter-button" type="button">Т</button>
-                        </li>
-                        <li class="alphabetical-index__item">
-                          <button class="alphabetical-index__letter-button" type="button">У</button>
-                        </li>
-                        <li class="alphabetical-index__item">
-                          <button class="alphabetical-index__letter-button" type="button">Ф</button>
-                        </li>
-                        <li class="alphabetical-index__item">
-                          <button class="alphabetical-index__letter-button" type="button">Х</button>
-                        </li>
-                        <li class="alphabetical-index__item">
-                          <button class="alphabetical-index__letter-button" type="button">Ч</button>
-                        </li>
-                        <li class="alphabetical-index__item">
-                          <button class="alphabetical-index__letter-button" type="button">Ш</button>
-                        </li>
-                        <li class="alphabetical-index__item">
-                          <button class="alphabetical-index__letter-button" type="button">Э</button>
-                        </li>
-                        <li class="alphabetical-index__item">
-                          <button class="alphabetical-index__letter-button" type="button">Ю</button>
-                        </li>
-                        <li class="alphabetical-index__item">
-                          <button class="alphabetical-index__letter-button" type="button">Я</button>
-                        </li>
-                      </ul>
-                      <ul class="countries-selector__countries-list countries-list countries-list--form">
-                        <li class="countries-list__item">
-                          <input class="countries-list__radio visually-hidden" id="afg-id" type="radio" name="countries-a" value="AFG">
-                          <label class="countries-list__label" for="afg-id">Афганистан</label>
-                        </li>
-                        <li class="countries-list__item">
-                          <input class="countries-list__radio visually-hidden" id="alb-id" type="radio" name="countries-a" value="ALB">
-                          <label class="countries-list__label" for="alb-id">Албания</label>
-                        </li>
-                        <li class="countries-list__item">
-                          <input class="countries-list__radio visually-hidden" id="dza-id" type="radio" name="countries-a" value="DZA">
-                          <label class="countries-list__label" for="dza-id">Алжир</label>
-                        </li>
-                        <li class="countries-list__item">
-                          <input class="countries-list__radio visually-hidden" id="and-id" type="radio" name="countries-a" value="AND">
-                          <label class="countries-list__label" for="and-id">Андорра</label>
-                        </li>
-                        <li class="countries-list__item">
-                          <input class="countries-list__radio visually-hidden" id="arg-id" type="radio" name="countries-a" value="ARG">
-                          <label class="countries-list__label" for="arg-id">Аргентина</label>
-                        </li>
-                        <li class="countries-list__item">
-                          <input class="countries-list__radio visually-hidden" id="arm-id" type="radio" name="countries-a" value="ARM">
-                          <label class="countries-list__label" for="arm-id">Армения</label>
-                        </li>
-                        <li class="countries-list__item">
-                          <input class="countries-list__radio visually-hidden" id="aus-id" type="radio" name="countries-a" value="AUS">
-                          <label class="countries-list__label" for="aus-id">Австралия</label>
-                        </li>
-                        <li class="countries-list__item">
-                          <input class="countries-list__radio visually-hidden" id="aut-id" type="radio" name="countries-a" value="AUT">
-                          <label class="countries-list__label" for="aut-id">Австрия</label>
-                        </li>
-                        <li class="countries-list__item">
-                          <input class="countries-list__radio visually-hidden" id="aze-id" type="radio" name="countries-a" value="AZE">
-                          <label class="countries-list__label" for="aze-id">Азербайджан</label>
-                        </li>
-                      </ul>
-                    </div>
-                    <button class="countries-selector__delete-button" type="button"><span class="visually-hidden">Удалить страну</span></button>
-                  </li>
-
-                  <li class="countries-selector__item countries-selector__item--add">
-                    <button class="countries-selector__button countries-selector__button--add" type="button"><span>Добавить страну</span></button>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="new-schedule-form__buttons-wrapper">
-                <a class="new-schedule-form__button button button--rectangle" href="#third-step-id">Следующий шаг</a>
-                <a class="new-schedule-form__button button button--step-back" href="#first-step-id">На шаг назад</a>
+      <section class="user-schedule">
+        <div class="user-schedule__container">
+          <h2 class="user-schedule__heading">Мои планы:</h2>
+          <ol class="user-schedule__list">
+            <li class="user-schedule__item">
+              <p class="user-schedule__country-wrapper">
+                <span class="user-schedule__number">1.</span>
+                <b class="user-schedule__countries">Франция, Италия</b>
+              </p>
+              <div class="user-schedule__info-wrapper">
+                <p class="user-schedule__info"><span class="visually-hidden">Количество попутчиков: </span>3 попутчика</p>
+                <p class="user-schedule__info"><span class="visually-hidden">Даты пребывания: </span>26 мар — 29 мар</p>
+                <a class="user-schedule__change-link" href="#">Изменить</a>
               </div>
             </li>
-
-            <li class="new-schedule-form__steps-item" id="third-step-id">
-              <div class="new-schedule-form__step-wrapper">
-                <div class="new-schedule-form__header">
-                  <div class="new-schedule-form__heading-description-wrapper">
-                    <h3 class="new-schedule-form__step-heading"><span class="new-schedule-form__step-number">Шаг 3.</span> Развлечения</h3>
-                    <p class="new-schedule-form__step-description">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
-                  </div>
-                  <ul class="new-schedule-form__indicator-list">
-                    <li class="new-schedule-form__indicator-item">Даты</li>
-                    <li class="new-schedule-form__indicator-item">Маршрут</li>
-                    <li class="new-schedule-form__indicator-item new-schedule-form__indicator-item--current">Развлечения</li>
-                  </ul>
-                </div>
-
-                <ol class="new-schedule-form__road-map road-map">
-                  <li class="road-map__country">
-                    <div class="road-map__country-wrapper">
-                      <label class="road-map__country-label" for="bosnia-herzegovina-plans-id">Босния и герцеговина</label>
-                    </div>
-                    <textarea class="road-map__country-textarea" id="bosnia-herzegovina-plans-id" name="bosnia-herzegovina-plans" placeholder="План действий" required></textarea>
-                  </li>
-                  <li class="road-map__country">
-                    <div class="road-map__country-wrapper">
-                      <label class="road-map__country-label" for="czech-plans-id">Чехия</label>
-                    </div>
-                    <textarea class="road-map__country-textarea" id="czech-plans-id" name="czech-plans" placeholder="План действий" required>Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
-                  </li>
-                </ol>
-              </div>
-              <div class="new-schedule-form__buttons-wrapper">
-                <button class="new-schedule-form__button button button--rectangle" type="submit" name="new-schedule-form-button">Отправить</button>
-                <a class="new-schedule-form__button button button--step-back" href="#second-step-id">На шаг назад</a>
+            <li class="user-schedule__item">
+              <p class="user-schedule__country-wrapper">
+                <span class="user-schedule__number">2.</span>
+                <b class="user-schedule__countries">Таиланд, Индонезия</b>
+              </p>
+              <div class="user-schedule__info-wrapper">
+                <p class="user-schedule__info"><span class="visually-hidden">Количество попутчиков: </span>1 попутчик</p>
+                <p class="user-schedule__info"><span class="visually-hidden">Даты пребывания: </span>1 июл — 15 июл</p>
+                <a class="user-schedule__change-link" href="#">Изменить</a>
               </div>
             </li>
           </ol>
-        </form>
+        </div>
+      </section>
+
+      <section class="add-schedule">
+        <div class="add-schedule__container">
+          <header class="add-schedule__header">
+            <h2 class="add-schedule__heading">Добавить план:</h2>
+            <ul class="add-schedule__step-indicator-wrapper">
+              <li class="add-schedule__step-indicator add-schedule__step-indicator--current">
+                <span class="visually-hidden">Первый шаг</span>
+              </li>
+              <li class="add-schedule__step-indicator">
+                <span class="visually-hidden">Второй шаг</span>
+              </li>
+              <li class="add-schedule__step-indicator">
+                <span class="visually-hidden">Третий шаг</span>
+              </li>
+            </ul>
+          </header>
+
+          <form class="new-schedule-form" action="https://echo.htmlacademy.ru" method="post">
+            <ol class="new-schedule-form__steps-list">
+              <li class="new-schedule-form__steps-item new-schedule-form__steps-item--dates" id="first-step-id">
+                <div class="new-schedule-form__step-wrapper">
+                  <div class="new-schedule-form__header new-schedule-form__header--dates">
+                    <div class="new-schedule-form__heading-description-wrapper">
+                      <h3 class="new-schedule-form__step-heading"><span class="new-schedule-form__step-number">Шаг 1.</span> Даты пребывания</h3>
+                      <p class="new-schedule-form__step-description new-schedule-form__step-description--dates">Укажите предпочтительное количество попутчиков, которых<br class="new-schedule-form__wrap"> вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+                    </div>
+                    <ul class="new-schedule-form__indicator-list">
+                      <li class="new-schedule-form__indicator-item new-schedule-form__indicator-item--current">Даты</li>
+                      <li class="new-schedule-form__indicator-item">Маршрут</li>
+                      <li class="new-schedule-form__indicator-item">Развлечения</li>
+                    </ul>
+                  </div>
+
+                  <div class="new-schedule-form__counter-children-wrapper">
+                    <div class="new-schedule-form__counter">
+                      <div class="new-schedule-form__counter-header">
+                        <label class="new-schedule-form__counter-label" for="companion-counter-id">Ищу попутчиков:</label>
+                        <span class="new-schedule-form__counter-label new-schedule-form__counter-label--unit">Чел.</span>
+                      </div>
+                      <div class="new-schedule-form__counter-content">
+                        <button class="new-schedule-form__counter-button new-schedule-form__counter-button--minus" type="button"><span class="visually-hidden">-</span></button>
+                        <input class="new-schedule-form__counter-input" id="companion-counter-id" type="text" name="companion-counter" value="2">
+                        <button class="new-schedule-form__counter-button new-schedule-form__counter-button--plus" type="button"><span class="visually-hidden">+</span></button>
+                      </div>
+                    </div>
+
+                    <div class="new-schedule-form__counter new-schedule-form__counter--duration">
+                      <div class="new-schedule-form__counter-header">
+                        <label class="new-schedule-form__counter-label" for="days-counter-id">Длительность:</label>
+                        <span class="new-schedule-form__counter-label new-schedule-form__counter-label--unit">Дн.</span>
+                      </div>
+                      <div class="new-schedule-form__counter-content">
+                        <button class="new-schedule-form__counter-button new-schedule-form__counter-button--minus" type="button"><span class="visually-hidden">-</span></button>
+                        <input class="new-schedule-form__counter-input" id="days-counter-id" type="text" name="days-counter" value="2">
+                        <button class="new-schedule-form__counter-button new-schedule-form__counter-button--plus" type="button"><span class="visually-hidden">+</span></button>
+                      </div>
+                    </div>
+
+                    <div class="new-schedule-form__children-option">
+                      <input class="new-schedule-form__children-checkbox visually-hidden" id="children-option-id" type="checkbox" name="children-option" checked>
+                      <label class="new-schedule-form__children-label" for="children-option-id">Можно с детьми</label>
+                    </div>
+                  </div>
+
+                  <div class="calendar">
+                    <div class="calendar__month-toggler">
+                      <button class="calendar__button calendar__button--left" type="button"><span class="visually-hidden">Предыдущий месяц</span></button>
+                      <label class="visually-hidden" for="month-id">Выберите месяц</label>
+                      <input class="calendar__input" id="month-id" type="text" name="month" value="Март 2019" readonly>
+                      <button class="calendar__button calendar__button--right" type="button"><span class="visually-hidden">Следующий месяц</span></button>
+                    </div>
+                    <ul class="calendar__weekdays-list">
+                      <li class="calendar__weekdays-item">П<span class="calendar__weekday-letter">н</span></li>
+                      <li class="calendar__weekdays-item">В<span class="calendar__weekday-letter">т</span></li>
+                      <li class="calendar__weekdays-item">С<span class="calendar__weekday-letter">р</span></li>
+                      <li class="calendar__weekdays-item">Ч<span class="calendar__weekday-letter">т</span></li>
+                      <li class="calendar__weekdays-item">П<span class="calendar__weekday-letter">т</span></li>
+                      <li class="calendar__weekdays-item calendar__weekdays-item--holiday">С<span class="calendar__weekday-letter">б</span></li>
+                      <li class="calendar__weekdays-item calendar__weekdays-item--holiday">В<span class="calendar__weekday-letter">с</span></li>
+                    </ul>
+                    <ul class="calendar__days-list">
+                      <li class="calendar__days-item">
+                        <button class="calendar__date calendar__date--disabled" type="button" disabled>23<span class="visually-hidden"> февраля</span></button>
+                      </li>
+                      <li class="calendar__days-item">
+                        <button class="calendar__date calendar__date--disabled" type="button" disabled>24<span class="visually-hidden"> февраля</span></button>
+                      </li>
+                      <li class="calendar__days-item">
+                        <button class="calendar__date calendar__date--disabled" type="button" disabled>25<span class="visually-hidden"> февраля</span></button>
+                      </li>
+                      <li class="calendar__days-item">
+                        <button class="calendar__date calendar__date--disabled" type="button" disabled>26<span class="visually-hidden"> февраля</span></button>
+                      </li>
+                      <li class="calendar__days-item">
+                        <button class="calendar__date calendar__date--disabled" type="button" disabled>27<span class="visually-hidden"> февраля</span></button>
+                      </li>
+                      <li class="calendar__days-item">
+                        <button class="calendar__date calendar__date--disabled" type="button" disabled>28<span class="visually-hidden"> февраля</span></button>
+                      </li>
+                      <li class="calendar__days-item">
+                        <button class="calendar__date calendar__date--disabled" type="button" disabled>1 <span class="visually-hidden">марта</span> <span class="calendar__month-label">мар</span></button>
+                      </li>
+                      <li class="calendar__days-item">
+                        <button class="calendar__date calendar__date--disabled" type="button" disabled>2<span class="visually-hidden"> марта</span></button>
+                      </li>
+                      <li class="calendar__days-item">
+                        <button class="calendar__date calendar__date--disabled" type="button" disabled>3<span class="visually-hidden"> марта</span></button>
+                      </li>
+                      <li class="calendar__days-item">
+                        <button class="calendar__date calendar__date--disabled" type="button" disabled>4<span class="visually-hidden"> марта</span></button>
+                      </li>
+                      <li class="calendar__days-item">
+                        <button class="calendar__date calendar__date--disabled" type="button" disabled>5<span class="visually-hidden"> марта</span></button>
+                      </li>
+                      <li class="calendar__days-item">
+                        <button class="calendar__date calendar__date--disabled" type="button" disabled>6<span class="visually-hidden"> марта</span></button>
+                      </li>
+                      <li class="calendar__days-item">
+                        <button class="calendar__date calendar__date--disabled" type="button" disabled>7<span class="visually-hidden"> марта</span></button>
+                      </li>
+                      <li class="calendar__days-item">
+                        <button class="calendar__date calendar__date--disabled" type="button" disabled>8<span class="visually-hidden"> марта</span></button>
+                      </li>
+                      <li class="calendar__days-item">
+                        <button class="calendar__date calendar__date--disabled" type="button" disabled>9<span class="visually-hidden"> марта</span></button>
+                      </li>
+                      <li class="calendar__days-item">
+                        <button class="calendar__date calendar__date--disabled" type="button" disabled>10<span class="visually-hidden"> марта</span></button>
+                      </li>
+                      <li class="calendar__days-item">
+                        <button class="calendar__date calendar__date--disabled" type="button" disabled>11<span class="visually-hidden"> марта</span></button>
+                      </li>
+                      <li class="calendar__days-item">
+                        <button class="calendar__date calendar__date--disabled" type="button" disabled>12<span class="visually-hidden"> марта</span></button>
+                      </li>
+                      <li class="calendar__days-item">
+                        <button class="calendar__date calendar__date--disabled" type="button" disabled>13<span class="visually-hidden"> марта</span></button>
+                      </li>
+                      <li class="calendar__days-item">
+                        <button class="calendar__date calendar__date--disabled" type="button" disabled>14<span class="visually-hidden"> марта</span></button>
+                      </li>
+                      <li class="calendar__days-item">
+                        <button class="calendar__date calendar__date--disabled" type="button" disabled>15<span class="visually-hidden"> марта</span></button>
+                      </li>
+                      <li class="calendar__days-item">
+                        <button class="calendar__date calendar__date--disabled" type="button" disabled>16<span class="visually-hidden"> марта</span></button>
+                      </li>
+                      <li class="calendar__days-item">
+                        <button class="calendar__date calendar__date--disabled" type="button" disabled>17<span class="visually-hidden"> марта</span></button>
+                      </li>
+                      <li class="calendar__days-item">
+                        <button class="calendar__date calendar__date--disabled" type="button" disabled>18<span class="visually-hidden"> марта</span></button>
+                      </li>
+                      <li class="calendar__days-item">
+                        <button class="calendar__date calendar__date--disabled" type="button" disabled>19<span class="visually-hidden"> марта</span></button>
+                      </li>
+                      <li class="calendar__days-item">
+                        <button class="calendar__date calendar__date--disabled" type="button" disabled>20<span class="visually-hidden"> марта</span></button>
+                      </li>
+                      <li class="calendar__days-item">
+                        <button class="calendar__date calendar__date--disabled" type="button" disabled>21<span class="visually-hidden"> марта</span></button>
+                      </li>
+                      <li class="calendar__days-item">
+                        <button class="calendar__date calendar__date--disabled" type="button" disabled>22<span class="visually-hidden"> марта</span></button>
+                      </li>
+                      <li class="calendar__days-item">
+                        <button class="calendar__date calendar__date--disabled" type="button" disabled>23<span class="visually-hidden"> марта</span></button>
+                      </li>
+                      <li class="calendar__days-item">
+                        <button class="calendar__date calendar__date--disabled" type="button" disabled>24<span class="visually-hidden"> марта</span></button>
+                      </li>
+                      <li class="calendar__days-item">
+                        <button class="calendar__date calendar__date--disabled" type="button" disabled>25<span class="visually-hidden"> марта</span></button>
+                      </li>
+                      <li class="calendar__days-item">
+                        <button class="calendar__date calendar__date--chosen calendar__date--period" type="button">26 <span class="visually-hidden">марта</span> <span class="calendar__period-label">Заезд</span></button>
+                      </li>
+                      <li class="calendar__days-item">
+                        <button class="calendar__date calendar__date--chosen" type="button">27<span class="visually-hidden"> марта</span></button>
+                      </li>
+                      <li class="calendar__days-item">
+                        <button class="calendar__date calendar__date--chosen calendar__date--period" type="button">28 <span class="visually-hidden">марта</span> <span class="calendar__period-label">Выезд</span></button>
+                      </li>
+                      <li class="calendar__days-item">
+                        <button class="calendar__date" type="button">29<span class="visually-hidden"> марта</span></button>
+                      </li>
+                      <li class="calendar__days-item">
+                        <button class="calendar__date" type="button">30<span class="visually-hidden"> марта</span></button>
+                      </li>
+                      <li class="calendar__days-item">
+                        <button class="calendar__date" type="button">31<span class="visually-hidden"> марта</span></button>
+                      </li>
+                      <li class="calendar__days-item">
+                        <button class="calendar__date" type="button">1 <span class="visually-hidden"> апреля</span> <span class="calendar__month-label">апр</span></button>
+                      </li>
+                      <li class="calendar__days-item">
+                        <button class="calendar__date" type="button">2<span class="visually-hidden"> апреля</span></button>
+                      </li>
+                      <li class="calendar__days-item">
+                        <button class="calendar__date" type="button">3<span class="visually-hidden"> апреля</span></button>
+                      </li>
+                      <li class="calendar__days-item">
+                        <button class="calendar__date" type="button">4<span class="visually-hidden"> апреля</span></button>
+                      </li>
+                      <li class="calendar__days-item">
+                        <button class="calendar__date" type="button">5<span class="visually-hidden"> апреля</span></button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <a class="new-schedule-form__button new-schedule-form__button--dates button button--rectangle" href="#second-step-id">Следующий шаг</a>
+              </li>
+
+              <li class="new-schedule-form__steps-item new-schedule-form__steps-item--countries-selector" id="second-step-id">
+                <div class="new-schedule-form__step-wrapper new-schedule-form__step-wrapper--countries-selector">
+                  <div class="new-schedule-form__header">
+                    <div class="new-schedule-form__heading-description-wrapper">
+                      <h3 class="new-schedule-form__step-heading"><span class="new-schedule-form__step-number">Шаг 2.</span> Маршрут</h3>
+                      <p class="new-schedule-form__step-description">Укажите страны, которые вы хотели посетить. <br class="new-schedule-form__wrap">Это может быть одна или сразу несколько.</p>
+                    </div>
+                    <ul class="new-schedule-form__indicator-list">
+                      <li class="new-schedule-form__indicator-item">Даты</li>
+                      <li class="new-schedule-form__indicator-item new-schedule-form__indicator-item--current">Маршрут</li>
+                      <li class="new-schedule-form__indicator-item">Развлечения</li>
+                    </ul>
+                  </div>
+
+                  <ul class="countries-selector">
+                    <li class="countries-selector__item countries-selector__item--chosen">
+                      <button class="countries-selector__button countries-selector__button--chosen" type="button" value="BIH"><span>Босния и Герцеговина</span></button>
+                      <p class="countries-selector__flag">
+                        <img class="countries-selector__flag-image" src="img/flag-bosnia.svg" width="35" height="24" alt="Флаг страны">
+                      </p>
+                      <button class="countries-selector__delete-button" type="button"><span class="visually-hidden">Удалить страну</span></button>
+                    </li>
+
+                    <li class="countries-selector__item countries-selector__item--chosen">
+                      <button class="countries-selector__button countries-selector__button--chosen" type="button" value="CZE"><span>Чехия</span></button>
+                      <p class="countries-selector__flag">
+                        <img class="countries-selector__flag-image" src="img/flag-czech.svg" width="35" height="24" alt="Флаг страны">
+                      </p>
+                      <button class="countries-selector__delete-button" type="button"><span class="visually-hidden">Удалить страну</span></button>
+                    </li>
+
+                    <li class="countries-selector__item">
+                      <button class="countries-selector__button" type="button"><span>Выберите страну</span></button>
+                      <div class="countries-selector__dropdown-wrapper">
+                        <ul class="alphabetical-index">
+                          <li class="alphabetical-index__item">
+                            <button class="alphabetical-index__letter-button alphabetical-index__letter-button--active-light" type="button">А</button>
+                          </li>
+                          <li class="alphabetical-index__item">
+                            <button class="alphabetical-index__letter-button" type="button">Б</button>
+                          </li>
+                          <li class="alphabetical-index__item">
+                            <button class="alphabetical-index__letter-button" type="button">В</button>
+                          </li>
+                          <li class="alphabetical-index__item">
+                            <button class="alphabetical-index__letter-button" type="button">Г</button>
+                          </li>
+                          <li class="alphabetical-index__item">
+                            <button class="alphabetical-index__letter-button" type="button">Д</button>
+                          </li>
+                          <li class="alphabetical-index__item">
+                            <button class="alphabetical-index__letter-button" type="button">Е</button>
+                          </li>
+                          <li class="alphabetical-index__item">
+                            <button class="alphabetical-index__letter-button" type="button">З</button>
+                          </li>
+                          <li class="alphabetical-index__item">
+                            <button class="alphabetical-index__letter-button" type="button">И</button>
+                          </li>
+                          <li class="alphabetical-index__item">
+                            <button class="alphabetical-index__letter-button" type="button">К</button>
+                          </li>
+                          <li class="alphabetical-index__item">
+                            <button class="alphabetical-index__letter-button" type="button">Л</button>
+                          </li>
+                          <li class="alphabetical-index__item">
+                            <button class="alphabetical-index__letter-button" type="button">М</button>
+                          </li>
+                          <li class="alphabetical-index__item">
+                            <button class="alphabetical-index__letter-button" type="button">Н</button>
+                          </li>
+                          <li class="alphabetical-index__item">
+                            <button class="alphabetical-index__letter-button" type="button">О</button>
+                          </li>
+                          <li class="alphabetical-index__item">
+                            <button class="alphabetical-index__letter-button" type="button">П</button>
+                          </li>
+                          <li class="alphabetical-index__item">
+                            <button class="alphabetical-index__letter-button" type="button">Р</button>
+                          </li>
+                          <li class="alphabetical-index__item">
+                            <button class="alphabetical-index__letter-button" type="button">С</button>
+                          </li>
+                          <li class="alphabetical-index__item">
+                            <button class="alphabetical-index__letter-button" type="button">Т</button>
+                          </li>
+                          <li class="alphabetical-index__item">
+                            <button class="alphabetical-index__letter-button" type="button">У</button>
+                          </li>
+                          <li class="alphabetical-index__item">
+                            <button class="alphabetical-index__letter-button" type="button">Ф</button>
+                          </li>
+                          <li class="alphabetical-index__item">
+                            <button class="alphabetical-index__letter-button" type="button">Х</button>
+                          </li>
+                          <li class="alphabetical-index__item">
+                            <button class="alphabetical-index__letter-button" type="button">Ч</button>
+                          </li>
+                          <li class="alphabetical-index__item">
+                            <button class="alphabetical-index__letter-button" type="button">Ш</button>
+                          </li>
+                          <li class="alphabetical-index__item">
+                            <button class="alphabetical-index__letter-button" type="button">Э</button>
+                          </li>
+                          <li class="alphabetical-index__item">
+                            <button class="alphabetical-index__letter-button" type="button">Ю</button>
+                          </li>
+                          <li class="alphabetical-index__item">
+                            <button class="alphabetical-index__letter-button" type="button">Я</button>
+                          </li>
+                        </ul>
+                        <ul class="countries-list countries-list--form">
+                          <li class="countries-list__item">
+                            <input class="countries-list__radio visually-hidden" id="afg-id" type="radio" name="countries-a" value="AFG">
+                            <label class="countries-list__label" for="afg-id">Афганистан</label>
+                          </li>
+                          <li class="countries-list__item">
+                            <input class="countries-list__radio visually-hidden" id="alb-id" type="radio" name="countries-a" value="ALB">
+                            <label class="countries-list__label" for="alb-id">Албания</label>
+                          </li>
+                          <li class="countries-list__item">
+                            <input class="countries-list__radio visually-hidden" id="dza-id" type="radio" name="countries-a" value="DZA">
+                            <label class="countries-list__label" for="dza-id">Алжир</label>
+                          </li>
+                          <li class="countries-list__item">
+                            <input class="countries-list__radio visually-hidden" id="and-id" type="radio" name="countries-a" value="AND">
+                            <label class="countries-list__label" for="and-id">Андорра</label>
+                          </li>
+                          <li class="countries-list__item">
+                            <input class="countries-list__radio visually-hidden" id="arg-id" type="radio" name="countries-a" value="ARG">
+                            <label class="countries-list__label" for="arg-id">Аргентина</label>
+                          </li>
+                          <li class="countries-list__item">
+                            <input class="countries-list__radio visually-hidden" id="arm-id" type="radio" name="countries-a" value="ARM">
+                            <label class="countries-list__label" for="arm-id">Армения</label>
+                          </li>
+                          <li class="countries-list__item">
+                            <input class="countries-list__radio visually-hidden" id="aus-id" type="radio" name="countries-a" value="AUS">
+                            <label class="countries-list__label" for="aus-id">Австралия</label>
+                          </li>
+                          <li class="countries-list__item">
+                            <input class="countries-list__radio visually-hidden" id="aut-id" type="radio" name="countries-a" value="AUT">
+                            <label class="countries-list__label" for="aut-id">Австрия</label>
+                          </li>
+                          <li class="countries-list__item">
+                            <input class="countries-list__radio visually-hidden" id="aze-id" type="radio" name="countries-a" value="AZE">
+                            <label class="countries-list__label" for="aze-id">Азербайджан</label>
+                          </li>
+                        </ul>
+                      </div>
+                      <button class="countries-selector__delete-button" type="button"><span class="visually-hidden">Удалить страну</span></button>
+                    </li>
+
+                    <li class="countries-selector__item countries-selector__item--add">
+                      <button class="countries-selector__button countries-selector__button--add" type="button"><span>Добавить страну</span></button>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="new-schedule-form__buttons-wrapper">
+                  <a class="new-schedule-form__button button button--rectangle" href="#third-step-id">Следующий шаг</a>
+                  <a class="new-schedule-form__button button button--step-back" href="#first-step-id">На шаг назад</a>
+                </div>
+              </li>
+
+              <li class="new-schedule-form__steps-item" id="third-step-id">
+                <div class="new-schedule-form__step-wrapper">
+                  <div class="new-schedule-form__header">
+                    <div class="new-schedule-form__heading-description-wrapper">
+                      <h3 class="new-schedule-form__step-heading"><span class="new-schedule-form__step-number">Шаг 3.</span> Развлечения</h3>
+                      <p class="new-schedule-form__step-description">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+                    </div>
+                    <ul class="new-schedule-form__indicator-list">
+                      <li class="new-schedule-form__indicator-item">Даты</li>
+                      <li class="new-schedule-form__indicator-item">Маршрут</li>
+                      <li class="new-schedule-form__indicator-item new-schedule-form__indicator-item--current">Развлечения</li>
+                    </ul>
+                  </div>
+
+                  <ol class="road-map">
+                    <li class="road-map__country">
+                      <div class="road-map__country-wrapper">
+                        <label class="road-map__country-label" for="bosnia-herzegovina-plans-id">Босния и герцеговина</label>
+                        <svg class="road-map__country-flag" width="35" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71 48">
+                          <g fill-rule="nonzero" fill="none"><rect fill="#4758A9" x=".9" y=".13" width="70" height="47" rx="6.36"/><path fill="#F6D660" d="M13.9.13h37v47z"/><path d="M8.19 4.88c-.27-.08-.28-.24 0-.36l1-.44a.93.93 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.8c.203.22.517.3.8.2l1.08-.43c.26-.11.36 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.11-1a.84.84 0 0 0-.55-.65l-1-.3zM12.51 10.38c-.27-.08-.28-.24 0-.36l1-.44a.92.92 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.8c.203.22.517.3.8.2l1.08-.43c.26-.1.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.12-1a.84.84 0 0 0-.55-.65l-.99-.3zM16.84 15.88c-.27-.08-.28-.24 0-.36l1-.44a.92.92 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.11.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.16.23-.33.19-.36-.09l-.11-1a.84.84 0 0 0-.55-.65l-1-.31zM21.17 21.38c-.27-.08-.28-.24 0-.36l1-.44a.92.92 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.1.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.12-1a.83.83 0 0 0-.55-.65l-.99-.31zM25.5 26.88c-.27-.08-.28-.24 0-.36l1-.44a.93.93 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.11.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.12-1a.83.83 0 0 0-.55-.65l-.99-.31zM29.83 32.38c-.27-.08-.28-.24 0-.36l1-.44a.93.93 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.11.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.12-1a.84.84 0 0 0-.55-.65l-.99-.31zM34.16 37.89c-.27-.08-.28-.24 0-.36l1-.44a.93.93 0 0 0 .49-.73v-1c0-.28.17-.34.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.11.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.12-1a.84.84 0 0 0-.55-.65l-.99-.31zM37.87 42.6c-.27-.08-.28-.24 0-.36l1-.44a.93.93 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.11.35 0 .21.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.09.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.16.23-.33.19-.36-.09l-.12-1a.84.84 0 0 0-.55-.65l-1-.31z" fill="#FFF"/>
+                          </g>
+                        </svg>
+                      </div>
+                      <textarea class="road-map__country-textarea" id="bosnia-herzegovina-plans-id" name="bosnia-herzegovina-plans" placeholder="План действий" required></textarea>
+                    </li>
+                    <li class="road-map__country">
+                      <div class="road-map__country-wrapper">
+                        <label class="road-map__country-label" for="czech-plans-id">Чехия</label>
+                        <svg class="road-map__country-flag" width="35" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71 48">
+                          <g fill-rule="nonzero" fill="none"><path d="M63.92.55H6.65A6.36 6.36 0 0 0 .29 6.91v17.64h70V6.91A6.36 6.36 0 0 0 63.92.55z" fill="#f5f7fa"/><path d="M.28 41.18a6.36 6.36 0 0 0 6.36 6.36h57.28a6.36 6.36 0 0 0 6.36-6.36V24.55h-70v16.63z" fill="#ED5565"/><path d="M2.19 2.38a6.34 6.34 0 0 0-1.9 4.54v34.27a6.34 6.34 0 0 0 1.95 4.57l23.05-21.21L2.19 2.38z" fill="#4758A9"/></g>
+                        </svg>
+                      </div>
+                      <textarea class="road-map__country-textarea" id="czech-plans-id" name="czech-plans" placeholder="План действий" required>Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                    </li>
+                  </ol>
+                </div>
+                <div class="new-schedule-form__buttons-wrapper">
+                  <button class="new-schedule-form__button button button--rectangle" type="submit" name="new-schedule-form-button">Отправить</button>
+                  <a class="new-schedule-form__button button button--step-back" href="#second-step-id">На шаг назад</a>
+                </div>
+              </li>
+            </ol>
+          </form>
+        </div>
       </section>
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
+      <div class="page-footer__container">
         <div class="page-footer__logo logo">
           <a class="logo__link" href="index.html">
             <img class="logo__image" src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Логоип «Погнали»">

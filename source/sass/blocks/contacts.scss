@@ -40,6 +40,19 @@
     }
   }
 
+  &--bright {
+    color: $bright;
+
+    &:hover,
+    &:focus {
+      color: $bright-darker;
+    }
+
+    &:active {
+      color: rgba($bright-darker, 0.3);
+    }
+  }
+
   &--phone {
     &::before {
       background-image: url("../img/contacts-phone.svg");

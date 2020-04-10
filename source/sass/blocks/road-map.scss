@@ -1,0 +1,133 @@
+.road-map {
+  @include list-reset;
+}
+
+.road-map__country {
+  position: relative;
+
+  margin-bottom: 24px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: -14px;
+
+    width: 11px;
+    height: 2px;
+
+    background-color: #1d2e5b;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: -14px;
+
+    width: 2px;
+    height: 281px;
+
+    background-color: #1d2e5b;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.road-map__country-wrapper {
+  position: relative;
+}
+
+.road-map__country-label {
+  position: relative;
+
+  box-sizing: border-box;
+  display: inline-block;
+  width: 220px;
+  height: 24px;
+  margin-bottom: 12px;
+  padding-top: 1px;
+  padding-left: 12px;
+
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 500;
+  vertical-align: top;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: -3px;
+
+    width: 6px;
+    height: 6px;
+
+    background-color: #1d2e5b;
+
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 85px;
+    height: 24px;
+
+    background-color: transparent;
+    background-image: linear-gradient(to right, transparent, $lightest 23%);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 85px 24px;
+  }
+}
+
+.road-map__country-flag {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 35px;
+  height: 24px;
+}
+
+.road-map__country-textarea {
+  position: relative;
+
+  box-sizing: border-box;
+  width: 100%;
+  height: 220px;
+  margin-bottom: 0;
+  padding: 9px 14px;
+
+  font: inherit;
+  vertical-align: top;
+
+  border: 1px solid #cbced9;
+  border-radius: 5px;
+
+  overflow: auto;
+  resize: none;
+
+  &:hover,
+  &:focus {
+    border-color: #959bb2;
+  }
+
+  &:valid {
+    border-color: $darkest;
+  }
+
+  &:invalid {
+    border-color: #f47e7e;
+  }
+}

@@ -1,0 +1,164 @@
+.countries-filter {
+  position: relative;
+  top: 0;
+
+  margin-top: -22px;
+
+  background-color: #e2e5f2;
+
+  border-bottom-right-radius: 21px;
+  border-bottom-left-radius: 21px;
+}
+
+.countries-filter__container {
+  @include container-mobile;
+
+  padding-top: 22px;
+  padding-bottom: 27px;
+
+  &--closed {
+    padding-bottom: 15px;
+
+    .countries-filter__header {
+      margin-bottom: 0;
+    }
+
+    .countries-filter__filter-toggle {
+      display: block;
+
+      background-image: url("../img/dots.svg");
+      background-repeat: no-repeat;
+      background-position: 0 10px;
+      background-size: 17px 3px;
+    }
+
+    .countries-filter__content-wrapper {
+      display: none;
+    }
+
+    .countries-filter__button {
+      display: none;
+    }
+  }
+}
+
+.countries-filter__header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 15px;
+  margin-bottom: 30px;
+}
+
+.countries-filter__heading {
+  position: relative;
+
+  margin: 0;
+  padding-left: 28px;
+
+  font: inherit;
+  font-weight: 700;
+  color: $dark;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 1px;
+
+    width: 15px;
+    height: 10px;
+
+    background-color: transparent;
+    background-image: url("../img/filter.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 15px 10px;
+  }
+}
+
+.countries-filter__colon {
+  display: none;
+}
+
+.countries-filter__filter-toggle {
+  display: none;
+  width: 20px;
+  height: 20px;
+
+  background-color: transparent;
+  background-image: url("../img/filter-close.svg");
+  background-repeat: no-repeat;
+  background-position: 1px 5px;
+  background-size: 12px 12px;
+
+  border: none;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.countries-filter__toggle-label {
+  display: none;
+}
+
+.countries-filter__content-wrapper {
+  display: block;
+  padding: 0 25px;
+}
+
+.countries-filter__world-parts-list {
+  @include list-reset;
+
+  margin-bottom: 21px;
+
+  text-transform: uppercase;
+}
+
+.countries-filter__world-parts-item {
+  margin-bottom: 5px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.countries-filter__world-parts-label {
+  font-weight: 700;
+  color: rgba($dark, 0.3);
+
+  cursor: pointer;
+
+  &:hover {
+    color: rgba($dark, 0.6);
+  }
+}
+
+.countries-filter__world-parts-selector:checked + .countries-filter__world-parts-label {
+  color: $dark;
+}
+
+.countries-filter__alphabetical-index {
+  margin-bottom: 11px;
+}
+
+.countries-filter__countries-list {
+  display: none;
+
+  &:first-child {
+    display: block;
+  }
+}
+
+.countries-filter__button {
+  display: none;
+}

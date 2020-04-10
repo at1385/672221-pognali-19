@@ -31,6 +31,94 @@
     line-height: 50px;
   }
 
+  &--inner-page {
+    width: 270px;
+
+    background-color: #dfe3f0;
+
+    &:hover,
+    &:focus {
+      background-color: #d1d7e9;
+    }
+
+    &:active {
+      color: rgba($darkest, 0.3);
+    }
+  }
+
+  &--step-back {
+    width: 120px;
+    min-height: 0;
+    padding: 0;
+
+    line-height: 30px;
+
+    background-color: transparent;
+
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      color: rgba($darkest, 0.7);
+    }
+
+    &:active {
+      color: rgba($darkest, 0.3);
+    }
+  }
+
+  &--filter {
+    position: relative;
+
+    width: 270px;
+
+    background-color: #d6daed;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 14px;
+      left: 85px;
+
+      width: 12px;
+      height: 12px;
+
+      background-image: url("../img/filter-close.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: 12px 12px;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: #c8cee8;
+    }
+
+    &:active {
+      color: rgba($darkest, 0.3);
+
+      &::before {
+        opacity: 0.3;
+      }
+    }
+  }
+
+  &--companions {
+    background-color: $lightest;
+
+    &:hover,
+    &:focus {
+      background-color: $lightest;
+      box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
+    }
+
+    &:active {
+      color: rgba($darkest, 0.3);
+
+      background-color: #f3c72b;
+      box-shadow: none;
+    }
+  }
+
   &--more {
     position: relative;
 
@@ -79,4 +167,13 @@
       }
     }
   }
+}
+
+.button__countries-filter-label {
+  position: relative;
+
+  display: inline-block;
+  padding-left: 24px;
+
+  vertical-align: top;
 }
