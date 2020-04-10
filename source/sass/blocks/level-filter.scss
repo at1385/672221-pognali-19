@@ -1,0 +1,150 @@
+.level-filter__level-range {
+  position: relative;
+
+  display: flex;
+  margin-bottom: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+
+    width: 16px;
+    height: 11px;
+    margin-top: -5.5px;
+    margin-left: -8px;
+
+    background-color: $lightest;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+
+    width: 16px;
+    height: 1px;
+    margin-top: -0.5px;
+    margin-left: -8px;
+
+    background-color: #cbced9;
+  }
+}
+
+.level-filter__level-number {
+  position: relative;
+
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 9px;
+  padding-bottom: 9px;
+
+  font: inherit;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 500;
+  color: #1d2e5b;
+  letter-spacing: 1.4px;
+  text-align: center;
+
+  border: 1px solid #cbced9;
+  outline: none;
+
+  &:hover {
+    border-color: #959bb2;
+  }
+
+  &:focus,
+  &:active {
+    border-color: $darkest;
+  }
+
+  &--min {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      z-index: 1;
+    }
+  }
+
+  &--max {
+    margin-left: -1px;
+
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      z-index: 1;
+    }
+  }
+}
+
+.level-filter__controls {
+  position: relative;
+
+  width: 220px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.level-filter__scale {
+  position: relative;
+
+  height: 2px;
+
+  background-color: rgba(#444444, 0.2);
+}
+
+.level-filter__bar {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 69%;
+  height: 2px;
+  background-color: #1d2e5b;
+}
+
+.level-filter__toggle {
+  position: absolute;
+
+  width: 10px;
+  height: 10px;
+  padding: 0;
+
+  background-color: #1d2e5b;
+
+  border: none;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  &--min {
+    top: 0;
+    left: 67px;
+  }
+
+  &--max {
+    top: 0;
+    right: 0;
+  }
+
+  &:hover,
+  &:focus {
+    transform: scale(1.4);
+    transition: all 0.1s ease-out;
+  }
+
+  &:active {
+    box-shadow: 0 3px 7px 0 rgba(29, 46, 91, 0.35);
+  }
+}
