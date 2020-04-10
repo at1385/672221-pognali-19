@@ -66,6 +66,42 @@
     }
   }
 
+  &--filter {
+    position: relative;
+
+    width: 270px;
+
+    background-color: #d6daed;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 14px;
+      left: 85px;
+
+      width: 12px;
+      height: 12px;
+
+      background-image: url("../img/filter-close.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: 12px 12px;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: #c8cee8;
+    }
+
+    &:active {
+      color: rgba($darkest, 0.3);
+
+      &::before {
+        opacity: 0.3;
+      }
+    }
+  }
+
   &--more {
     position: relative;
 
@@ -114,4 +150,13 @@
       }
     }
   }
+}
+
+.button__countries-filter-label {
+  position: relative;
+
+  display: inline-block;
+  padding-left: 24px;
+
+  vertical-align: top;
 }
