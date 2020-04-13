@@ -22,3 +22,37 @@
   font-weight: 700;
   font-style: normal;
 }
+
+@media (min-width: $tablet-width) {
+  .review {
+    @include container-tablet;
+
+    margin-top: -539px;
+    margin-bottom: 352px;
+
+    background-color: transparent;
+  }
+
+  .review__content {
+    width: 260px;
+    margin-left: 35px;
+  }
+
+  .review__text {
+    margin-bottom: 45px;
+
+    font-size: 28px;
+    line-height: 33px;
+    font-weight: 300;
+  }
+
+  .review__author {
+    font-size: 21px;
+    line-height: 25px;
+    font-weight: 700;
+  }
+
+  .review__wrap {
+    display: block;
+  }
+}
