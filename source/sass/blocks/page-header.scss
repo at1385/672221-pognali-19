@@ -60,6 +60,10 @@
   .page-header {
     background-color: $darkest;
 
+    background-image: url("../img/globe-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center 0;
+
     border-bottom-right-radius: 58px;
     border-bottom-left-radius: 58px;
   }
@@ -67,13 +71,9 @@
   .page-header__container {
     @include container-desktop;
 
-    background-image:
-      url("../img/traveller-illustration-desktop@1x.png"),
-      url("../img/globe-back-desktop@1x.jpg");
+    background-image: url("../img/traveller-illustration-desktop@1x.png");
     background-repeat: no-repeat;
-    background-position:
-      604px 10px,
-      -180px -100px;
+    background-position: 604px 10px;
   }
 
   .page-header__slogan {
