@@ -72,10 +72,14 @@
     height: 60px;
 
     line-height: 60px;
+  }
 
-    &:hover,
-    &:focus {
-      background-color: $dark;
+  .menu {
+    .social__icon {
+      &:hover,
+      &:focus {
+        background-color: $dark;
+      }
     }
   }
 

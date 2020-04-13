@@ -30,3 +30,17 @@
 .copyright__logo {
   fill: $dark;
 }
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    border-top: none;
+  }
+
+  .copyright__phrase {
+    margin-top: 1px;
+    margin-right: 25px;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
