@@ -8,7 +8,7 @@
   padding-top: 27px;
   padding-bottom: 29px;
 
-  background-color: $lightest;
+  // background-color: $lightest;
 
   &--inner-page {
     padding-top: 19px;
@@ -91,5 +91,42 @@
   .menu__social {
     order: 3;
     margin-left: 57px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .menu {
+    background-color: transparent;
+  }
+
+  .menu__container {
+    @include container-desktop;
+
+    padding-top: 49px;
+  }
+
+  .menu__header {
+    width: 200px;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  .menu__main-nav {
+    order: 0;
+    margin: 0;
+  }
+
+  .menu__user-menu {
+    order: 1;
+    margin: 0;
+  }
+
+  .menu__contacts {
+    order: 0;
+    margin: 0;
+  }
+
+  .menu__social {
+    display: none;
   }
 }

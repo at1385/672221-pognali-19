@@ -26,10 +26,67 @@
 
 @media (min-width: $tablet-width) {
   .site-menu {
-    width: 630px;
+    width: 775px;
 
     font-size: 60px;
     line-height: 70px;
     text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-menu {
+    position: relative;
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 55px;
+    padding-left: 145px;
+
+    font-size: 20px;
+    line-height: 50px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 40px;
+
+      width: 60px;
+      height: 2px;
+
+      background-color: $lightest;
+    }
+  }
+
+  .site-menu__item {
+    margin-right: 35px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .site-menu__link {
+    color: $lightest;
+
+    &:hover,
+    &:focus {
+      color: $bright;
+    }
+
+    &:active {
+      color: rgba($bright, 0.3);
+    }
+
+    &--current {
+      color: rgba($bright, 1);
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: rgba($bright, 1);
+      }
+    }
   }
 }

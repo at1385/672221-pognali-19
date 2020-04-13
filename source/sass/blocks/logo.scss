@@ -24,3 +24,24 @@
     height: 42px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .logo {
+    width: 200px;
+    height: 50px;
+    margin-top: -6px;
+  }
+
+  .logo__link--light {
+    display: inline;
+  }
+
+  .logo__link--dark {
+    display: none;
+  }
+
+  .logo__image {
+    width: 200px;
+    height: 50px;
+  }
+}
