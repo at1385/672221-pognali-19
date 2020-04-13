@@ -4,6 +4,18 @@
   padding: 0 25px;
 }
 
+@mixin container-tablet {
+  width: 768px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+@mixin container-desktop {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
 @mixin list-reset {
   margin: 0;
   padding: 0;
