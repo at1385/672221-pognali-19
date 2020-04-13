@@ -81,3 +81,35 @@
     }
   }
 }
+
+@media (min-width: $tablet-width) {
+  .contacts__list,
+  .contacts__item {
+    width: 630px;
+  }
+
+  .contacts__link {
+    height: 68px;
+    padding-left: 91px;
+
+    font-size: 28px;
+    line-height: 68px;
+
+    &::before {
+      width: 68px;
+      height: 68px;
+    }
+
+    &--phone {
+      &::before {
+        background-size: 27px 27px;
+      }
+    }
+
+    &--email {
+      &::before {
+        background-size: 27px 19px;
+      }
+    }
+  }
+}

@@ -11,3 +11,16 @@
   width: 100px;
   height: 19px;
 }
+
+@media (min-width: $tablet-width) {
+  .logo {
+    width: 166px;
+    height: 42px;
+    padding-top: 5px;
+  }
+
+  .logo__image {
+    width: 166px;
+    height: 42px;
+  }
+}

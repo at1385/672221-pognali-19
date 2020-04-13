@@ -55,3 +55,41 @@
 .menu__contacts {
   margin-bottom: 29px;
 }
+
+@media (min-width: $tablet-width) {
+  .menu__container {
+    @include container-tablet;
+
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    padding-bottom: 74px;
+  }
+
+  .menu__header {
+    width: 357px;
+    margin-right: 141px;
+    margin-bottom: 92px;
+  }
+
+  .menu__toggle {
+    margin-top: 16px;
+  }
+
+  .menu__main-nav {
+    order: 1;
+    margin-bottom: 136px;
+    margin-left: 57px;
+  }
+
+  .menu__contacts {
+    order: 2;
+    margin-bottom: 115px;
+    margin-left: 57px;
+  }
+
+  .menu__social {
+    order: 3;
+    margin-left: 57px;
+  }
+}

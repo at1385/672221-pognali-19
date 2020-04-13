@@ -177,3 +177,13 @@
 
   vertical-align: top;
 }
+
+@media (min-width: $tablet-width) {
+  .button {
+    width: 190px;
+    min-height: 50px;
+
+    font-size: 20px;
+    line-height: 50px;
+  }
+}
