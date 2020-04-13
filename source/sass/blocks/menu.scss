@@ -116,9 +116,11 @@
     margin: 0;
   }
 
-  .menu__user-menu {
-    order: 1;
-    margin: 0;
+  .page-header {
+    .menu__user-menu {
+      order: 1;
+      margin: 0;
+    }
   }
 
   .menu__contacts {
