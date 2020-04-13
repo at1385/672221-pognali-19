@@ -56,3 +56,18 @@
     display: block;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .review {
+    @include container-desktop;
+
+    margin-top: -533px;
+    margin-bottom: 346px;
+    padding: 0;
+    padding-left: 1095px;
+  }
+
+  .review__content {
+    margin-left: 0;
+  }
+}
