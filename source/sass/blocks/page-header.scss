@@ -32,18 +32,17 @@
 @media (min-width: $tablet-width) {
   .page-header {
     background-color: #182044;
+    background-image: url("../img/globe-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center 90.1%;
   }
 
   .page-header__container {
     @include container-tablet;
 
-    background-image:
-      url("../img/traveller-illustration-tablet@1x.png"),
-      url("../img/globe-back-tablet@1x.jpg");
+    background-image: url("../img/traveller-illustration-tablet@1x.png");
     background-repeat: no-repeat;
-    background-position:
-      284px 404px,
-      -355px 382px;
+    background-position: 284px 404px;
   }
 
   .page-header__slogan {
