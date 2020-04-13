@@ -7,7 +7,6 @@
 .page-header__container {
   @include container-mobile;
 
-  background-color: $darkest;
   background-image:
     url("../img/traveller-illustration-mobile@1x.png"),
     url("../img/globe-back-mobile@1x.jpg");
@@ -28,4 +27,31 @@
   line-height: 40px;
   font-weight: 700;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    background-color: #182044;
+  }
+
+  .page-header__container {
+    @include container-tablet;
+
+    background-image:
+      url("../img/traveller-illustration-tablet@1x.png"),
+      url("../img/globe-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position:
+      284px 404px,
+      -355px 382px;
+  }
+
+  .page-header__slogan {
+    width: 395px;
+    min-height: 995px;
+    padding-top: 157px;
+
+    font-size: 60px;
+    line-height: 70px;
+  }
 }
