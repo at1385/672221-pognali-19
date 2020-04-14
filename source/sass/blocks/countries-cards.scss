@@ -123,3 +123,92 @@
     opacity: 0.1;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .countries-cards {
+    margin-left: 35px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      width: 618px;
+      height: 70px;
+
+      background-color: transparent;
+      background-image: linear-gradient(transparent, $light 86%);
+    }
+  }
+
+  .countries-cards__item {
+    width: 618px;
+    padding-top: 0;
+
+    background-repeat: no-repeat;
+    background-position: 432px 0;
+
+    border-radius: 20px;
+
+    &::before {
+      top: 16px;
+      left: 398px;
+
+      width: 70px;
+      height: 47px;
+
+      background-size: 70px 47px;
+    }
+
+    &--thailand {
+      background-image: url("../img/thailand-desktop@1x.jpg");
+    }
+
+    &--france {
+      background-image: url("../img/france-desktop@1x.jpg");
+    }
+
+    &--czech {
+      background-image: url("../img/czech-desktop@1x.jpg");
+    }
+  }
+
+  .countries-cards__bottom-wrapper {
+    flex-direction: column;
+
+    width: 432px;
+    padding: 30px;
+    padding-bottom: 23px;
+
+    border-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .countries-cards__link {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .countries-cards__slogan {
+    margin-bottom: 22px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .countries-cards__counter {
+    padding-left: 30px;
+
+    font-size: 20px;
+    line-height: 20px;
+
+    &::before {
+      top: 0;
+
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
