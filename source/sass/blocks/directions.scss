@@ -65,3 +65,32 @@
     margin-bottom: 45px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .directions__container {
+    @include container-desktop;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-top: -58px;
+    padding-top: 219px;
+    padding-bottom: 102px;
+
+    background-position:
+      1091px 146px,
+      60px 147px;
+
+    .directions__rectangle-button {
+      order: 2;
+      margin-top: -118px;
+      margin-left: 803px;
+    }
+  }
+
+  .directions__block-description {
+    order: 1;
+    margin-bottom: 150px;
+    margin-left: 173px;
+  }
+}
