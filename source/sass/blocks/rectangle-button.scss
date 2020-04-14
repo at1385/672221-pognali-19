@@ -124,3 +124,10 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .rectangle-button {
+    width: 274px;
+    margin: 0;
+  }
+}
