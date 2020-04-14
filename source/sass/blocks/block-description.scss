@@ -85,3 +85,25 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .block-description__heading--about {
+    margin-bottom: 60px;
+  }
+
+  .block-description__paragraph {
+    &--about {
+      margin-bottom: 40px;
+    }
+
+    &--light-accent {
+      width: 410px;
+    }
+  }
+
+  .block-description__wrap {
+    &--about-additional {
+      display: none;
+    }
+  }
+}
