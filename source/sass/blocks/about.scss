@@ -59,3 +59,33 @@
     margin-bottom: 52px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .about__container {
+    @include container-desktop;
+
+    margin-top: -58px;
+    padding-top: 185px;
+    padding-bottom: 162px;
+
+    background-image:
+      url("../img/about-desktop@1x.png"),
+      url("../img/blue-back-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position:
+      750px 143px,
+      60px 129px;
+    background-size:
+      630px auto,
+      213px auto;
+  }
+
+  .about__wrapper {
+    width: 620px;
+    margin-left: 70px;
+  }
+
+  .about__block-description {
+    margin-bottom: 85px;
+  }
+}
