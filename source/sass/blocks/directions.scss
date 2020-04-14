@@ -26,3 +26,42 @@
     margin-bottom: 25px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .directions {
+    margin-top: -58px;
+
+    border-bottom-right-radius: 58px;
+    border-bottom-left-radius: 58px;
+  }
+
+  .directions__container {
+    @include container-tablet;
+
+    padding-top: 127px;
+    padding-bottom: 80px;
+
+    background-image:
+      url("../img/flags-back@1x.png"),
+      url("../img/lightblue-back-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position:
+      439px 138px,
+      40px 464px;
+  }
+
+  .directions__block-description {
+    width: 340px;
+    margin-left: 35px;
+    margin-bottom: 105px;
+  }
+
+  .directions__countries-cards-wrapper {
+    width: 618px;
+    margin-left: 35px;
+  }
+
+  .directions__countries-cards {
+    margin-bottom: 45px;
+  }
+}
