@@ -140,3 +140,141 @@
     color: rgba($darkest, 0.3);
   }
 }
+
+@media (min-width: $tablet-width) {
+  .add-profile {
+    margin-top: -58px;
+
+    border-bottom-right-radius: 58px;
+    border-bottom-left-radius: 58px;
+  }
+
+  .add-profile__container {
+    @include container-tablet;
+
+    padding-top: 128px;
+    padding-bottom: 64px;
+
+    background-image:
+      url("../img/rates@1x.png"),
+      url("../img/lightblue-vertical-back-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position:
+      582px 467px,
+      530px 207px;
+    background-size:
+      99px 99px,
+      198px 285px;
+  }
+
+  .add-profile__heading {
+    width: 485px;
+    margin: 0 auto;
+    margin-bottom: 77px;
+    padding: 0;
+
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .add-profile__features-list {
+    margin-bottom: 35px;
+    padding: 0;
+
+    font-size: 28px;
+    line-height: 33px;
+    font-weight: 300;
+
+    &::after {
+      left: 91px;
+
+      width: 562px;
+    }
+  }
+
+  .add-profile__features-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 653px;
+    padding-top: 15px;
+    padding-right: 0;
+    padding-bottom: 18px;
+    padding-left: 91px;
+
+    &::before {
+      left: 91px;
+
+      width: 562px;
+    }
+
+    &::after {
+      top: 0;
+      left: 0;
+
+      width: 67px;
+      height: 67px;
+
+      line-height: 67px;
+    }
+  }
+
+  .add-profile__tariffs-link {
+    position: relative;
+
+    width: 365px;
+    margin: 0;
+    padding-left: 90px;
+
+    font-size: 20px;
+    line-height: 67px;
+    color: #132576;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 67px;
+      height: 67px;
+
+      background-color: #e2e5f2;
+
+      border-radius: 50%;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 22px;
+      left: 25px;
+
+      width: 17px;
+      height: 21px;
+
+      background-image: url("../img/business.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 17px 21px;
+    }
+
+    &:hover,
+    &:focus {
+      color: rgba(#132576, 0.7);
+
+      &::after {
+        opacity: 0.7;
+      }
+    }
+
+    &:active {
+      color: rgba(#132576, 0.3);
+
+      &::after {
+        opacity: 0.3;
+      }
+    }
+  }
+}
