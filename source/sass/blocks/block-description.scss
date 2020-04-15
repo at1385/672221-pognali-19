@@ -35,7 +35,8 @@
 }
 
 .block-description__wrap {
-  &--about-additional {
+  &--about-additional,
+  &--travel-companions {
     display: none;
   }
 }
@@ -80,7 +81,8 @@
       display: none;
     }
 
-    &--about-additional {
+    &--about-additional,
+    &--travel-companions {
       display: inline;
     }
   }
