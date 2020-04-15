@@ -278,3 +278,47 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .add-profile__container {
+    @include container-desktop;
+
+    padding-top: 162px;
+    padding-bottom: 165px;
+
+    background-image:
+      url("../img/rates@1x.png"),
+      url("../img/lightblue-back-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position:
+      1108px 344px,
+      750px 292px;
+    background-size:
+      198px 198px,
+      444px 300px;
+  }
+
+  .add-profile__heading {
+    margin-bottom: 136px;
+  }
+
+  .add-profile__features-list {
+    margin-left: 71px;
+
+    &::after {
+      width: 813px;
+    }
+  }
+
+  .add-profile__features-item {
+    width: 904px;
+
+    &::before {
+      width: 813px;
+    }
+  }
+
+  .add-profile__tariffs-link {
+    margin-left: 71px;
+  }
+}
