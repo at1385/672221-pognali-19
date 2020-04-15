@@ -83,3 +83,37 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .travel-companions__container {
+    @include container-desktop;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-top: 182px;
+    padding-bottom: 134px;
+
+    background-position:
+      60px 127px,
+      547px 191px,
+      191px 443px;
+
+    .travel-companions__users-cards {
+      margin-top: 10px;
+      margin-bottom: 0;
+      margin-left: 0;
+    }
+
+    .travel-companions__rectangle-button {
+      margin-top: -91px;
+      margin-left: 71px;
+    }
+  }
+
+  .travel-companions__block-description {
+    margin-right: 194px;
+    margin-bottom: 140px;
+    margin-left: 71px;
+  }
+}
