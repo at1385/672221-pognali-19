@@ -4,7 +4,7 @@
   left: 50%;
   z-index: 5;
 
-  display: block;
+  display: none;
   width: 270px;
   margin: 0 auto;
   margin-left: -135px;
@@ -160,5 +160,34 @@
 
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .modal-tariffs {
+    top: 167px;
+
+    width: 750px;
+    margin-left: -375px;
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+
+  .modal-tariffs__list {
+    &::after {
+      width: 630px;
+    }
+  }
+
+  .modal-tariffs__item {
+    width: 630px;
+
+    &::before {
+      width: 630px;
+    }
+  }
+
+  .modal-tariffs__close {
+    width: 750px;
   }
 }
