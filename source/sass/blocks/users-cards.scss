@@ -184,3 +184,24 @@
     margin-bottom: 20px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .users-cards {
+    width: 630px;
+  }
+
+  .users-cards__item {
+    margin-right: 60px;
+  }
+
+  .users-cards__level {
+    top: 23px;
+    left: 23px;
+  }
+
+  .users-cards__info {
+    padding-right: 22px;
+    padding-bottom: 25px;
+    padding-left: 22px;
+  }
+}
