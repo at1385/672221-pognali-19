@@ -68,6 +68,11 @@
 
     border-bottom-right-radius: 58px;
     border-bottom-left-radius: 58px;
+
+    &--inner-page {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+    }
   }
 
   .page-header__container {
