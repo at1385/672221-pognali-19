@@ -17,6 +17,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .catalog {
+    @include container-tablet;
+  }
+
   .catalog__list {
     margin-bottom: 44px;
   }
