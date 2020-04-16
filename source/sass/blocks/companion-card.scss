@@ -432,3 +432,94 @@
     margin-left: 255px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .companion-card {
+    padding-top: 48px;
+    padding-right: 44px;
+    padding-bottom: 43px;
+    padding-left: 285px;
+  }
+
+  .companion-card__user-picture {
+    top: 0;
+    left: 0;
+
+    width: 285px;
+    height: 285px;
+
+    border-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .companion-card__user-image {
+    width: 285px;
+    height: 285px;
+  }
+
+  .companion-card__name-status-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-start;
+    width: 270px;
+    margin-right: 84px;
+    margin-bottom: 100px;
+    margin-left: 34px;
+  }
+
+  .companion-card__user-name {
+    order: 1;
+    width: 240px;
+    margin-right: 0;
+  }
+
+  .companion-card__name-separator {
+    max-width: 250px;
+  }
+
+  .companion-card__web-status {
+    margin-right: 19px;
+  }
+
+  .companion-card__favourites-rating-wrapper {
+    order: 5;
+    margin-top: -54px;
+  }
+
+  .companion-card__tags {
+    order: 2;
+    margin-top: -89px;
+    margin-right: 84px;
+    margin-bottom: 70px;
+    margin-left: 55px;
+  }
+
+  .companion-card__countries-wrapper {
+    order: 1;
+    width: 230px;
+    margin-bottom: 36px;
+  }
+
+  .companion-card__sub-heading--countries {
+    display: none;
+  }
+
+  .companion-card__countries {
+    margin: 0;
+  }
+
+  .companion-card__transport-level-wrapper {
+    order: 3;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 234px;
+    margin: 0;
+  }
+
+  .companion-card__button {
+    order: 4;
+    margin-top: -54px;
+    margin-left: 56px;
+  }
+}

@@ -173,3 +173,15 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .countries--catalog {
+    align-content: flex-start;
+    min-height: 98px;
+  }
+
+  .countries__item--catalog {
+    margin-bottom: 13px;
+    padding-left: 55px;
+  }
+}

@@ -302,3 +302,36 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .level--light {
+    width: 94px;
+    height: 94px;
+
+    background-color: transparent;
+  }
+
+  .level--80-form {
+    &::before {
+      width: 88px;
+      height: 88px;
+    }
+
+    &::after {
+      width: 88px;
+      height: 88px;
+    }
+  }
+
+  .level__word--dark {
+    color: $lightest;
+  }
+
+  .level__number--dark {
+    color: $lightest;
+
+    &::after {
+      background-color: rgba($lightest, 0.3);
+    }
+  }
+}

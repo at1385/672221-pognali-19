@@ -131,3 +131,17 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .transport--catalog {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 135px;
+
+    text-align: left;
+
+    .transport__icon {
+      vertical-align: middle;
+    }
+  }
+}
