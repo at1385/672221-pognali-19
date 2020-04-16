@@ -87,3 +87,61 @@
     height: 21px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .transport--catalog {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 33px;
+
+    text-align: center;
+
+    .transport__item {
+      width: 33px;
+      height: 33px;
+
+      background-color: transparent;
+    }
+
+    .transport__icon {
+      margin: 0;
+
+      vertical-align: top;
+
+      &--plane {
+        width: 19px;
+        height: 21px;
+      }
+
+      &--bus {
+        width: 17px;
+        height: 21px;
+      }
+
+      &--bike {
+        width: 24px;
+        height: 21px;
+      }
+
+      &--walk {
+        width: 20px;
+        height: 21px;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .transport--catalog {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 135px;
+
+    text-align: left;
+
+    .transport__icon {
+      vertical-align: middle;
+    }
+  }
+}

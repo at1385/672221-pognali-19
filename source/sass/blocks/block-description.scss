@@ -35,7 +35,77 @@
 }
 
 .block-description__wrap {
-  &--about-additional {
+  &--about-additional,
+  &--travel-companions {
     display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .block-description {
+    margin-left: 0;
+  }
+
+  .block-description__heading {
+    margin-bottom: 60px;
+
+    font-size: 45px;
+    line-height: 45px;
+
+    &--about {
+      margin-bottom: 41px;
+    }
+  }
+
+  .block-description__paragraph {
+    width: 100%;
+    margin-bottom: 40px;
+
+    font-size: 28px;
+    line-height: 33px;
+
+    &--about {
+      margin-bottom: 32px;
+    }
+
+    &--light-accent {
+      width: 260px;
+
+      font-size: 21px;
+      line-height: 25px;
+    }
+  }
+
+  .block-description__wrap {
+    &--about {
+      display: none;
+    }
+
+    &--about-additional,
+    &--travel-companions {
+      display: inline;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .block-description__heading--about {
+    margin-bottom: 60px;
+  }
+
+  .block-description__paragraph {
+    &--about {
+      margin-bottom: 40px;
+    }
+
+    &--light-accent {
+      width: 410px;
+    }
+  }
+
+  .block-description__wrap {
+    &--about-additional {
+      display: none;
+    }
   }
 }

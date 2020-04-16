@@ -1,0 +1,77 @@
+.index-redirect__link {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .index-redirect {
+    @include container-tablet;
+
+    margin-top: -109px;
+
+    text-align: right;
+  }
+
+  .index-redirect__link {
+    position: relative;
+    z-index: 11;
+
+    display: inline;
+    padding-right: 95px;
+
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: $lightest;
+
+    text-transform: uppercase;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 3px;
+      right: 35px;
+
+      width: 32px;
+      height: 16px;
+
+      background-color: transparent;
+      background-image: url("../img/return.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: 32px 16px;
+    }
+
+    &:hover,
+    &:focus {
+      color: rgba($lightest, 0.6);
+
+      &::after {
+        opacity: 0.6;
+      }
+    }
+
+    &:active {
+      color: rgba($lightest, 0.3);
+
+      &::after {
+        opacity: 0.3;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .index-redirect {
+    @include container-desktop;
+
+    margin-top: -109px;
+  }
+
+  .index-redirect__link {
+    padding-right: 124px;
+
+    &::after {
+      right: 64px;
+    }
+  }
+}

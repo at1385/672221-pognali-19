@@ -40,3 +40,80 @@
     margin-bottom: 20px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .travel-companions {
+    margin-top: -58px;
+
+    border-bottom-right-radius: 58px;
+    border-bottom-left-radius: 58px;
+  }
+
+  .travel-companions__container {
+    @include container-tablet;
+
+    padding-top: 195px;
+    padding-bottom: 88px;
+
+    background-image:
+      url("../img/blue-back-desktop@1x.png"),
+      url("../img/smolov-back-desktop@1x.png"),
+      url("../img/rogovaya-back-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position:
+      40px 139px,
+      40px 485px,
+      408px 139px;
+    background-size:
+      213px 213px,
+      143px 143px,
+      285px 285px;
+  }
+
+  .travel-companions__block-description {
+    width: 425px;
+    margin-left: 35px;
+    margin-bottom: 60px;
+  }
+
+  .page-main {
+    .travel-companions__users-cards {
+      margin-bottom: 80px;
+      margin-left: 35px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .travel-companions__container {
+    @include container-desktop;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-top: 182px;
+    padding-bottom: 134px;
+
+    background-position:
+      60px 127px,
+      547px 191px,
+      191px 443px;
+
+    .travel-companions__users-cards {
+      margin-top: 10px;
+      margin-bottom: 0;
+      margin-left: 0;
+    }
+
+    .travel-companions__rectangle-button {
+      margin-top: -80px;
+      margin-left: 71px;
+    }
+  }
+
+  .travel-companions__block-description {
+    margin-right: 194px;
+    margin-bottom: 140px;
+    margin-left: 71px;
+  }
+}

@@ -25,3 +25,67 @@
     292px auto,
     132px auto;
 }
+
+@media (min-width: $tablet-width) {
+  .about {
+    border-bottom-right-radius: 58px;
+    border-bottom-left-radius: 58px;
+  }
+
+  .about__container {
+    @include container-tablet;
+
+    padding-top: 134px;
+    padding-bottom: 88px;
+
+    background-image:
+      url("../img/about-tablet@1x.png"),
+      url("../img/blue-back-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position:
+      384px 144px,
+      40px 96px;
+    background-size:
+      376px auto,
+      688px auto;
+  }
+
+  .about__wrapper {
+    width: 300px;
+    margin-left: 35px;
+  }
+
+  .about__block-description {
+    margin-bottom: 52px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about__container {
+    @include container-desktop;
+
+    margin-top: -58px;
+    padding-top: 185px;
+    padding-bottom: 162px;
+
+    background-image:
+      url("../img/about-desktop@1x.png"),
+      url("../img/blue-back-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position:
+      750px 143px,
+      60px 129px;
+    background-size:
+      630px auto,
+      213px auto;
+  }
+
+  .about__wrapper {
+    width: 620px;
+    margin-left: 70px;
+  }
+
+  .about__block-description {
+    margin-bottom: 85px;
+  }
+}

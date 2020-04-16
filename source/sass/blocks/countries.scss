@@ -150,3 +150,38 @@
     background-image: url("../img/flag-czech.svg");
   }
 }
+
+@media (min-width: $tablet-width) {
+  .countries--catalog {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .countries__item--catalog {
+    margin-right: 27px;
+    margin-bottom: 0;
+    padding-left: 47px;
+
+    font-size: 20px;
+    line-height: 24px;
+
+    &::before {
+      width: 35px;
+      height: 24px;
+
+      background-size: 35px 24px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .countries--catalog {
+    align-content: flex-start;
+    min-height: 98px;
+  }
+
+  .countries__item--catalog {
+    margin-bottom: 13px;
+    padding-left: 55px;
+  }
+}

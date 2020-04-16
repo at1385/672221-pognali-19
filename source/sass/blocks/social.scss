@@ -65,3 +65,40 @@
     fill: $dark;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .social__icon {
+    width: 60px;
+    height: 60px;
+
+    line-height: 60px;
+  }
+
+  .menu {
+    .social__icon {
+      &:hover,
+      &:focus {
+        background-color: $dark;
+      }
+    }
+  }
+
+  .social__logo {
+    fill: $dark;
+  }
+
+  .social__logo--facebook {
+    width: 14px;
+    height: 28px;
+  }
+
+  .social__logo--vkontakte {
+    width: 31px;
+    height: 16px;
+  }
+
+  .social__logo--instagram {
+    width: 26px;
+    height: 26px;
+  }
+}

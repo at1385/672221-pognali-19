@@ -277,3 +277,249 @@
 .companion-card__button {
   margin: 0 18px;
 }
+
+@media (min-width: $tablet-width) {
+  .companion-card {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding-top: 35px;
+    padding-bottom: 25px;
+
+    &:hover,
+    &:focus {
+      .companion-card__user-image {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  .companion-card__user-picture {
+    top: 35px;
+    left: 35px;
+
+    width: 190px;
+    height: 190px;
+
+    border-radius: 18px;
+  }
+
+  .companion-card__user-image {
+    width: 190px;
+    height: 190px;
+
+    transition: all 0.5s ease-out;
+  }
+
+  .companion-card__name-status-wrapper {
+    width: 315px;
+    margin-left: 259px;
+    margin-bottom: 17px;
+  }
+
+  .companion-card__user-name {
+    width: auto;
+    margin-top: -4px;
+    margin-right: 18px;
+
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .companion-card__name-separator {
+    display: inline-block;
+    max-width: 315px;
+
+    vertical-align: top;
+  }
+
+  .companion-card__web-status {
+    width: 7px;
+    height: 7px;
+  }
+
+  .companion-card__favourites-rating-wrapper {
+    order: 2;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  .companion-card__favourites {
+    width: 50px;
+    height: 50px;
+
+    &::before {
+      top: 18px;
+      left: 15px;
+
+      width: 20px;
+      height: 17px;
+
+      background-size: 20px 17px;
+    }
+  }
+
+  .companion-card__raiting {
+    margin-top: 0;
+
+    font-size: 20px;
+    line-height: 50px;
+  }
+
+  .companion-card__tags {
+    margin-left: 253px;
+    margin-bottom: 47px;
+  }
+
+  .companion-card__countries-wrapper {
+    order: 10;
+    width: 100%;
+  }
+
+  .companion-card__sub-heading {
+    margin-bottom: 20px;
+    padding-left: 83px;
+
+    &::before {
+      width: 71px;
+    }
+
+    &::after {
+      width: 499px;
+    }
+  }
+
+  .companion-card__countries {
+    margin: 0 33px;
+  }
+
+  .companion-card__transport-level-wrapper {
+    order: 3;
+    flex-direction: column;
+    align-items: center;
+    width: 60px;
+    margin-top: -137px;
+    margin-right: 25px;
+    margin-bottom: 17px;
+    margin-left: auto;
+  }
+
+  .companion-card__transport-wrapper {
+    margin-right: 0;
+  }
+
+  .companion-card__sub-heading--transport,
+  .companion-card__sub-heading--level {
+    display: none;
+  }
+
+  .companion-card__transport {
+    margin-left: 0;
+  }
+
+  .companion-card__level-wrapper {
+    width: 60px;
+  }
+
+  .companion-card__level {
+    margin-left: 0;
+  }
+
+  .companion-card__button {
+    order: 1;
+    align-self: flex-start;
+    margin-right: 0;
+    margin-left: 255px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .companion-card {
+    padding-top: 48px;
+    padding-right: 44px;
+    padding-bottom: 43px;
+    padding-left: 285px;
+  }
+
+  .companion-card__user-picture {
+    top: 0;
+    left: 0;
+
+    width: 285px;
+    height: 285px;
+
+    border-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .companion-card__user-image {
+    width: 285px;
+    height: 285px;
+  }
+
+  .companion-card__name-status-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-start;
+    width: 270px;
+    margin-right: 84px;
+    margin-bottom: 100px;
+    margin-left: 34px;
+  }
+
+  .companion-card__user-name {
+    order: 1;
+    width: 240px;
+    margin-right: 0;
+  }
+
+  .companion-card__name-separator {
+    max-width: 250px;
+  }
+
+  .companion-card__web-status {
+    margin-right: 19px;
+  }
+
+  .companion-card__favourites-rating-wrapper {
+    order: 5;
+    margin-top: -54px;
+  }
+
+  .companion-card__tags {
+    order: 2;
+    margin-top: -89px;
+    margin-right: 84px;
+    margin-bottom: 70px;
+    margin-left: 55px;
+  }
+
+  .companion-card__countries-wrapper {
+    order: 1;
+    width: 230px;
+    margin-bottom: 36px;
+  }
+
+  .companion-card__sub-heading--countries {
+    display: none;
+  }
+
+  .companion-card__countries {
+    margin: 0;
+  }
+
+  .companion-card__transport-level-wrapper {
+    order: 3;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 234px;
+    margin: 0;
+  }
+
+  .companion-card__button {
+    order: 4;
+    margin-top: -54px;
+    margin-left: 56px;
+  }
+}

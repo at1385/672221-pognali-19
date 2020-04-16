@@ -15,3 +15,32 @@
     margin-bottom: 0;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    @include container-tablet;
+  }
+
+  .catalog__list {
+    margin-bottom: 44px;
+  }
+
+  .catalog__companion-card {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    width: 950px;
+    padding: 0;
+  }
+
+  .catalog__list {
+    margin-bottom: 65px;
+  }
+
+  .catalog__companion-card {
+    margin-bottom: 30px;
+  }
+}

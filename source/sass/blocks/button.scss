@@ -177,3 +177,41 @@
 
   vertical-align: top;
 }
+
+@media (min-width: $tablet-width) {
+  .button {
+    width: 190px;
+    min-height: 50px;
+
+    font-size: 20px;
+    line-height: 50px;
+
+    &--invite {
+      width: 148px;
+    }
+
+    &--more {
+      min-height: 27px;
+      padding-left: 45px;
+
+      font-size: 20px;
+      line-height: 27px;
+
+      &::before {
+        top: 0;
+
+        width: 27px;
+        height: 27px;
+
+        background-size: 27px 27px;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button--more {
+    width: 192px;
+    padding-left: 47px;
+  }
+}

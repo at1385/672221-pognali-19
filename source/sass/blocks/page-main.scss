@@ -30,3 +30,33 @@
   margin-bottom: 21px;
   margin-left: 60px;
 }
+
+@media (min-width: $tablet-width) {
+  .page-main__catalog-page-wrapper {
+    margin-top: -58px;
+    padding-top: 324px;
+    padding-bottom: 119px;
+  }
+
+  .page-main__button {
+    margin-bottom: 51px;
+    margin-left: 247px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__catalog-page-wrapper {
+    @include container-desktop;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    padding-top: 149px;
+    padding-bottom: 134px;
+  }
+
+  .page-main__button {
+    margin-bottom: 70px;
+    margin-left: 345px;
+  }
+}
