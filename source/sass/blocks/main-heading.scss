@@ -59,3 +59,16 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-heading {
+    @include container-desktop;
+
+    padding-top: 110px;
+    padding-bottom: 67px;
+  }
+
+  .main-heading__name {
+    margin-left: 67px;
+  }
+}
