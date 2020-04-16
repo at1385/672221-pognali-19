@@ -32,11 +32,11 @@
 
 @media (min-width: $desktop-width) {
   .catalog {
-    @include container-desktop;
+    width: 950px;
+    padding: 0;
   }
 
   .catalog__list {
-    width: 950px;
     margin-bottom: 65px;
   }
 
