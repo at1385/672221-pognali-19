@@ -32,6 +32,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-main__contacts {
+    margin-left: 35px;
+  }
+
   .page-main__catalog-page-wrapper {
     margin-top: -58px;
     padding-top: 324px;
