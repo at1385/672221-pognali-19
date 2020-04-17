@@ -71,3 +71,36 @@
     color: #ff0000;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .email-form {
+    justify-content: flex-start;
+    width: 618px;
+    height: 81px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .email-form__input {
+    flex-shrink: 0;
+    width: 536px;
+    padding-right: 35px;
+    padding-left: 35px;
+
+    font-size: 24px;
+    line-height: 24px;
+
+    border-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+    &:focus,
+    &:valid {
+      padding-left: 31px;
+    }
+  }
+
+  .email-form__rectangle-button {
+    order: 1;
+  }
+}
