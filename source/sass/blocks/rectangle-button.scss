@@ -137,6 +137,15 @@
         margin-top: 0;
       }
     }
+
+    &--border {
+      padding: 25px 32px;
+
+      &::after {
+        top: 26px;
+        right: 33px;
+      }
+    }
   }
 }
 

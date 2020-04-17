@@ -78,3 +78,42 @@
 
   border: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .route {
+    margin-top: -58px;
+
+    border-bottom-right-radius: 58px;
+    border-bottom-left-radius: 58px;
+  }
+
+  .route__container {
+    @include container-tablet;
+
+    padding-top: 43px;
+    padding-bottom: 48px;
+  }
+
+  .route__adress {
+    width: 524px;
+    min-height: 68px;
+    margin-bottom: 44px;
+    margin-left: 35px;
+    padding-left: 94px;
+
+    font-size: 28px;
+    line-height: 68px;
+
+    &::before {
+      width: 68px;
+      height: 68px;
+
+      background-size: 21px 31px;
+    }
+  }
+
+  .route__map {
+    height: 571px;
+    margin-top: -58px;
+  }
+}
