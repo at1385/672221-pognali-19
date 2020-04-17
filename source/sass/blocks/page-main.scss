@@ -49,6 +49,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-main__contacts {
+    margin-left: 223px;
+  }
+
   .page-main__catalog-page-wrapper {
     @include container-desktop;
 
