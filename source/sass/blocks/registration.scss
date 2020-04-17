@@ -102,3 +102,27 @@
     margin-bottom: 56px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .registration__container {
+    @include container-desktop;
+
+    padding-top: 160px;
+    padding-bottom: 103px;
+  }
+
+  .registration__text {
+    margin-bottom: 62px;
+
+    &:last-of-type {
+      width: 630px;
+      margin-bottom: 45px;
+
+      font-size: 29px;
+    }
+  }
+
+  .registration__email-form {
+    margin-bottom: 65px;
+  }
+}
