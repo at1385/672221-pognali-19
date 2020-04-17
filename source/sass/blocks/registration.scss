@@ -59,3 +59,46 @@
 .registration__email-form {
   margin-bottom: 28px;
 }
+
+@media (min-width: $tablet-width) {
+  .registration {
+    margin-top: -58px;
+
+    border-bottom-right-radius: 58px;
+    border-bottom-left-radius: 58px;
+  }
+
+  .registration__container {
+    @include container-tablet;
+
+    padding-top: 130px;
+    padding-bottom: 61px;
+  }
+
+  .registration__heading-question {
+    margin-bottom: 58px;
+
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .registration__text {
+    width: 618px;
+    margin-bottom: 66px;
+
+    font-size: 28px;
+    line-height: 33px;
+
+    &:last-of-type {
+      margin-bottom: 40px;
+    }
+  }
+
+  .registration__wrap--off {
+    display: none;
+  }
+
+  .registration__email-form {
+    margin-bottom: 56px;
+  }
+}
