@@ -104,3 +104,13 @@
     order: 1;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .email-form {
+    width: 1174px;
+  }
+
+  .email-form__input {
+    width: 850px;
+  }
+}
