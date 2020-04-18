@@ -131,3 +131,75 @@
     border-color: #f47e7e;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .road-map {
+    margin-bottom: 25px;
+    padding-top: 25px;
+
+    border-top: 1px solid #d6d9e6;
+  }
+
+  .road-map__country {
+    margin-bottom: 42px;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 20px;
+      left: 526px;
+
+      width: 3px;
+      height: 265px;
+
+      background-color: #1d2e5b;
+    }
+  }
+
+  .road-map__country-label {
+    width: 410px;
+    height: 47px;
+    margin-bottom: 29px;
+    padding: 0;
+
+    font-size: 30px;
+    line-height: 47px;
+    font-weight: 700;
+
+    &::before {
+      top: 17px;
+      left: 520px;
+
+      width: 15px;
+      height: 15px;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .road-map__country-flag {
+    right: 32px;
+
+    width: 70px;
+    height: 47px;
+  }
+
+  .road-map__country-textarea {
+    width: 499px;
+    height: 142px;
+    padding: 16px 20px;
+
+    font-size: 20px;
+    line-height: 24px;
+
+    &::placeholder {
+      opacity: 0.3;
+    }
+  }
+}
