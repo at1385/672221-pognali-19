@@ -312,14 +312,10 @@
   }
 
   .level--80-form {
-    &::before {
-      width: 88px;
-      height: 88px;
-    }
-
+    &::before,
     &::after {
-      width: 88px;
-      height: 88px;
+      width: 94px;
+      height: 94px;
     }
   }
 
