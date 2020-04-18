@@ -3,8 +3,6 @@
   z-index: 1;
 
   margin-top: -31px;
-  padding-top: 63px;
-  padding-bottom: 36px;
 
   background-color: $bright;
 
@@ -14,6 +12,9 @@
 
 .route__container {
   @include container-mobile;
+
+  padding-top: 63px;
+  padding-bottom: 36px;
 }
 
 .route__adress {
@@ -77,4 +78,78 @@
   margin-top: -30px;
 
   border: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .route__background-wrapper {
+    margin-top: -58px;
+
+    border-bottom-right-radius: 58px;
+    border-bottom-left-radius: 58px;
+  }
+
+  .route__container {
+    @include container-tablet;
+
+    padding-top: 105px;
+    padding-bottom: 86px;
+  }
+
+  .route__adress {
+    width: 524px;
+    min-height: 68px;
+    margin-bottom: 44px;
+    margin-left: 35px;
+    padding-left: 94px;
+
+    font-size: 28px;
+    line-height: 68px;
+
+    &::before {
+      width: 68px;
+      height: 68px;
+
+      background-size: 21px 31px;
+    }
+  }
+
+  .route__map {
+    height: 571px;
+    margin-top: -58px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .route__container {
+    @include container-desktop;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 110px;
+    padding-bottom: 57px;
+  }
+
+  .route__adress {
+    width: 555px;
+    min-height: 90px;
+    margin-bottom: 0;
+    margin-right: 143px;
+    margin-left: 223px;
+    padding-left: 122px;
+
+    font-size: 28px;
+    line-height: 90px;
+
+    &::before {
+      width: 90px;
+      height: 90px;
+
+      background-size: 28px 43px;
+    }
+  }
+
+  .route__map {
+    height: 507px;
+  }
 }

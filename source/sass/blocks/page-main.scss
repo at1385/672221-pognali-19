@@ -32,10 +32,18 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-main__contacts {
+    margin-left: 35px;
+  }
+
   .page-main__catalog-page-wrapper {
     margin-top: -58px;
-    padding-top: 324px;
+    padding-top: 104px;
     padding-bottom: 119px;
+  }
+
+  .page-main__companions-finder {
+    margin-bottom: 40px;
   }
 
   .page-main__button {
@@ -45,13 +53,17 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-main__contacts {
+    margin-left: 223px;
+  }
+
   .page-main__catalog-page-wrapper {
     @include container-desktop;
 
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
 
-    padding-top: 149px;
+    padding-top: 0;
     padding-bottom: 134px;
   }
 

@@ -53,3 +53,57 @@
     background-color: #1d2e5b;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .add-schedule {
+    margin-top: -30px;
+  }
+
+  .add-schedule__container {
+    @include container-tablet;
+
+    padding: 0 75px;
+    padding-top: 49px;
+    padding-bottom: 119px;
+  }
+
+  .add-schedule__heading {
+    margin-bottom: 60px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .add-schedule__step-indicator {
+    margin-top: 17px;
+    margin-right: 29px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .add-schedule {
+    margin-top: -53px;
+
+    border-top-right-radius: 58px;
+    border-top-left-radius: 58px;
+  }
+
+  .add-schedule__container {
+    @include container-desktop;
+
+    padding-top: 52px;
+    padding-bottom: 130px;
+  }
+
+  .add-schedule__heading {
+    margin-left: 70px;
+  }
+
+  .add-schedule__step-indicator-wrapper {
+    display: none;
+  }
+}

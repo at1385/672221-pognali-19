@@ -13,6 +13,13 @@
   border-top-left-radius: 30px;
 }
 
+.user-schedule__container {
+  @include container-mobile;
+
+  padding-top: 27px;
+  padding-bottom: 60px;
+}
+
 .user-schedule__heading {
   margin: 0;
   margin-bottom: 30px;
@@ -20,13 +27,6 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: 700;
-}
-
-.user-schedule__container {
-  @include container-mobile;
-
-  padding-top: 27px;
-  padding-bottom: 60px;
 }
 
 .user-schedule__list {
@@ -92,5 +92,142 @@
 
   &:active {
     color: rgba(#444444, 0.1);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .user-schedule {
+    margin-top: -30px;
+  }
+
+  .user-schedule__container {
+    @include container-tablet;
+
+    padding: 0 75px;
+    padding-top: 51px;
+    padding-bottom: 107px;
+  }
+
+  .user-schedule__heading {
+    margin-bottom: 53px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .user-schedule__item {
+    padding: 0;
+  }
+
+  .user-schedule__country-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 0;
+    padding-top: 38px;
+    padding-right: 31px;
+    padding-bottom: 34px;
+    padding-left: 36px;
+  }
+
+  .user-schedule__number {
+    order: 1;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .user-schedule__countries {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .user-schedule__info-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 19px;
+    padding-right: 34px;
+    padding-bottom: 16px;
+    padding-left: 33px;
+
+    font-size: 20px;
+    line-height: 20px;
+
+    border-top: 1px solid #eff0f4;
+  }
+
+  .user-schedule__info {
+    min-width: 160px;
+    margin-right: 27px;
+    margin-bottom: 0;
+
+    letter-spacing: 1.9px;
+
+    &:last-of-type {
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  .user-schedule__change-link {
+    margin-left: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-schedule {
+    margin-top: -58px;
+
+    border-top-right-radius: 58px;
+    border-top-left-radius: 58px;
+  }
+
+  .user-schedule__container {
+    @include container-desktop;
+
+    padding-top: 51px;
+    padding-right: 60px;
+    padding-bottom: 115px;
+    padding-left: 124px;
+  }
+
+  .user-schedule__heading {
+    margin-left: 7px;
+  }
+
+  .user-schedule__item {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 14px;
+    padding: 37px 42px;
+    padding-left: 44px;
+  }
+
+  .user-schedule__country-wrapper {
+    justify-content: flex-start;
+    margin-right: 62px;
+    padding: 0;
+  }
+
+  .user-schedule__number {
+    order: 0;
+    margin-right: 36px;
+  }
+
+  .user-schedule__countries {
+    width: 470px;
+  }
+
+  .user-schedule__info-wrapper {
+    width: 586px;
+    padding: 0;
+
+    line-height: 24px;
+
+    border-top: none;
+  }
+
+  .user-schedule__info {
+    margin-right: 17px;
   }
 }

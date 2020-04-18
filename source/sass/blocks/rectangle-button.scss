@@ -122,6 +122,30 @@
       width: 274px;
       margin: 0;
     }
+
+    &--email-send {
+      position: static;
+
+      padding: 33px 36px;
+
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+
+      &::after {
+        top: 34px;
+
+        margin-top: 0;
+      }
+    }
+
+    &--border {
+      padding: 25px 32px;
+
+      &::after {
+        top: 26px;
+        right: 33px;
+      }
+    }
   }
 }
 
@@ -130,8 +154,35 @@
     width: 274px;
     margin: 0;
 
+    &--email-send {
+      position: relative;
+
+      width: 324px;
+      padding: 33px 36px;
+
+      font-size: 24px;
+      line-height: 24px;
+
+      &::before {
+        content: "Регистрация";
+        position: absolute;
+        top: 28px;
+        left: 36px;
+
+        width: 135px;
+      }
+
+      &::after {
+        margin-left: auto;
+      }
+    }
+
     &--travel-companions {
       width: 280px;
+    }
+
+    &--border {
+      width: 324px;
     }
   }
 }

@@ -106,3 +106,157 @@
   border: 1px solid #cbced9;
   border-radius: 10px;
 }
+
+@media (min-width: $tablet-width) {
+  .user-info {
+    @include container-tablet;
+
+    margin-top: -58px;
+    padding-top: 122px;
+    padding-bottom: 80px;
+  }
+
+  .user-info__header {
+    padding: 0 35px;
+  }
+
+  .user-info__level {
+    margin-left: 0;
+    margin-right: 430px;
+  }
+
+  .user-info__image-wrapper {
+    width: 94px;
+    height: 94px;
+  }
+
+  .user-info__image {
+    width: 94px;
+    height: 94px;
+    margin-right: 0;
+
+    border-radius: 6px;
+  }
+
+  .user-info__button {
+    margin-top: 52px;
+  }
+
+  .user-info__tags-transport-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0 35px;
+  }
+
+  .user-info__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    &--tags {
+      order: 1;
+      margin-top: 167px;
+      margin-bottom: 0;
+    }
+
+    &--transport {
+      width: 308px;
+      margin: 0 auto;
+      margin-top: -217px;
+    }
+  }
+
+  .user-info__sub-heading {
+    order: 1;
+    margin: 0 auto;
+    margin-top: -10px;
+
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+    letter-spacing: 1.6px;
+  }
+
+  .user-info__textarea {
+    height: 94px;
+    padding: 33px 39px;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .user-info__transport-chooser {
+    width: 308px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-info {
+    @include container-desktop;
+
+    padding-bottom: 112px;
+  }
+
+  .user-info__header {
+    position: relative;
+    z-index: 11;
+
+    width: 330px;
+    margin-top: -190px;
+    margin-right: 95px;
+    margin-left: auto;
+    padding: 0;
+  }
+
+  .user-info__level {
+    margin-top: 43px;
+    margin-right: 45px;
+    margin-left: 0;
+  }
+
+  .user-info__image-wrapper {
+    width: 190px;
+    height: 190px;
+  }
+
+  .user-info__image {
+    width: 190px;
+    height: 190px;
+    margin-right: 0;
+
+    border-radius: 0;
+  }
+
+  .user-info__button {
+    margin-top: 0;
+    margin-left: 139px;
+    margin-bottom: 0;
+  }
+
+  .user-info__tags-transport-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 39px;
+    padding-left: 64px;
+    padding-right: 0;
+  }
+
+  .user-info__wrapper--tags {
+    order: 0;
+    width: 730px;
+    margin-top: 0;
+  }
+
+  .user-info__wrapper--transport {
+    width: 384px;
+    margin: 0;
+  }
+
+  .user-info__sub-heading--tags {
+    margin-left: 23px;
+  }
+
+  .user-info__transport-chooser {
+    width: 384px;
+  }
+}
