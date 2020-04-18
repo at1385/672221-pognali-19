@@ -220,6 +220,54 @@
 }
 
 @media (min-width: $desktop-width) {
+  .button--inner-page {
+    position: relative;
+
+    width: 191px;
+    min-height: 47px;
+
+    font-size: 20px;
+    line-height: 47px;
+    font-weight: 500;
+    letter-spacing: 0;
+
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    &::before {
+      content: "Фото";
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+
+      width: 191px;
+      min-height: 47px;
+
+      letter-spacing: 1.7px;
+
+      background-color: #dfe3f0;
+
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+
+    &:hover,
+    &:focus {
+      &::before {
+        background-color: #d1d7e9;
+      }
+    }
+
+    &:active {
+      &::before {
+        color: rgba($darkest, 0.3);
+      }
+    }
+  }
+
   .button--more {
     width: 192px;
     padding-left: 47px;
