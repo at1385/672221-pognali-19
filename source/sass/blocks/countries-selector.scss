@@ -482,3 +482,44 @@
     border-bottom-left-radius: 10px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .countries-selector {
+    padding-top: 62px;
+
+    &::after {
+      right: 225px;
+
+      height: 140%;
+    }
+  }
+
+  .countries-selector__item {
+    &::before {
+      right: 218px;
+    }
+
+    &--opened {
+      .countries-selector__button {
+        width: 730px;
+      }
+    }
+  }
+
+  .countries-selector__button {
+    width: 730px;
+    margin-right: 85px;
+  }
+
+  .countries-selector__dropdown-wrapper {
+    top: 70px;
+
+    flex-wrap: wrap;
+    width: 730px;
+
+    background-color: $lightest;
+
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+}
