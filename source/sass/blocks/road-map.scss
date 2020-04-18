@@ -203,3 +203,32 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .road-map {
+    padding-top: 70px;
+  }
+
+  .road-map__country {
+    &::after {
+      left: 773px;
+    }
+  }
+
+  .road-map__country-label {
+    width: 730px;
+
+    &::before {
+      left: 767px;
+    }
+  }
+
+  .road-map__country-flag {
+    right: 115px;
+  }
+
+  .road-map__country-textarea {
+    width: 730px;
+    padding: 22px;
+  }
+}
