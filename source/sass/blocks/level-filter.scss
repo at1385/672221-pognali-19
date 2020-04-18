@@ -148,3 +148,50 @@
     box-shadow: 0 3px 7px 0 rgba(29, 46, 91, 0.35);
   }
 }
+
+@media (min-width: $tablet-width) {
+  .level-filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 492px;
+  }
+
+  .level-filter__level-range {
+    order: 1;
+
+    width: 149px;
+    margin-bottom: 0;
+  }
+
+  .level-filter__level-number {
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .level-filter__controls {
+    width: 282px;
+  }
+
+  .level-filter__scale {
+    height: 3px;
+  }
+
+  .level-filter__bar {
+    width: 72%;
+    height: 3px;
+  }
+
+  .level-filter__toggle {
+    width: 13px;
+    height: 13px;
+
+    &--min {
+      left: 69px;
+    }
+  }
+}

@@ -394,3 +394,235 @@
   margin: 0 20px;
   margin-bottom: 22px;
 }
+
+@media (min-width: $tablet-width) {
+  .companions-finder {
+    width: 688px;
+    padding: 35px;
+    padding-bottom: 38px;
+  }
+
+  .companions-finder__heading {
+    width: auto;
+    margin-bottom: 39px;
+    padding-left: 0;
+
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .companions-finder__filters-wrapper {
+    width: auto;
+    margin-bottom: 36px;
+    padding: 0;
+    padding-top: 34px;
+    padding-bottom: 33px;
+
+    &::before {
+      left: 0;
+
+      width: 618px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      width: 618px;
+      height: 1px;
+
+      background-color: #f3c72b;
+    }
+  }
+
+  .companions-finder__filter-item {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 26px;
+    padding: 0;
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &--food {
+      margin-bottom: 23px;
+    }
+
+    &--transport {
+      margin-bottom: 14px;
+    }
+
+    &--level {
+      align-items: baseline;
+    }
+
+    &::after {
+      display: none;
+    }
+
+    .companions-finder__filter-content-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  .companions-finder__filter-dropdown-button {
+    width: auto;
+    margin-bottom: 0;
+
+    cursor: default;
+
+    &::after {
+      display: none;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      opacity: 1;
+    }
+  }
+
+  .companions-finder__filter-name {
+    width: 116px;
+    margin-bottom: 0;
+    margin-right: 10px;
+    padding: 0;
+
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    text-align: left;
+
+    &--transport {
+      margin-right: 5px;
+      line-height: 43px;
+    }
+  }
+
+  .companions-finder__colon {
+    display: inline;
+  }
+
+  .companions-finder__checkbox-wrapper {
+    width: 150px;
+    margin-bottom: 0;
+
+    &--first-column {
+      margin-right: 19px;
+    }
+
+    &--second-column {
+      margin-right: 23px;
+    }
+
+    &--transport {
+      width: 43px;
+    }
+  }
+
+  .companions-finder__label {
+    display: inline-block;
+    padding-left: 36px;
+
+    font-size: 20px;
+    line-height: 24px;
+    vertical-align: middle;
+
+    &::before {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .companions-finder__checkbox:checked + .companions-finder__label {
+    &::before {
+      background-size: 12px 12px;
+    }
+  }
+
+  .companions-finder__transport-label {
+    width: 43px;
+    height: 43px;
+
+    line-height: 43px;
+  }
+
+  .companions-finder__transport-checkbox:checked + .companions-finder__transport-label {
+    &::before {
+      width: 43px;
+      height: 43px;
+
+      background-position: 10px 10px;
+    }
+
+    &::after {
+      width: 43px;
+      height: 43px;
+    }
+
+    &--plane {
+      &::before {
+        background-image: url("../img/plane.svg");
+        background-size: 19px 21px;
+      }
+    }
+
+    &--bus {
+      &::before {
+        background-image: url("../img/bus.svg");
+        background-position: 13px 10px;
+        background-size: 17px 21px;
+      }
+    }
+
+    &--bike {
+      &::before {
+        background-image: url("../img/bike.svg");
+        background-position: 9px 10px;
+        background-size: 24px 21px;
+      }
+    }
+
+    &--walk {
+      &::before {
+        background-image: url("../img/run.svg");
+        background-size: 20px 21px;
+      }
+    }
+  }
+
+  .companions-finder__transport-icon {
+    margin-left: 10px;
+    margin-top: 10px;
+
+    &--plane {
+      width: 19px;
+      height: 21px;
+    }
+
+    &--bus {
+      width: 17px;
+      height: 21px;
+      margin-left: 13px;
+    }
+
+    &--bike {
+      width: 24px;
+      height: 21px;
+      margin-left: 9px;
+    }
+
+    &--walk {
+      width: 20px;
+      height: 21px;
+    }
+  }
+
+  .companions-finder__button {
+    margin: 0;
+  }
+}
