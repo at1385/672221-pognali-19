@@ -83,3 +83,27 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .add-schedule {
+    margin-top: -53px;
+
+    border-top-right-radius: 58px;
+    border-top-left-radius: 58px;
+  }
+
+  .add-schedule__container {
+    @include container-desktop;
+
+    padding-top: 52px;
+    padding-bottom: 130px;
+  }
+
+  .add-schedule__heading {
+    margin-left: 70px;
+  }
+
+  .add-schedule__step-indicator-wrapper {
+    display: none;
+  }
+}
