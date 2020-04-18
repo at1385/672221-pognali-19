@@ -154,3 +154,58 @@
 .calendar__period-label {
   display: none;
 }
+
+@media (min-width: $tablet-width) {
+  .calendar__month-toggler {
+    margin-bottom: 31px;
+  }
+
+  .calendar__button {
+    width: 51px;
+    min-height: 85px;
+
+    background-size: 19px 34px;
+    background-position: 17px 26px;
+  }
+
+  .calendar__input {
+    width: 428px;
+
+    font-size: 36px;
+    line-height: 36px;
+    color: #1d2e5b;
+  }
+
+  .calendar__weekdays-item {
+    height: 34px;
+
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 2px;
+  }
+
+  .calendar__weekday-letter {
+    display: inline;
+  }
+
+  .calendar__days-list {
+    width: 530px;
+  }
+
+  .calendar__date {
+    width: 74px;
+    min-height: 68px;
+
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+
+    &:hover,
+    &:focus {
+      z-index: 10;
+
+      outline-width: 4px;
+      outline-offset: -2px;
+    }
+  }
+}
