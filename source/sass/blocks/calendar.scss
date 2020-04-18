@@ -209,3 +209,60 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .calendar__button {
+    width: 19px;
+
+    background-position: 0 26px;
+  }
+
+  .calendar__input {
+    width: 962px;
+  }
+
+  .calendar__month-toggler {
+    margin-bottom: 11px;
+  }
+
+  .calendar__weekdays-list {
+    margin-bottom: 10px;
+  }
+
+  .calendar__weekdays-item {
+    margin-left: 15px;
+
+    text-align: left;
+  }
+
+  .calendar__days-list {
+    width: 100%;
+  }
+
+  .calendar__date {
+    width: 141px;
+    min-height: 70px;
+    padding-bottom: 29px;
+    padding-left: 15px;
+
+
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-align: left;
+
+    &--period {
+      padding-bottom: 3px;
+    }
+  }
+
+  .calendar__month-label {
+    display: inline;
+  }
+
+  .calendar__period-label {
+    display: block;
+    margin-top: 9px;
+  }
+}
