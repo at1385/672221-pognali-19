@@ -626,3 +626,92 @@
     margin: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .companions-finder {
+    order: 1;
+    align-self: flex-start;
+    width: 285px;
+    margin: 0;
+    padding: 45px 48px;
+    padding-bottom: 47px;
+  }
+
+  .companions-finder__heading {
+    margin-bottom: 32px;
+  }
+
+  .companions-finder__filters-wrapper {
+    margin-bottom: 39px;
+    padding: 0;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  .companions-finder__filter-item {
+    margin-bottom: 29px;
+
+    &--closed {
+      margin-bottom: 18px;
+
+      .companions-finder__filter-content-wrapper {
+        display: none;
+      }
+
+      .companions-finder__filter-dropdown-button {
+        margin-bottom: 0;
+      }
+    }
+
+    &--transport {
+      margin-bottom: 14px;
+    }
+  }
+
+  .companions-finder__filter-dropdown-button {
+    width: 189px;
+    margin-bottom: 23px;
+
+    cursor: pointer;
+
+    &::after {
+      display: block;
+
+      width: 10px;
+      height: 5px;
+      margin-top: 10px;
+
+      background-size: 10px 5px;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &--less-spacing {
+      margin-bottom: 18px;
+    }
+  }
+
+  .companions-finder__filter-name {
+    width: auto;
+    margin-right: 0;
+
+    &--transport {
+      line-height: 24px;
+    }
+  }
+
+  .companions-finder__checkbox-wrapper {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+}

@@ -195,3 +195,24 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .level-filter {
+    width: 189px;
+  }
+
+  .level-filter__level-range {
+    order: 0;
+
+    width: auto;
+    margin-bottom: 33px;
+  }
+
+  .level-filter__bar {
+    width: 65%;
+  }
+
+  .level-filter__toggle--min {
+    left: 58px;
+  }
+}
