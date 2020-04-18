@@ -66,3 +66,113 @@
     }
   }
 }
+
+@media (min-width: $tablet-width) {
+  .alphabetical-index {
+    width: 400px;
+
+    border: none;
+  }
+
+  .alphabetical-index__item {
+    margin-right: 33px;
+    margin-bottom: 23px;
+    border: none;
+  }
+
+  .alphabetical-index__letter-button {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 700;
+    color: rgba($dark, 0.2);
+
+    background-color: transparent;
+
+    border: none;
+
+    &:hover,
+    &:focus {
+      color: rgba($dark, 0.4);
+
+      outline: none;
+    }
+
+    &:active {
+      color: $dark;
+
+      background-color: transparent;
+    }
+
+    &--active {
+      color: $dark;
+
+      background-color: transparent;
+
+      outline: none;
+
+      &:hover,
+      &:focus {
+        color: $dark;
+
+        outline-color: #1d2e5b;
+      }
+    }
+  }
+
+  .countries-selector__item--opened {
+    .alphabetical-index {
+      width: 261px;
+      height: 346px;
+      margin-top: 34px;
+      margin-bottom: 36px;
+      margin-left: 27px;
+
+      border: 1px solid #cbced9;
+      border-right-width: 0;
+      border-bottom-width: 0;
+    }
+
+    .alphabetical-index__item {
+      margin: 0;
+      border-right: 1px solid #cbced9;
+      border-bottom: 1px solid #cbced9;
+    }
+
+    .alphabetical-index__letter-button {
+      width: 51px;
+      min-height: 68px;
+
+      font-size: 20px;
+      line-height: 20px;
+      font-weight: 500;
+      color: #1d2e5b;
+
+      &:hover,
+      &:focus {
+        outline: 1px solid #959bb2;
+      }
+
+      &:active {
+        color: $lightest;
+
+        background-color: #1d2e5b;
+
+        outline-color: #1d2e5b;
+      }
+
+      &--active-light {
+        color: $lightest;
+
+        background-color: #1d2e5b;
+
+        outline: 1px solid #1d2e5b;
+
+        &:hover,
+        &:focus {
+          border-color: #cbced9;
+          outline: 1px solid #1d2e5b;
+        }
+      }
+    }
+  }
+}
