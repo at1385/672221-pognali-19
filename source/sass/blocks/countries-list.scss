@@ -33,3 +33,27 @@
     color: rgba(#1d2e5b, 0.3);
   }
 }
+
+@media (min-width: $tablet-width) {
+  .countries-list {
+    font-size: 20px;
+    line-height: 20px;
+
+    &--form {
+      width: 206px;
+      margin-left: auto;
+      padding: 37px 25px;
+
+      background-color: $lightest;
+
+      border: none;
+      border-left: 1px solid #eaecf2;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 0;
+    }
+  }
+
+  .countries-list__item {
+    margin-bottom: 10px;
+  }
+}
