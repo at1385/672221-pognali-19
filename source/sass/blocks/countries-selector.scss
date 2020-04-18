@@ -335,3 +335,150 @@
 
   box-shadow: 0 20px 50px 0 rgba(29, 46, 91, 0.1);
 }
+
+@media (min-width: $tablet-width) {
+  .countries-selector {
+    position: relative;
+
+    padding-top: 41px;
+
+    border-top: 1px solid #d6d9e6;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 135px;
+
+      width: 1px;
+      height: 115%;
+
+      background-image: linear-gradient(#d6d9e6 85%, transparent);
+    }
+  }
+
+  .countries-selector__item {
+    margin-bottom: 15px;
+
+    &::before {
+      top: 25px;
+      right: 128px;
+
+      width: 15px;
+      height: 15px;
+    }
+
+    &::after {
+      display: none;
+    }
+
+    &--opened {
+      .countries-selector__button {
+        width: 370px;
+
+        &::after {
+          top: 26px;
+          right: 26px;
+
+          width: 18px;
+          height: 18px;
+
+          background-size: 18px 18px;
+        }
+      }
+
+      .countries-selector__dropdown-wrapper {
+        display: flex;
+      }
+    }
+  }
+
+  .countries-selector__button {
+    width: 370px;
+    min-height: 70px;
+    margin-right: 52px;
+    padding: 0 25px;
+
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 2px;
+
+    &::after {
+      top: 30px;
+      right: 26px;
+
+      width: 17px;
+      height: 9px;
+
+      background-size: 17px 9px;
+    }
+
+    &--add {
+      &::after {
+        top: 25px;
+        right: 27px;
+
+        width: 18px;
+        height: 18px;
+
+        background-size: 18px 18px;
+      }
+    }
+  }
+
+  .countries-selector__flag {
+    width: 70px;
+    margin: auto 0;
+
+    border: none;
+  }
+
+  .countries-selector__flag-image {
+    width: 70px;
+    height: 47px;
+  }
+
+  .countries-selector__delete-button {
+    position: static;
+
+    width: 18px;
+    height: 18px;
+    margin-left: auto;
+
+    background-color: transparent;
+
+    &::after {
+      width: 18px;
+      height: 18px;
+
+      background-size: 18px 18px;
+
+      opacity: 0.1;
+    }
+
+    &:hover,
+    &:focus {
+      &::after {
+        opacity: 0.3;
+      }
+    }
+
+    &:active {
+      &::after {
+        opacity: 0.05;
+      }
+    }
+  }
+
+  .countries-selector__dropdown-wrapper {
+    top: 70px;
+
+    flex-wrap: wrap;
+    width: 575px;
+
+    background-color: $lightest;
+
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+}
