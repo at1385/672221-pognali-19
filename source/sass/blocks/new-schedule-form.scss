@@ -231,3 +231,141 @@
     margin-bottom: 0;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .new-schedule-form__steps-item {
+    margin-bottom: 40px;
+    padding: 43px;
+    padding-bottom: 55px;
+
+    border-radius: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &--countries-selector {
+      margin-bottom: 50px;
+    }
+  }
+
+  .new-schedule-form__step-wrapper {
+    margin-bottom: 47px;
+    padding: 0;
+  }
+
+  .new-schedule-form__header {
+    margin-bottom: 36px;
+
+    &--dates {
+      margin-bottom: 40px;
+    }
+  }
+
+  .new-schedule-form__step-heading {
+    margin-bottom: 37px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .new-schedule-form__step-description {
+    width: 500px;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .new-schedule-form__wrap {
+    display: inline;
+  }
+
+  .new-schedule-form__counter-children-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    border-top: 1px solid #d6d9e6;
+  }
+
+  .new-schedule-form__counter {
+    margin-bottom: 25px;
+    padding-top: 22px;
+
+    &--duration {
+      order: 2;
+      margin-bottom: 59px;
+    }
+  }
+
+  .new-schedule-form__counter-label {
+    margin-bottom: 16px;
+
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 1.9px;
+  }
+
+  .new-schedule-form__counter-button {
+    width: 68px;
+    min-height: 68px;
+
+    background-position: 24px;
+    background-size: 20px 20px;
+  }
+
+  .new-schedule-form__counter-input {
+    width: 394px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .new-schedule-form__children-label {
+    padding-left: 59px;
+
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 34px;
+    color: #1d2e5b;
+    vertical-align: middle;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    &::before {
+      width: 36px;
+      height: 36px;
+
+      border-radius: 5px;
+    }
+  }
+
+  .new-schedule-form__children-checkbox:checked + .new-schedule-form__children-label {
+    &::after {
+      top: 12px;
+      left: 13px;
+
+      width: 12px;
+      height: 12px;
+
+      background-size: 12px 12px;
+    }
+  }
+
+  .new-schedule-form__children-option {
+    order: 1;
+    margin-bottom: 28px;
+  }
+
+  .new-schedule-form__buttons-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .new-schedule-form__button {
+    margin: 0;
+  }
+}
