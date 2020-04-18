@@ -64,3 +64,17 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+@mixin showen {
+  position: relative;
+
+  width: auto;
+  height: auto;
+  margin: 0;
+
+  white-space: normal;
+
+  clip-path: none;
+  clip: auto;
+  overflow: visible;
+}
