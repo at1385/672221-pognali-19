@@ -32,9 +32,13 @@
 @media (min-width: $tablet-width) {
   .page-header {
     background-color: #182044;
-    background-image: url("../img/globe-back-tablet@1x.jpg");
+    background-image:
+      url("../img/globe-back-tablet@1x.jpg"),
+      linear-gradient(#182044 93.1%, $dark 93.1%);
     background-repeat: no-repeat;
-    background-position: center 90.1%;
+    background-position:
+      center 90.1%,
+      0 0;
   }
 
   .page-header__container {
