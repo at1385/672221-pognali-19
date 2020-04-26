@@ -25,6 +25,18 @@
   }
 }
 
+@media (max-width: $only-tablet-width) {
+  .menu--closed {
+    .logo__link--light {
+      display: block;
+    }
+
+    .logo__link--dark {
+      display: none;
+    }
+  }
+}
+
 @media (min-width: $desktop-width) {
   .logo {
     width: 200px;

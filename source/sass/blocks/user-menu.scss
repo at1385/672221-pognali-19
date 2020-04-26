@@ -1,3 +1,13 @@
 .user-menu {
   @include list-reset;
 }
+
+@media (max-width: $only-mobile-width) {
+  .menu--closed {
+    &.menu--inner-page {
+      .user-menu {
+        display: none;
+      }
+    }
+  }
+}

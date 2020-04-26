@@ -178,6 +178,17 @@
   vertical-align: top;
 }
 
+@media (max-width: $only-mobile-width) {
+  .menu--closed {
+    .button--login {
+      width: 190px;
+      min-height: 40px;
+
+      line-height: 40px;
+    }
+  }
+}
+
 @media (min-width: $tablet-width) {
   .button {
     width: 190px;
