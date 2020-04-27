@@ -16,6 +16,10 @@
 
   border-radius: 20px;
   box-shadow: 0 20px 50px 0 rgba(29, 46, 91, 0.1);
+
+  &--opened {
+    display: block;
+  }
 }
 
 .modal-tariffs__heading {
