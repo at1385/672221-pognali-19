@@ -373,6 +373,10 @@
     }
 
     &--opened {
+      &::before {
+        display: block;
+      }
+
       .countries-selector__button {
         width: 370px;
 
@@ -389,6 +393,10 @@
 
       .countries-selector__dropdown-wrapper {
         display: flex;
+      }
+
+      .countries-selector__delete-button {
+        display: block;
       }
     }
   }

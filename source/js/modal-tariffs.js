@@ -12,7 +12,7 @@ tariffsCloseButton.addEventListener('click', function () {
 });
 
 window.addEventListener('keydown', function (evt) {
-  if (tariffsModal.classList.contains("modal-tariffs--opened") && evt.key === 'Escape') {
+  if (tariffsModal.classList.contains('modal-tariffs--opened') && evt.key === 'Escape') {
     tariffsModal.classList.remove('modal-tariffs--opened');
   }
 });
