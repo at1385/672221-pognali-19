@@ -316,6 +316,25 @@
         background-size: 27px 27px;
       }
     }
+
+    &--filter {
+      width: 618px;
+      min-height: 100px;
+
+      &::before {
+        top: 41px;
+        left: 243px;
+
+        width: 18px;
+        height: 18px;
+
+        background-size: 18px 18px;
+      }
+    }
+  }
+
+  .button__countries-filter-label {
+    padding-left: 39px;
   }
 }
 
@@ -371,5 +390,14 @@
   .button--more {
     width: 192px;
     padding-left: 47px;
+  }
+
+  .button--filter {
+    width: 100%;
+
+    &::before {
+      top: 41px;
+      left: 595px;
+    }
   }
 }
