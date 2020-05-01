@@ -103,6 +103,11 @@
         padding-top: 0;
       }
     }
+
+
+    &.page-header--scroll {
+      padding-top: 99px;
+    }
   }
 
   .page-header__container {

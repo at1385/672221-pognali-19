@@ -89,4 +89,37 @@
       }
     }
   }
+
+  .menu--scroll {
+    .site-menu::before {
+      left: 55px;
+
+      width: 45px;
+
+      background-color: $dark;
+    }
+
+    .site-menu__link {
+      color: $dark;
+
+      &:hover,
+      &:focus {
+        color: rgba($dark, 0.6);
+      }
+
+      &:active {
+        color: rgba($dark, 0.3);
+      }
+
+      &--current {
+        color: rgba($dark, 0.3);
+
+        &:hover,
+        &:focus,
+        &:active {
+          color: rgba($dark, 0.3);
+        }
+      }
+    }
+  }
 }
