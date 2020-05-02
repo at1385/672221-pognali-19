@@ -2,6 +2,12 @@
   color: $lightest;
 
   background-color: $darkest;
+
+  &--js {
+    &.page-header--inner-page {
+      padding-top: 39px;
+    }
+  }
 }
 
 .page-header__container {
@@ -32,9 +38,27 @@
 @media (min-width: $tablet-width) {
   .page-header {
     background-color: #182044;
-    background-image: url("../img/globe-back-tablet@1x.jpg");
+    background-image:
+      url("../img/globe-back-tablet@1x.jpg"),
+      linear-gradient(#182044 93.1%, $dark 93.1%);
     background-repeat: no-repeat;
-    background-position: center 90.1%;
+    background-position:
+      center 90.1%,
+      0 0;
+
+    &--js {
+      background-image:
+        url("../img/globe-back-tablet@1x.jpg"),
+        linear-gradient(#182044 76.2%, $dark 76.2%);
+      background-position:
+        center 73.2%,
+        0 0;
+
+      &.page-header--inner-page {
+        background-color: $darkest;
+        background-image: none;
+      }
+    }
   }
 
   .page-header__container {
@@ -72,6 +96,17 @@
     &--inner-page {
       border-bottom-right-radius: 0;
       border-bottom-left-radius: 0;
+    }
+
+    &--js {
+      &.page-header--inner-page {
+        padding-top: 0;
+      }
+    }
+
+
+    &.page-header--scroll {
+      padding-top: 99px;
     }
   }
 

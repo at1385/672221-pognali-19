@@ -48,12 +48,82 @@
 }
 
 .transport__item {
+  position: relative;
+
   width: 33px;
   height: 33px;
 
   line-height: 33px;
 
   border-radius: 50%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 25%;
+    z-index: 100;
+
+    display: none;
+
+    border: 8px solid #101d41;
+    border-top-width: 0;
+    border-right-color: transparent;
+    border-left-color: transparent;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 43px;
+    z-index: 100;
+
+    display: none;
+    padding: 16px 22px;
+
+    font-size: 20px;
+    line-height: 24px;
+    color: $lightest;
+
+    background-color: #101d41;
+
+    border-radius: 3px;
+  }
+
+  &:hover {
+    &::before,
+    &::after {
+      display: block;
+    }
+  }
+
+  &--plane {
+    &::after {
+      content: "Авиаперелет";
+      left: -59px;
+    }
+  }
+
+  &--bus {
+    &::after {
+      content: "Автотранспорт";
+      left: -66px;
+    }
+  }
+
+  &--bike {
+    &::after {
+      content: "Ведосипед";
+      left: -50px;
+    }
+  }
+
+  &--walk {
+    &::after {
+      content: "Пешком";
+      left: -39px;
+    }
+  }
 }
 
 .transport__icon {
@@ -130,6 +200,18 @@
       }
     }
   }
+
+  .companion-card__transport {
+    .transport__item {
+      &::before {
+        top: 27px;
+      }
+
+      &::after {
+        top: 35px;
+      }
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -142,6 +224,43 @@
 
     .transport__icon {
       vertical-align: middle;
+    }
+  }
+
+  .companion-card__transport {
+    .transport__item {
+      &::before {
+        top: 35px;
+        left: 6%;
+      }
+
+      &::after {
+        top: 43px;
+      }
+
+      &--plane {
+        &::after {
+          left: -65px;
+        }
+      }
+
+      &--bus {
+        &::after {
+          left: -72px;
+        }
+      }
+
+      &--bike {
+        &::after {
+          left: -57px;
+        }
+      }
+
+      &--walk {
+        &::after {
+          left: -46px;
+        }
+      }
     }
   }
 }

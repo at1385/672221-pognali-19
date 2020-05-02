@@ -439,6 +439,18 @@
     padding-right: 44px;
     padding-bottom: 43px;
     padding-left: 285px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: center;
+      right: 320px;
+
+      width: 1px;
+      height: 185px;
+
+      background-image: linear-gradient(rgba(#000000, 0.02) 5%, rgba(#000000, 0.1) 25%, rgba(#000000, 0.1) 75%, rgba(#000000, 0.02) 95%);
+    }
   }
 
   .companion-card__user-picture {
