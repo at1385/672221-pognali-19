@@ -8,76 +8,12 @@
   &--catalog {
     flex-direction: column;
     margin-left: 5px;
-
-    .countries__item {
-      &--catalog {
-        background-image: none;
-      }
-
-      &--sri-lanka {
-        &::before {
-          background-image: url("../img/flag-sri-lanka.svg");
-        }
-      }
-
-      &--thailand {
-        &::before {
-          background-image: url("../img/flag-thailand.svg");
-        }
-      }
-
-      &--seychelles {
-        &::before {
-          background-image: url("../img/flag-seychelles.svg");
-        }
-      }
-
-      &--belgium {
-        &::before {
-          background-image: url("../img/flag-belgium.svg");
-        }
-      }
-
-      &--czech {
-        &::before {
-          background-image: url("../img/flag-czech.svg");
-        }
-      }
-
-      &--usa {
-        &::before {
-          background-image: url("../img/flag-usa.svg");
-        }
-      }
-
-      &--australia {
-        &::before {
-          background-image: url("../img/flag-australia.svg");
-        }
-      }
-
-      &--dominicana {
-        &::before {
-          background-image: url("../img/flag-dominica.svg");
-        }
-      }
-
-      &--great-britain {
-        &::before {
-          background-image: url("../img/flag-united-kingdom.svg");
-        }
-      }
-
-      &--germany {
-        &::before {
-          background-image: url("../img/flag-germany.png");
-        }
-      }
-    }
   }
 }
 
 .countries__item {
+  position: relative;
+
   min-width: 35px;
   height: 24px;
   margin-right: 19px;
@@ -94,6 +30,46 @@
     margin-right: 0;
   }
 
+  &::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 30%;
+    z-index: 100;
+
+    display: none;
+
+    border: 8px solid #101d41;
+    border-top-width: 0;
+    border-right-color: transparent;
+    border-left-color: transparent;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 38px;
+    z-index: 100;
+
+    display: none;
+    padding: 16px 22px;
+
+    font-size: 20px;
+    line-height: 24px;
+    color: $lightest;
+
+    background-color: #101d41;
+
+    border-radius: 3px;
+  }
+
+  &:hover {
+    &::before,
+    &::after {
+      display: block;
+    }
+  }
+
   &--catalog {
     position: relative;
 
@@ -107,47 +83,85 @@
     text-transform: uppercase;
 
     background-color: transparent;
+    background-size: 26px auto;
 
     &:last-child {
       margin-bottom: 0;
     }
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 2px;
-
-      width: 26px;
-      height: 18px;
-
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      background-size: 26px 18px;
-
-      border-bottom-left-radius: 3px;
-      border-bottom-right-radius: 3px;
+    &:hover {
+      &::before,
+      &::after {
+        display: none;
+      }
     }
   }
 
   &--sri-lanka {
     background-image: url("../img/flag-sri-lanka.svg");
+
+    &::after {
+      content: "Шри-Ланка";
+      left: -52px;
+
+      white-space: nowrap;
+    }
   }
 
   &--thailand {
     background-image: url("../img/flag-thailand.svg");
+
+    &::after {
+      content: "Таиланд";
+      left: -39px;
+    }
   }
 
   &--seychelles {
     background-image: url("../img/flag-seychelles.svg");
+
+    &::after {
+      content: "Сейшелы";
+      left: -43px;
+    }
   }
 
   &--belgium {
     background-image: url("../img/flag-belgium.svg");
+
+    &::after {
+      content: "Бельгия";
+      left: -39px;
+    }
   }
 
   &--czech {
     background-image: url("../img/flag-czech.svg");
+
+    &::after {
+      content: "Чехия";
+      left: -30px;
+    }
+  }
+
+  &--usa {
+    background-image: url("../img/flag-usa.svg");
+  }
+
+  &--australia {
+    background-image: url("../img/flag-australia.svg");
+  }
+
+  &--dominicana {
+    background-image: url("../img/flag-dominica.svg");
+  }
+
+  &--great-britain {
+    background-image: url("../img/flag-united-kingdom.svg");
+  }
+
+  &--germany {
+    background-image: url("../img/flag-germany.png");
   }
 }
 
@@ -165,12 +179,7 @@
     font-size: 20px;
     line-height: 24px;
 
-    &::before {
-      width: 35px;
-      height: 24px;
-
-      background-size: 35px 24px;
-    }
+    background-size: 35px auto;
   }
 }
 
