@@ -20,6 +20,15 @@
   background-position:
     79px 223px,
     0 0;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image:
+      url("../img/traveller-illustration-mobile@2x.png"),
+      url("../img/globe-back-mobile@2x.jpg");
+    background-size:
+      192px auto,
+      320px auto;
+  }
 }
 
 .page-header__slogan {
@@ -46,6 +55,18 @@
       center 90.1%,
       0 0;
 
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image:
+        url("../img/globe-back-tablet@2x.jpg"),
+        linear-gradient(#182044 93.1%, $dark 93.1%);
+      background-size:
+        1479px auto,
+        auto auto;
+      background-position:
+        -358px 90.1%,
+        0 0;
+    }
+
     &--js {
       background-image:
         url("../img/globe-back-tablet@1x.jpg"),
@@ -53,6 +74,18 @@
       background-position:
         center 73.2%,
         0 0;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image:
+          url("../img/globe-back-tablet@2x.jpg"),
+          linear-gradient(#182044 93.1%, $dark 93.1%);
+        background-size:
+          1479px auto,
+          auto auto;
+        background-position:
+          -358px 379px,
+          0 0;
+      }
 
       &.page-header--inner-page {
         background-color: $darkest;
@@ -67,6 +100,11 @@
     background-image: url("../img/traveller-illustration-tablet@1x.png");
     background-repeat: no-repeat;
     background-position: 284px 404px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/traveller-illustration-tablet@2x.png");
+      background-size: 372px auto;
+    }
   }
 
   .page-header__slogan {
@@ -89,6 +127,11 @@
     background-image: url("../img/globe-back-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: center 0;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/globe-back-desktop@2x.jpg");
+      background-size: 1800px auto;
+    }
 
     border-bottom-right-radius: 58px;
     border-bottom-left-radius: 58px;
@@ -116,6 +159,11 @@
     background-image: url("../img/traveller-illustration-desktop@1x.png");
     background-repeat: no-repeat;
     background-position: 604px 10px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/traveller-illustration-desktop@2x.png");
+      background-size: 431px auto;
+    }
   }
 
   .page-header__slogan {

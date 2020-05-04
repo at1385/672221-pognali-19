@@ -24,6 +24,12 @@
   background-size:
     292px auto,
     132px auto;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image:
+      url("../img/about-mobile@2x.png"),
+      url("../img/blue-back-desktop@2x.png");
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -48,6 +54,12 @@
     background-size:
       376px auto,
       688px auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image:
+        url("../img/about-tablet@2x.png"),
+        url("../img/blue-back-tablet@2x.png");
+    }
   }
 
   .about__wrapper {
@@ -78,6 +90,12 @@
     background-size:
       630px auto,
       213px auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image:
+        url("../img/about-desktop@2x.png"),
+        url("../img/blue-back-desktop@2x.png");
+    }
   }
 
   .about__wrapper {

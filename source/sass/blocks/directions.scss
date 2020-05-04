@@ -48,6 +48,15 @@
     background-position:
       439px 138px,
       40px 464px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image:
+        url("../img/flags-back@2x.png"),
+        url("../img/lightblue-back-tablet@2x.png");
+      background-size:
+        289px auto,
+        141px auto;
+    }
   }
 
   .directions__block-description {
