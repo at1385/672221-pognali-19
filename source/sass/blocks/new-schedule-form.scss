@@ -311,6 +311,14 @@
 
     background-position: 24px;
     background-size: 20px 20px;
+
+    &--minus {
+      background-image: url("../img/qty-minus.svg");
+    }
+
+    &--plus {
+      background-image: url("../img/qty-plus.svg");
+    }
   }
 
   .new-schedule-form__counter-input {

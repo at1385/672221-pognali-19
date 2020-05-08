@@ -257,94 +257,38 @@
   &:hover,
   &:focus {
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
+
+    .companions-finder__transport-icon {
+      fill: rgba(#000000, 0.3);
+    }
   }
 
   &:active {
     background-color: #e2e5f1;
+    box-shadow: none;
+
+    .companions-finder__transport-icon {
+      fill: rgba(#000000, 0.1);
+    }
   }
 }
 
 .companions-finder__transport-checkbox:checked + .companions-finder__transport-label {
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-
-    width: 33px;
-    height: 33px;
-
-    background-color: $lightest;
-    background-repeat: no-repeat;
-    background-position: 8px 8px;
-
-    border-radius: 50%;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-
-    width: 33px;
-    height: 33px;
-
-    background-color: $lightest;
-
-    border-radius: 50%;
-
-    opacity: 0;
-  }
-
   &:hover,
   &:focus {
-    &::after {
-      opacity: 0.3;
+    .companions-finder__transport-icon {
+      fill: rgba(#1d2e5b, 0.7);
     }
   }
 
   &:active {
-    &::before {
-      background-color: #e2e5f1;
-    }
-
-    &::after {
-      background-color: #e2e5f1;
-      opacity: 0.7;
+    .companions-finder__transport-icon {
+      fill: rgba(#1d2e5b, 0.3);
     }
   }
 
-  &--plane {
-    &::before {
-      background-image: url("../img/plane.svg");
-      background-size: 14px 16px;
-    }
-  }
-
-  &--bus {
-    &::before {
-      background-image: url("../img/bus.svg");
-      background-position: 10px 8px;
-      background-size: 13px 16px;
-    }
-  }
-
-  &--bike {
-    &::before {
-      background-image: url("../img/bike.svg");
-      background-position: 6px 7px;
-      background-size: 19px 17px;
-    }
-  }
-
-  &--walk {
-    &::before {
-      background-image: url("../img/run.svg");
-      background-size: 15px 17px;
-    }
+  .companions-finder__transport-icon {
+    fill: #1d2e5b;
   }
 }
 
@@ -356,15 +300,6 @@
   vertical-align: top;
 
   fill: rgba(#000000, 0.15);
-
-  &:hover,
-  &:focus {
-    fill: rgba(#000000, 0.3);
-  }
-
-  &:active {
-    fill: rgba(#000000, 0.1);
-  }
 
   &--plane {
     width: 14px;
@@ -549,50 +484,6 @@
     height: 43px;
 
     line-height: 43px;
-  }
-
-  .companions-finder__transport-checkbox:checked + .companions-finder__transport-label {
-    &::before {
-      width: 43px;
-      height: 43px;
-
-      background-position: 10px 10px;
-    }
-
-    &::after {
-      width: 43px;
-      height: 43px;
-    }
-
-    &--plane {
-      &::before {
-        background-image: url("../img/plane.svg");
-        background-size: 19px 21px;
-      }
-    }
-
-    &--bus {
-      &::before {
-        background-image: url("../img/bus.svg");
-        background-position: 13px 10px;
-        background-size: 17px 21px;
-      }
-    }
-
-    &--bike {
-      &::before {
-        background-image: url("../img/bike.svg");
-        background-position: 9px 10px;
-        background-size: 24px 21px;
-      }
-    }
-
-    &--walk {
-      &::before {
-        background-image: url("../img/run.svg");
-        background-size: 20px 21px;
-      }
-    }
   }
 
   .companions-finder__transport-icon {

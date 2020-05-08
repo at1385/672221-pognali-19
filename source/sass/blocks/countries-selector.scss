@@ -305,19 +305,19 @@
     background-position: 0 0;
     background-size: 9px 9px;
 
-    opacity: 0.3;
+    opacity: 0.1;
   }
 
   &:hover,
   &:focus {
     &::after {
-      opacity: 1;
+      opacity: 0.3;
     }
   }
 
   &:active {
     &::after {
-      opacity: 0.1;
+      opacity: 0.05;
     }
   }
 }
@@ -429,6 +429,7 @@
         width: 18px;
         height: 18px;
 
+        background-image: url("../img/qty-plus.svg");
         background-size: 18px 18px;
       }
     }
@@ -460,21 +461,6 @@
       height: 18px;
 
       background-size: 18px 18px;
-
-      opacity: 0.1;
-    }
-
-    &:hover,
-    &:focus {
-      &::after {
-        opacity: 0.3;
-      }
-    }
-
-    &:active {
-      &::after {
-        opacity: 0.05;
-      }
     }
   }
 
