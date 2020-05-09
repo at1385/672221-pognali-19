@@ -44,10 +44,6 @@
     height: 45px;
 
     background-color: $darker;
-    background-image: url("../img/contacts-location.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 14px 22px;
 
     border-radius: 50%;
   }
@@ -57,18 +53,29 @@
     color: rgba($dark, 0.7);
     background-color: transparent;
 
-    &::before {
-      background-image: url("../img/contacts-location-darker.svg");
+    .route__icon {
+      fill: $bright-darker;
     }
   }
 
   &:active {
     color: rgba($dark, 0.3);
 
-    &::before {
-      opacity: 0.3;
+    .route__icon {
+      fill: rgba($bright-darker, 0.3);
     }
   }
+}
+
+.route__icon {
+  position: absolute;
+  top: 13px;
+  left: 16px;
+
+  width: 14px;
+  height: 22px;
+
+  fill: $bright;
 }
 
 .route__map {
@@ -113,6 +120,14 @@
     }
   }
 
+  .route__icon {
+    top: 20px;
+    left: 23px;
+
+    width: 21px;
+    height: 32px;
+  }
+
   .route__map {
     height: 571px;
     margin-top: -58px;
@@ -147,6 +162,14 @@
 
       background-size: 28px 43px;
     }
+  }
+
+  .route__icon {
+    top: 27px;
+    left: 32px;
+
+    width: 28px;
+    height: 43px;
   }
 
   .route__map {

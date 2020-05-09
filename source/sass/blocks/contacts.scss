@@ -34,15 +34,20 @@
     height: 45px;
 
     background-color: $darker;
-    background-repeat: no-repeat;
-    background-position: center;
 
     border-radius: 50%;
   }
 
+  &:hover,
+  &:focus {
+    .contacts__icon {
+      fill: $bright-darker;
+    }
+  }
+
   &:active {
-    &::before {
-      opacity: 0.3;
+    .contacts__icon {
+      fill: rgba($bright-darker, 0.3);
     }
   }
 
@@ -52,39 +57,37 @@
     &:hover,
     &:focus {
       color: $bright-darker;
+
+      .contacts__phone-icon {
+        fill: $bright-darker;
+      }
     }
 
     &:active {
       color: rgba($bright-darker, 0.3);
     }
   }
+}
+
+.contacts__icon {
+  position: absolute;
+
+  fill: $bright;
 
   &--phone {
-    &::before {
-      background-image: url("../img/contacts-phone.svg");
-      background-size: 18px 18px;
-    }
+    top: 14px;
+    left: 14px;
 
-    &:hover,
-    &:focus {
-      &::before {
-        background-image: url("../img/contacts-phone-darker.svg");
-      }
-    }
+    width: 18px;
+    height: 18px;
   }
 
   &--email {
-    &::before {
-      background-image: url("../img/contacts-mail.svg");
-      background-size: 18px 13px;
-    }
+    top: 17px;
+    left: 14px;
 
-    &:hover,
-    &:focus {
-      &::before {
-        background-image: url("../img/contacts-mail-darker.svg");
-      }
-    }
+    width: 18px;
+    height: 13px;
   }
 }
 
@@ -167,6 +170,7 @@
       }
     }
 
+    .contacts__icon,
     .contacts__label {
       display: none;
     }
@@ -196,17 +200,23 @@
       width: 68px;
       height: 68px;
     }
+  }
 
+  .contacts__icon {
     &--phone {
-      &::before {
-        background-size: 27px 27px;
-      }
+      top: 21px;
+      left: 21px;
+
+      width: 27px;
+      height: 27px;
     }
 
     &--email {
-      &::before {
-        background-size: 27px 19px;
-      }
+      top: 25px;
+      left: 21px;
+
+      width: 27px;
+      height: 20px;
     }
   }
 
@@ -246,19 +256,23 @@
       width: 90px;
       height: 90px;
     }
+  }
 
+  .contacts__icon {
     &--phone {
-      &::before {
-        background-image: url("../img/contacts-phone.svg");
-        background-size: 36px 36px;
-      }
+      top: 28px;
+      left: 28px;
+
+      width: 36px;
+      height: 36px;
     }
 
     &--email {
-      &::before {
-        background-image: url("../img/contacts-mail.svg");
-        background-size: 36px 26px;
-      }
+      top: 33px;
+      left: 28px;
+
+      width: 36px;
+      height: 26px;
     }
   }
 
@@ -346,6 +360,7 @@
       }
     }
 
+    .contacts__icon,
     .contacts__label {
       display: none;
     }
