@@ -89,6 +89,7 @@
 }
 
 .companion-card__favourites {
+  @include button-normalize;
   position: relative;
 
   width: 31px;

@@ -101,6 +101,8 @@
 }
 
 .companions-finder__filter-dropdown-button {
+  @include button-normalize;
+
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -144,6 +146,10 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+.companions-finder__filter-dropdown-button > span {
+  @include button-moveless;
 }
 
 .companions-finder__filter-name {

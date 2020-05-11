@@ -37,7 +37,21 @@
   }
 }
 
-@mixin button {
+@mixin button-normalize {
+  outline: none;
+
+  &::-moz-focus-inner {
+    border: 0;
+  }
+}
+
+@mixin button-moveless {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+@mixin button-conditions {
   &:hover,
   &:focus,
   &:active {

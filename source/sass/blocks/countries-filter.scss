@@ -20,7 +20,13 @@
   }
 
   .countries-filter__filter-toggle {
+    @include button-normalize;
+
     display: block;
+  }
+
+  .countries-filter__filter-toggle > span {
+    @include button-moveless;
   }
 
   .countries-filter__countries-list {

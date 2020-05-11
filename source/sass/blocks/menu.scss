@@ -22,6 +22,8 @@
 }
 
 .menu__toggle {
+  @include button-normalize;
+
   display: none;
   width: 25px;
   height: 18px;
@@ -46,6 +48,10 @@
   &:active {
     opacity: 0.1;
   }
+}
+
+.menu__toggle > svg {
+  @include button-moveless;
 }
 
 .menu__open-icon {

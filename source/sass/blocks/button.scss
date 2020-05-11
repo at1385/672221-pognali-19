@@ -1,5 +1,6 @@
 .button {
-  @include button;
+  @include button-normalize;
+  @include button-conditions;
 
   display: inline-block;
   width: 230px;
@@ -167,6 +168,10 @@
       }
     }
   }
+}
+
+.button > span {
+  @include button-moveless;
 }
 
 .button__countries-filter-label {
