@@ -48,6 +48,20 @@
     border-radius: 50%;
   }
 
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 45px;
+    height: 45px;
+
+    background-color: transparent;
+
+    border-radius: 50%;
+  }
+
   &:hover,
   &:focus {
     color: rgba($dark, 0.7);
@@ -142,6 +156,11 @@
 
       background-size: 21px 31px;
     }
+
+    &::after {
+      width: 68px;
+      height: 68px;
+    }
   }
 
   .route__icon {
@@ -196,6 +215,11 @@
       height: 90px;
 
       background-size: 28px 43px;
+    }
+
+    &::after {
+      width: 90px;
+      height: 90px;
     }
   }
 
