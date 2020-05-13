@@ -105,6 +105,8 @@
 }
 
 .calendar__date {
+  @include button-normalize;
+
   flex-grow: 1;
   width: 30px;
   min-height: 30px;
@@ -145,6 +147,10 @@
 
     cursor: default;
   }
+}
+
+.calendar__date > span {
+  @include button-moveless;
 }
 
 .calendar__month-label {
