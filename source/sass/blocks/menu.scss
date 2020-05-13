@@ -118,6 +118,10 @@
     }
 
     &.menu--inner-page {
+      .menu__container {
+        padding-top: 27px;
+      }
+
       .menu__header {
         margin-bottom: 0;
       }
