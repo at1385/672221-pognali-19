@@ -24,6 +24,12 @@
   }
 }
 
+.site-menu__label {
+  &:active {
+    color: rgba($dark, 0.3);
+  }
+}
+
 @media (min-width: $tablet-width) {
   .site-menu {
     width: 775px;
@@ -96,6 +102,8 @@
         color: rgba($bright, 0.7);
 
         .site-menu__label {
+          color: rgba($bright, 0.7);
+
           transform: none;
         }
       }
@@ -164,7 +172,16 @@
         color: #f57b20;
       }
 
+      &--current-page {
+        &:hover,
+        &:focus {
+          color: rgba($dark, 0.3);
+        }
+      }
+
       &:active {
+        color: rgba($dark, 0.3);
+
         &::before {
           color: rgba(#f57b20, 0.3);
         }
