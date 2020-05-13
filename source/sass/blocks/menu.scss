@@ -84,6 +84,12 @@
       position: fixed;
 
       background-color: $lightest;
+
+      &.menu--inner-page {
+        .menu__container {
+          padding-top: 27px;
+        }
+      }
     }
   }
 
@@ -118,10 +124,6 @@
     }
 
     &.menu--inner-page {
-      .menu__container {
-        padding-top: 27px;
-      }
-
       .menu__header {
         margin-bottom: 0;
       }
