@@ -15,8 +15,6 @@
 .algorithm__list {
   @include list-reset;
 
-  background-image: linear-gradient($bright-darkest 90px, $bright-dark 90px, $bright-dark 170px, $bright-darker 170px, $bright-darker 250px, $bright 250px);
-
   border-radius: 10px;
 
   counter-reset: algorithm;
@@ -27,7 +25,7 @@
 
   width: 270px;
   padding-top: 20px;
-  padding-bottom: 24px;
+  padding-bottom: 34px;
 
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
@@ -41,6 +39,10 @@
     right: 20px;
 
     color: $lightest;
+  }
+
+  &:not(:first-child) {
+    margin-top: -10px;
   }
 
   &:nth-child(1) {
@@ -57,6 +59,26 @@
 
   &:nth-child(4) {
     background-color: $bright;
+  }
+
+  &:nth-child(4n+1) {
+    background-color: $bright-darkest;
+  }
+
+  &:nth-child(4n+2) {
+    background-color: $bright-dark;
+  }
+
+  &:nth-child(4n+3) {
+    background-color: $bright-darker;
+  }
+
+  &:nth-child(4n+4) {
+    background-color: $bright;
+  }
+
+  &:last-child {
+    padding-bottom: 24px;
 
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -88,8 +110,6 @@
     display: flex;
     flex-wrap: wrap;
 
-    background-image: linear-gradient($bright-darkest 50%, $bright-darker 50%);
-
     border-radius: 20px;
   }
 
@@ -97,9 +117,6 @@
     width: 344px;
     padding: 30px 34px;
     padding-bottom: 62px;
-
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
 
     &::after {
       top: 86px;
@@ -109,13 +126,37 @@
       line-height: 30px;
     }
 
-    &:nth-child(3) {
+    &:first-child {
+      border-top-right-radius: 0;
+      border-top-left-radius: 20px;
+    }
+
+    &:nth-child(2) {
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+    }
+
+    &:nth-child(odd) {
+      width: 364px;
+    }
+
+    &:nth-child(even) {
+      margin-left: -20px;
+    }
+
+    &:nth-child(n+3) {
       border-radius: 0;
+    }
+
+    &:not(:first-child) {
+      margin-top: 0;
+    }
+
+    &:nth-last-child(2) {
       border-bottom-left-radius: 20px;
     }
 
-    &:nth-child(4) {
-      border-radius: 0;
+    &:last-child {
       border-bottom-left-radius: 20px;
       border-bottom-right-radius: 20px;
     }
@@ -137,12 +178,8 @@
     @include container-desktop;
   }
 
-  .algorithm__list {
-    background-image: linear-gradient(to right, $bright-darkest 345px, $bright-dark 345px, $bright-dark 690px, $bright-darker 690px, $bright-darker 1035px, $bright 1035px);
-  }
-
   .algorithm__item {
-    width: 345px;
+    width: 365px;
     padding: 31px 30px;
     padding-top: 28px;
 
@@ -157,28 +194,38 @@
       line-height: 24px;
     }
 
-    &:first-child,
-    &:last-child {
+    &:not(:first-child) {
+      margin-left: -20px;
+    }
+
+    &:nth-child(2) {
+      border-top-right-radius: 0;
+    }
+
+    &:nth-child(n+3) {
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+    }
+
+    &:nth-child(4n) {
+      width: 315px;
+
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+
       &::after {
         left: 270px;
       }
     }
 
-    &:first-child {
-      width: 315px;
-      padding-right: 36px;
+    &:nth-child(4n+1) {
+      width: 335px;
+      margin-left: 0;
       padding-left: 36px;
-    }
 
-    &:last-child {
-      width: 255px;
-
-      border-top-left-radius: 20px;
-      border-top-right-radius: 20px;
-    }
-
-    &:nth-child(3) {
-      border-top-left-radius: 20px;
+      &::after {
+        left: 270px;
+      }
     }
   }
 }
