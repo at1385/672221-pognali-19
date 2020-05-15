@@ -5,6 +5,9 @@
   flex-wrap: wrap;
   justify-content: center;
 
+  width: 220px;
+  margin: 0 auto;
+
   &--catalog {
     flex-direction: column;
     margin-left: 5px;
@@ -17,6 +20,7 @@
   min-width: 35px;
   height: 24px;
   margin-right: 19px;
+  margin-bottom: 10px;
 
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -28,6 +32,10 @@
 
   &:last-child {
     margin-right: 0;
+  }
+
+  &:nth-last-child(-n+4) {
+    margin-bottom: 0;
   }
 
   &::before {
@@ -84,6 +92,10 @@
 
     background-color: transparent;
     background-size: 26px auto;
+
+    &:nth-last-child(-n+4) {
+      margin-bottom: 4px;
+    }
 
     &:last-child {
       margin-bottom: 0;
@@ -169,6 +181,8 @@
   .countries--catalog {
     flex-direction: row;
     justify-content: flex-start;
+
+    width: 100%;
   }
 
   .countries__item--catalog {
@@ -180,6 +194,10 @@
     line-height: 24px;
 
     background-size: 35px auto;
+
+    &:nth-last-child(-n+4) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -192,5 +210,13 @@
   .countries__item--catalog {
     margin-bottom: 13px;
     padding-left: 55px;
+
+    &:nth-last-child(-n+4) {
+      margin-bottom: 13px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
