@@ -128,7 +128,20 @@
   }
 
   &:invalid {
+    background-image:
+      url("../img/textarea-invalid.png"),
+      linear-gradient(transparent 80%, #ffefef 80%);
+    background-repeat: no-repeat;
+    background-position:
+      5px 92.5%,
+      0 0;
+    background-size:
+      95% auto,
+      auto auto;
+
     border-color: #f47e7e;
+
+    box-shadow: none;
   }
 }
 
@@ -200,6 +213,17 @@
 
     &::placeholder {
       opacity: 0.3;
+    }
+
+    &:invalid {
+      background-image:
+        url("../img/textarea-invalid.png"),
+        linear-gradient(transparent 60%, #ffefef 60%);
+      background-repeat: no-repeat;
+      background-position:
+        22px 85%,
+        0 0;
+      background-size: auto;
     }
   }
 }
