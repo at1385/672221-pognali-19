@@ -75,6 +75,8 @@
   &:active {
     color: rgba($dark, 0.3);
 
+    outline: none;
+
     .route__icon {
       fill: rgba($bright-darker, 0.3);
     }

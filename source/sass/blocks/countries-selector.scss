@@ -291,6 +291,8 @@
 }
 
 .countries-selector__delete-button {
+  @include button-normalize;
+
   position: absolute;
   top: -10px;
   right: -10px;

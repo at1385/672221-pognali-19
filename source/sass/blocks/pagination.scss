@@ -59,6 +59,8 @@
     }
 
     &:active {
+      outline: none;
+
       &::before {
         opacity: 0.3;
       }
@@ -151,6 +153,8 @@
       color: $darkest;
 
       background-color: $bright;
+
+      outline: none;
     }
   }
 

@@ -37,8 +37,14 @@
     opacity: 0.5;
   }
 
+  &:focus {
+    outline: #808080 dotted 1px;
+  }
+
   &:active {
     opacity: 0.1;
+
+    outline: none;
   }
 
   &::-moz-focus-inner {

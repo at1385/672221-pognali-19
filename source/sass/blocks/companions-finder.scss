@@ -346,6 +346,14 @@
 .companions-finder__button {
   margin: 0 20px;
   margin-bottom: 22px;
+
+  &:focus {
+    outline: #808080 dotted 1px;
+  }
+
+  &:active {
+    outline: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
