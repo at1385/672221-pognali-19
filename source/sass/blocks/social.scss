@@ -29,6 +29,12 @@
     opacity: 0.6;
   }
 
+  &:focus {
+    outline-width: 1px;
+    outline-style: dotted;
+    outline-color: inherit;
+  }
+
   &:active {
     opacity: 0.3;
 

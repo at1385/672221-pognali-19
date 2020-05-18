@@ -144,7 +144,15 @@
     transition: all 0.1s ease-out;
   }
 
+  &:focus {
+    outline-width: 1px;
+    outline-style: dotted;
+    outline-color: inherit;
+  }
+
   &:active {
+    outline: none;
+
     box-shadow: 0 3px 7px 0 rgba(29, 46, 91, 0.35);
   }
 }

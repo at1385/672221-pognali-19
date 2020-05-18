@@ -49,6 +49,12 @@
     }
   }
 
+  &:focus {
+    outline-width: 1px;
+    outline-style: dotted;
+    outline-color: inherit;
+  }
+
   &:active {
     background-color: #e2e5f1;
     box-shadow: none;

@@ -220,8 +220,16 @@
     }
   }
 
+  &:focus {
+    outline-width: 1px;
+    outline-style: dotted;
+    outline-color: inherit;
+  }
+
   &:active {
     color: rgba(#444444, 0.3);
+
+    outline: none;
 
     &::before {
       background-color: rgba($lightest, 0.3);

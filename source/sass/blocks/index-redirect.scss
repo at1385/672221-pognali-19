@@ -1,5 +1,11 @@
 .index-redirect__link {
   display: none;
+
+  &:focus {
+    outline-width: 1px;
+    outline-style: dotted;
+    outline-color: inherit;
+  }
 }
 
 @media (min-width: $tablet-width) {

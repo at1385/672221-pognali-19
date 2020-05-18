@@ -51,6 +51,12 @@
     color: $bright-darkest;
   }
 
+  &:focus {
+    outline-width: 1px;
+    outline-style: dotted;
+    outline-color: inherit;
+  }
+
   &:active {
     color: rgba($bright-darkest, 0.3);
 

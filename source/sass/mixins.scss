@@ -32,6 +32,12 @@
     color: rgba($dark, 0.7);
   }
 
+  &:focus {
+    outline-width: 1px;
+    outline-style: dotted;
+    outline-color: inherit;
+  }
+
   &:active {
     color: rgba($dark, 0.3);
 
