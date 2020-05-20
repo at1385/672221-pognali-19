@@ -6,7 +6,7 @@ countriesSelectorButton.addEventListener('click', function () {
 });
 
 window.addEventListener('keydown', function (evt) {
-  if (countriesSelectorItem.classList.contains('countries-selector__item--opened') && evt.key === 'Escape') {
+  if (countriesSelectorItem.classList.contains('countries-selector__item--opened') && evt.keyCode === 27) {
     countriesSelectorItem.classList.remove('countries-selector__item--opened');
   }
 });

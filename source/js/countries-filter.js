@@ -19,7 +19,7 @@ countriesFilterButton.addEventListener('click', function () {
 });
 
 window.addEventListener('keydown', function (evt) {
-  if (!countriesFilterContainer.classList.contains('countries-filter__container--closed') && evt.key === 'Escape') {
+  if (!countriesFilterContainer.classList.contains('countries-filter__container--closed') && evt.keyCode === 27) {
     countriesFilter.classList.add('countries-filter--closed');
     countriesFilterContainer.classList.add('countries-filter__container--closed');
   }
