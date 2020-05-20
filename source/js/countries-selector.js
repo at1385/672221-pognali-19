@@ -3,4 +3,10 @@ var countriesSelectorButton = countriesSelectorItem.querySelector('.countries-se
 
 countriesSelectorButton.addEventListener('click', function () {
   countriesSelectorItem.classList.toggle('countries-selector__item--opened');
-})
+});
+
+window.addEventListener('keydown', function (evt) {
+  if (countriesSelectorItem.classList.contains('countries-selector__item--opened') && evt.key === 'Escape') {
+    countriesSelectorItem.classList.remove('countries-selector__item--opened');
+  }
+});
