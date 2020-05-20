@@ -511,6 +511,13 @@
     &::before {
       background-size: 12px 12px;
     }
+
+    &:hover,
+    &:focus {
+      &::before {
+        background-position: 5.999px 6px;
+      }
+    }
   }
 
   .companions-finder__transport-label {
