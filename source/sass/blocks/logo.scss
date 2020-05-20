@@ -3,8 +3,20 @@
   height: 19px;
 }
 
-.logo__link--light {
-  display: none;
+.logo__link {
+  &:focus {
+    outline-width: 1px;
+    outline-style: dotted;
+    outline-color: inherit;
+  }
+
+  &:active {
+    outline: none;
+  }
+
+  &--light {
+    display: none;
+  }
 }
 
 .logo__image {

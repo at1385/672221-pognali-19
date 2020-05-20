@@ -45,7 +45,7 @@ window.addEventListener('scroll', function () {
 });
 
 window.addEventListener('keydown', function (evt) {
-  if (!menu.classList.contains('menu--closed') && evt.key === 'Escape') {
+  if (!menu.classList.contains('menu--closed') && evt.keyCode === 27) {
     menu.classList.add('menu--closed');
   }
 });

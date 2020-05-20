@@ -50,13 +50,19 @@
           <nav class="menu__main-nav">
             <ul class="site-menu">
               <li class="site-menu__item">
-                <a class="site-menu__link" href="#">О сервисе</a>
+                <a class="site-menu__link" href="#">
+                  <span class="site-menu__label" data-site-menu-item-name="О сервисе">О сервисе</span>
+                </a>
               </li>
               <li class="site-menu__item">
-                <a class="site-menu__link" href="form.html">Направления</a>
+                <a class="site-menu__link" href="form.html">
+                  <span class="site-menu__label" data-site-menu-item-name="Направления">Направления</span>
+                </a>
               </li>
               <li class="site-menu__item">
-                <a class="site-menu__link" href="catalog.html">Попутчики</a>
+                <a class="site-menu__link" href="catalog.html">
+                  <span class="site-menu__label" data-site-menu-item-name="Попутчики">Попутчики</span>
+                </a>
               </li>
             </ul>
           </nav>
@@ -74,6 +80,10 @@
                   <svg class="contacts__icon contacts__icon--phone" width="18" height="18">
                     <use xlink:href="img/sprite.svg#contacts-phone"></use>
                   </svg>
+
+                  <svg class="contacts__icon contacts__icon--phone-mini" width="18" height="18">
+                    <use xlink:href="img/sprite.svg#contacts-phone-mini"></use>
+                  </svg>
                   <span class="contacts__label">8 800 555-86-28</span>
                 </a>
               </li>
@@ -81,6 +91,10 @@
                 <a class="contacts__link contacts__link--email" href="mailto:mail@htmlacademy.ru">
                   <svg class="contacts__icon contacts__icon--email" width="18" height="13">
                     <use xlink:href="img/sprite.svg#contacts-email"></use>
+                  </svg>
+
+                  <svg class="contacts__icon contacts__icon--email-mini" width="18" height="14">
+                    <use xlink:href="img/sprite.svg#contacts-email-mini"></use>
                   </svg>
                   <span class="contacts__label">mail@htmlacademy.ru</span>
                 </a>
@@ -431,16 +445,27 @@
         <div class="route__background-wrapper">
           <h2 class="visually-hidden">Маршрут</h2>
           <div class="route__container">
-            <a class="route__adress" href="#">
+            <a class="route__adress" href="https://www.google.com/maps/place/%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F+%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB%D0%B8%D1%86%D0%B0/@59.936107,30.321529,17z/data=!4m5!3m4!1s0x0:0x91c16b0cf63dfa74!8m2!3d59.9361074!4d30.3215286?hl=ru" target="_blank">
               <svg class="route__icon" width="14" height="22">
                 <use xlink:href="img/sprite.svg#route-location"></use>
               </svg>
               <span class="route__label">ул. Большая Конюшенная, 19/8</span>
             </a>
-            <a class="rectangle-button rectangle-button--border" href="#">Проложить маршрут</a>
+            <a class="rectangle-button rectangle-button--border" href="https://www.google.com/maps/place/%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F+%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB%D0%B8%D1%86%D0%B0/@59.936107,30.321529,17z/data=!4m5!3m4!1s0x0:0x91c16b0cf63dfa74!8m2!3d59.9361074!4d30.3215286?hl=ru" target="_blank">Проложить маршрут</a>
           </div>
         </div>
-        <iframe class="route__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1188.4551179009673!2d30.321808565615807!3d59.93653441012481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631057d105877%3A0x91c16b0cf63dfa74!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsA!5e0!3m2!1sru!2sru!4v1574014161689!5m2!1sru!2sru" width=100% height="330" allowfullscreen=""></iframe>
+        <div class="route__map-wrapper">
+          <iframe class="route__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1188.4551179009673!2d30.321808565615807!3d59.93653441012481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631057d105877%3A0x91c16b0cf63dfa74!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsA!5e0!3m2!1sru!2sru!4v1574014161689!5m2!1sru!2sru" width=100% height="340" allowfullscreen=""></iframe>
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1440px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+            <img class="route__map-image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.png 2x" width="320" height="546" alt="Карта маршрута">
+          </picture>
+        </div>
       </section>
     </main>
 
@@ -480,7 +505,7 @@
           </ul>
         </div>
 
-        <div class="page-footer__copyright copyright">
+        <div class="copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="copyright__phrase">Разработано</span>
             <img class="copyright__logo" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип «HTML Academy»">

@@ -1,5 +1,11 @@
 .index-redirect__link {
   display: none;
+
+  &:focus {
+    outline-width: 1px;
+    outline-style: dotted;
+    outline-color: inherit;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -52,6 +58,8 @@
 
     &:active {
       color: rgba($lightest, 0.3);
+
+      outline: none;
 
       &::after {
         opacity: 0.3;

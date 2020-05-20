@@ -28,6 +28,16 @@
   border-radius: 50%;
 
   overflow: hidden;
+
+  &:focus {
+    outline-width: 1px;
+    outline-style: dotted;
+    outline-color: inherit;
+  }
+
+  &:active {
+    outline: none;
+  }
 }
 
 .companion-card__user-image {
@@ -89,6 +99,7 @@
 }
 
 .companion-card__favourites {
+  @include button-normalize;
   position: relative;
 
   width: 31px;

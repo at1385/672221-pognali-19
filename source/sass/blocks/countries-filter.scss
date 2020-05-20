@@ -20,7 +20,13 @@
   }
 
   .countries-filter__filter-toggle {
+    @include button-normalize;
+
     display: block;
+  }
+
+  .countries-filter__filter-toggle > span {
+    @include button-moveless;
   }
 
   .countries-filter__countries-list {
@@ -160,8 +166,21 @@
 
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: rgba($dark, 0.6);
+  }
+
+  &:focus {
+    outline-width: 1px;
+    outline-style: dotted;
+    outline-color: inherit;
+  }
+
+  &:active {
+    color: $dark;
+
+    outline: none;
   }
 }
 

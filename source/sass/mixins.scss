@@ -32,12 +32,42 @@
     color: rgba($dark, 0.7);
   }
 
+  &:focus {
+    outline-width: 1px;
+    outline-style: dotted;
+    outline-color: inherit;
+  }
+
   &:active {
     color: rgba($dark, 0.3);
+
+    outline: none;
   }
 }
 
-@mixin button {
+@mixin button-normalize {
+  outline: none;
+
+  &::-moz-focus-inner {
+    border: 0;
+  }
+
+  &:focus {
+    outline: #808080 dotted 1px;
+  }
+
+  &:active {
+    outline: none;
+  }
+}
+
+@mixin button-moveless {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+@mixin button-conditions {
   &:hover,
   &:focus,
   &:active {

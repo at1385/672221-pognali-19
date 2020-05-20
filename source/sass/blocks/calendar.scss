@@ -37,8 +37,14 @@
     opacity: 0.5;
   }
 
+  &:focus {
+    outline: #808080 dotted 1px;
+  }
+
   &:active {
     opacity: 0.1;
+
+    outline: none;
   }
 
   &::-moz-focus-inner {
@@ -59,6 +65,7 @@
   background-color: transparent;
 
   border: none;
+  outline: none;
 }
 
 .calendar__weekdays-list,
@@ -105,6 +112,8 @@
 }
 
 .calendar__date {
+  @include button-normalize;
+
   flex-grow: 1;
   width: 30px;
   min-height: 30px;
@@ -145,6 +154,10 @@
 
     cursor: default;
   }
+}
+
+.calendar__date > span {
+  @include button-moveless;
 }
 
 .calendar__month-label {

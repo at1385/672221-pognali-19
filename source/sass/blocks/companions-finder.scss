@@ -92,7 +92,7 @@
   }
 
   &:last-child {
-    margin-bottom: 4px;
+    margin-bottom: 0;
 
     &::after {
       background-color: transparent;
@@ -101,6 +101,8 @@
 }
 
 .companions-finder__filter-dropdown-button {
+  @include button-normalize;
+
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -144,6 +146,10 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+.companions-finder__filter-dropdown-button > span {
+  @include button-moveless;
 }
 
 .companions-finder__filter-name {
@@ -214,8 +220,16 @@
     }
   }
 
+  &:focus {
+    outline-width: 1px;
+    outline-style: dotted;
+    outline-color: inherit;
+  }
+
   &:active {
     color: rgba(#444444, 0.3);
+
+    outline: none;
 
     &::before {
       background-color: rgba($lightest, 0.3);
@@ -253,6 +267,18 @@
   border-radius: 50%;
 
   cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 33px;
+    height: 33px;
+
+    background-color: transparent;
+  }
 
   &:hover,
   &:focus {
@@ -328,6 +354,14 @@
 .companions-finder__button {
   margin: 0 20px;
   margin-bottom: 22px;
+
+  &:focus {
+    outline: #808080 dotted 1px;
+  }
+
+  &:active {
+    outline: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -477,6 +511,13 @@
     &::before {
       background-size: 12px 12px;
     }
+
+    &:hover,
+    &:focus {
+      &::before {
+        background-position: 5.999px 6px;
+      }
+    }
   }
 
   .companions-finder__transport-label {
@@ -484,6 +525,11 @@
     height: 43px;
 
     line-height: 43px;
+
+    &::after {
+      width: 43px;
+      height: 43px;
+    }
   }
 
   .companions-finder__transport-icon {

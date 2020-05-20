@@ -38,16 +38,46 @@
     border-radius: 50%;
   }
 
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 45px;
+    height: 45px;
+
+    background-color: transparent;
+
+    border-radius: 50%;
+  }
+
   &:hover,
   &:focus {
     .contacts__icon {
       fill: $bright-darker;
+
+      &--phone-mini,
+      &--email-mini {
+        fill: $darkest;
+      }
     }
   }
 
+  &:focus {
+    outline: #808080 dotted 1px;
+  }
+
   &:active {
+    outline: none;
+
     .contacts__icon {
       fill: rgba($bright-darker, 0.3);
+
+      &--phone-mini,
+      &--email-mini {
+        fill: rgba($darkest, 0.3);
+      }
     }
   }
 
@@ -89,6 +119,11 @@
     width: 18px;
     height: 13px;
   }
+
+  &--phone-mini,
+  &--email-mini {
+    display: none;
+  }
 }
 
 .menu {
@@ -114,58 +149,23 @@
         display: none;
       }
 
-      &::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 1;
-
-        width: 40px;
-        height: 40px;
-
-        border-radius: 50%;
-
-        opacity: 0;
-      }
-
       &--phone {
         background-color: $bright-darkest;
-        background-image: url("../img/topmenu-phone.svg");
-        background-size: 18px 18px;
 
         &:hover,
-        &:focus {
-          background-color: #f26926;
-        }
-
+        &:focus,
         &:active {
-          &::after {
-            background-color: #f26926;
-            opacity: 0.7;
-          }
+          background-color: #f26926;
         }
       }
 
       &--email {
         background-color: $bright-darker;
-        background-image: url("../img/topmenu-mail.svg");
-        background-size: 18px 14px;
 
         &:hover,
-        &:focus {
-          background-color: $bright-darkest;
-        }
-
+        &:focus,
         &:active {
-          &::before {
-            opacity: 0.3;
-          }
-
-          &::after {
-            background-color: $bright-darkest;
-            opacity: 0.7;
-          }
+          background-color: $bright-darkest;
         }
       }
     }
@@ -173,6 +173,26 @@
     .contacts__icon,
     .contacts__label {
       display: none;
+    }
+
+    .contacts__icon {
+      width: 18px;
+      height: 18px;
+
+      fill: $darkest;
+
+      &--phone-mini {
+        display: block;
+        margin-left: 12px;
+        margin-top: 11px;
+      }
+
+      &--email-mini {
+        display: block;
+        height: 14px;
+        margin-left: 11px;
+        margin-top: 13px;
+      }
     }
 
     &.menu--inner-page {
@@ -197,6 +217,11 @@
     line-height: 68px;
 
     &::before {
+      width: 68px;
+      height: 68px;
+    }
+
+    &::after {
       width: 68px;
       height: 68px;
     }
@@ -253,6 +278,11 @@
     line-height: 90px;
 
     &::before {
+      width: 90px;
+      height: 90px;
+    }
+
+    &::after {
       width: 90px;
       height: 90px;
     }
@@ -321,41 +351,21 @@
 
       &--phone {
         background-color: $bright-darkest;
-        background-image: url("../img/topmenu-phone.svg");
-        background-size: 18px 18px;
 
         &:hover,
-        &:focus {
-          background-color: #f26926;
-        }
-
+        &:focus,
         &:active {
-          &::after {
-            background-color: #f26926;
-            opacity: 0.7;
-          }
+          background-color: #f26926;
         }
       }
 
       &--email {
         background-color: $bright-darker;
-        background-image: url("../img/topmenu-mail.svg");
-        background-size: 18px 14px;
 
         &:hover,
-        &:focus {
-          background-color: $bright-darkest;
-        }
-
+        &:focus,
         &:active {
-          &::before {
-            opacity: 0.3;
-          }
-
-          &::after {
-            background-color: $bright-darkest;
-            opacity: 0.7;
-          }
+          background-color: $bright-darkest;
         }
       }
     }
@@ -363,6 +373,20 @@
     .contacts__icon,
     .contacts__label {
       display: none;
+
+      fill: $darkest;
+
+      &--phone-mini {
+        display: block;
+        margin-left: 17px;
+        margin-top: 16px;
+      }
+
+      &--email-mini {
+        display: block;
+        margin-left: 16px;
+        margin-top: 18px;
+      }
     }
   }
 }

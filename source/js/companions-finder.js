@@ -2,7 +2,7 @@ var companionsFinder = document.querySelector('.companions-finder');
 var companionsFinderFilters = companionsFinder.querySelectorAll('.companions-finder__filter-item');
 var companionsFinderToggles = companionsFinder.querySelectorAll('.companions-finder__filter-dropdown-button');
 
-for (var i = 0; i < companionsFinderFilters.length; i++) {
+for (var i = 0; i < companionsFinderFilters.length - 1; i++) {
   companionsFinderFilters[i].classList.toggle('companions-finder__filter-item--closed');
 }
 

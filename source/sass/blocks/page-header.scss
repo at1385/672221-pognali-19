@@ -49,36 +49,36 @@
     background-color: #182044;
     background-image:
       url("../img/globe-back-tablet@1x.jpg"),
-      linear-gradient(#182044 93.1%, $dark 93.1%);
+      linear-gradient(#182044 1905px, $dark 1905px);
     background-repeat: no-repeat;
     background-position:
-      center 90.1%,
+      center 1290px,
       0 0;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image:
         url("../img/globe-back-tablet@2x.jpg"),
-        linear-gradient(#182044 93.1%, $dark 93.1%);
+        linear-gradient(#182044 1905px, $dark 1905px);
       background-size:
         1479px auto,
         auto auto;
       background-position:
-        -358px 90.1%,
+        -358px 1290px,
         0 0;
     }
 
     &--js {
       background-image:
         url("../img/globe-back-tablet@1x.jpg"),
-        linear-gradient(#182044 76.2%, $dark 76.2%);
+        linear-gradient(#182044 995px, $dark 995px);
       background-position:
-        center 73.2%,
+        center 382px,
         0 0;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image:
           url("../img/globe-back-tablet@2x.jpg"),
-          linear-gradient(#182044 93.1%, $dark 93.1%);
+          linear-gradient(#182044 995px, $dark 995px);
         background-size:
           1479px auto,
           auto auto;

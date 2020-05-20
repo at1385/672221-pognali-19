@@ -28,6 +28,18 @@
 
   cursor: pointer;
 
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 33px;
+    height: 33px;
+
+    background-color: transparent;
+  }
+
   &:hover,
   &:focus {
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
@@ -37,9 +49,17 @@
     }
   }
 
+  &:focus {
+    outline-width: 1px;
+    outline-style: dotted;
+    outline-color: inherit;
+  }
+
   &:active {
     background-color: #e2e5f1;
     box-shadow: none;
+
+    outline: none;
 
     .transport-chooser__icon {
       fill: rgba(#000000, 0.1);
@@ -109,6 +129,11 @@
     height: 43px;
 
     line-height: 43px;
+
+    &::after {
+      width: 43px;
+      height: 43px;
+    }
   }
 
   .transport-chooser__icon {

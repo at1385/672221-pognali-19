@@ -31,6 +31,8 @@
 
 .user-schedule__list {
   @include list-reset;
+
+  counter-reset: schedule-number;
 }
 
 .user-schedule__item {
@@ -47,20 +49,26 @@
   }
 }
 
-.user-schedule__country-wrapper,
-.user-schedule__info {
-  margin: 0;
-}
+.user-schedule__countries {
+  position: relative;
 
-.user-schedule__country-wrapper {
+  margin: 0;
   margin-bottom: 22px;
+  padding-left: 15px;
 
   font-size: 16px;
-  line-height: 16px;
-}
-
-.user-schedule__countries {
   font-weight: 700;
+  line-height: 16px;
+
+  &::before {
+    counter-increment: schedule-number;
+    content: counter(schedule-number) ".";
+    position: absolute;
+    top: 0;
+    left: -2px;
+
+    font-weight: 500;
+  }
 }
 
 .user-schedule__info-wrapper {
@@ -69,6 +77,7 @@
 }
 
 .user-schedule__info {
+  margin: 0;
   margin-bottom: 6px;
 
   letter-spacing: 1.5px;
@@ -90,8 +99,16 @@
     color: rgba(#444444, 0.6);
   }
 
+  &:focus {
+    outline-width: 1px;
+    outline-style: dotted;
+    outline-color: inherit;
+  }
+
   &:active {
     color: rgba(#444444, 0.1);
+
+    outline: none;
   }
 }
 
@@ -119,27 +136,23 @@
     padding: 0;
   }
 
-  .user-schedule__country-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  .user-schedule__countries {
     margin-bottom: 0;
     padding-top: 38px;
-    padding-right: 31px;
+    padding-right: 50px;
     padding-bottom: 34px;
     padding-left: 36px;
-  }
 
-  .user-schedule__number {
-    order: 1;
-
-    font-size: 20px;
-    line-height: 24px;
-  }
-
-  .user-schedule__countries {
     font-size: 24px;
     line-height: 24px;
+
+    &::before {
+      top: 40px;
+      left: 570px;
+
+      font-size: 20px;
+      line-height: 20px;
+    }
   }
 
   .user-schedule__info-wrapper {
@@ -203,19 +216,16 @@
     padding-left: 44px;
   }
 
-  .user-schedule__country-wrapper {
-    justify-content: flex-start;
+  .user-schedule__countries {
+    width: 520px;
     margin-right: 62px;
     padding: 0;
-  }
+    padding-left: 52px;
 
-  .user-schedule__number {
-    order: 0;
-    margin-right: 36px;
-  }
-
-  .user-schedule__countries {
-    width: 470px;
+    &::before {
+      top: 3px;
+      left: 0;
+    }
   }
 
   .user-schedule__info-wrapper {

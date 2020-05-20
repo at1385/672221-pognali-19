@@ -15,6 +15,12 @@
   }
 }
 
+.menu--scroll.menu--inner-page {
+  .menu__container {
+    padding-top: 27px;
+  }
+}
+
 .menu__header {
   display: flex;
   justify-content: space-between;
@@ -22,6 +28,8 @@
 }
 
 .menu__toggle {
+  @include button-normalize;
+
   display: none;
   width: 25px;
   height: 18px;
@@ -46,6 +54,10 @@
   &:active {
     opacity: 0.1;
   }
+}
+
+.menu__toggle > svg {
+  @include button-moveless;
 }
 
 .menu__open-icon {
@@ -162,11 +174,15 @@
     margin-left: 57px;
   }
 
-  .menu--closed {
-    &.menu--scroll {
-      .menu__container {
-        padding-bottom: 43px;
-      }
+  .menu--scroll.menu--inner-page {
+    .menu__container {
+      padding-top: 40px;
+    }
+  }
+
+  .menu--closed.menu--scroll {
+    .menu__container {
+      padding-bottom: 43px;
     }
   }
 }
