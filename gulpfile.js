@@ -2,6 +2,7 @@
 
 var gulp = require("gulp");
 var plumber = require("gulp-plumber");
+var htmlmin = require('gulp-htmlmin');
 var sourcemap = require("gulp-sourcemaps");
 var rename = require("gulp-rename");
 var sass = require("gulp-sass");
@@ -11,6 +12,16 @@ var csso = require("gulp-csso");
 var imagemin = require("gulp-imagemin");
 var del = require("del");
 var server = require("browser-sync").create();
+
+gulp.task("html", function () {
+  return gulp.src("source/*.html")
+    .pipe(plumber())
+    .pipe(htmlmin({
+      collapseWhitespace: true
+    }))
+    .pipe(gulp.dest("build/"))
+    .pipe(server.stream());
+});
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -56,6 +67,7 @@ gulp.task("copy", function () {
 gulp.task("build", gulp.series(
   "clean",
   "copy",
+  "html",
   "css"
 ));
 
@@ -74,7 +86,7 @@ gulp.task("server", function () {
   });
 
   gulp.watch("source/sass/**/*.scss", gulp.series("css"));
-  gulp.watch("source/*.html").on("change", server.reload);
+  gulp.watch("source/*.html", gulp.series("html"));
 });
 
 gulp.task("start", gulp.series("build", "server"));
