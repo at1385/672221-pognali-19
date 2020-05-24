@@ -13,7 +13,7 @@
 .page-main--js {
   .countries-filter {
     position: absolute;
-    top: 143px;
+    top: 664px;
     left: 0;
     right: 0;
     z-index: 5;
@@ -35,6 +35,12 @@
 
   .countries-filter__button {
     display: block;
+  }
+}
+
+.page-header--js ~ .page-main--js {
+  .countries-filter {
+    top: 143px;
   }
 }
 
@@ -212,7 +218,7 @@
 
   .page-main--js {
     .countries-filter {
-      top: 298px;
+      top: 1167px;
     }
 
     .countries-filter__container {
@@ -228,6 +234,11 @@
     }
   }
 
+  .page-header--js ~ .page-main--js {
+    .countries-filter {
+      top: 298px;
+    }
+  }
 
   .countries-filter__container {
     @include container-tablet;
@@ -376,6 +387,12 @@
 
     .countries-filter__countries-list {
       margin-bottom: 42px;
+    }
+  }
+
+  .page-header--js ~ .page-main--js {
+    .countries-filter {
+      top: 31px;
     }
   }
 
