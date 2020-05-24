@@ -340,8 +340,13 @@
   .companion-card__name-separator {
     display: inline-block;
     max-width: 315px;
+    margin-right: 9px;
 
     vertical-align: top;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   .companion-card__web-status {
